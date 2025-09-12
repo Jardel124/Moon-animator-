@@ -1,4 +1,5 @@
 
+
 local Players = game:GetService("Players")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
@@ -136,211 +137,6 @@ local function getPartType(partName)
     return partTypes[partName] or string.sub(partName, 1, 6)
 end
 
--- Export clean animation script with relative positioning
-local function exportAnimationScript()
-    if #savedPositions == 0 and not next(bodyPartPositions) then
-        return "-- No animation data to export"
-    end
-    
-    local code = [[-- Exported animation from Moon Animator X (Using Relative Positioning)
--- This is a LocalScript if you want it to run on client
--- This is a Script if you want it to run on server
-local TweenService = game:GetService('TweenService')
-local rig = script.Parent -- Change this to your rig path
-
-local function playAnimation()
-    local rootPart = rig:FindFirstChild("HumanoidRootPart")
-    if not rootPart then
-        warn("No HumanoidRootPart found for animation")
-        return
-    end
-    
-]]
-    
-    -- Add keyframes with relative positioning
-    for i, savedData in ipairs(savedPositions) do
-        code = code .. "    -- Keyframe " .. i .. "\n"
-        code = code .. "    local tweenInfo" .. i .. " = TweenInfo.new(" .. (savedData.duration or keyframeDuration) .. ", Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)\n"
-        code = code .. "    local tweens" .. i .. " = {}\n"
-        
-        local partIndex = 1
-        for partName, data in pairs(savedData.parts) do
-            -- Convert relative CFrame back to code format
-            local x, y, z = data.CFrame.Position.X, data.CFrame.Position.Y, data.CFrame.Position.Z
-            local rx, ry, rz = data.CFrame:toEulerAnglesXYZ()
-            
-            code = code .. "    local part" .. partIndex .. " = rig:FindFirstChild(\"" .. partName .. "\")\n"
-            code = code .. "    if part" .. partIndex .. " then\n"
-            
-            if partName == "HumanoidRootPart" then
-                code = code .. "        local targetCFrame" .. partIndex .. " = rootPart.CFrame * CFrame.new(" .. string.format("%.3f, %.3f, %.3f", x, y, z) .. ") * CFrame.Angles(" .. string.format("%.3f, %.3f, %.3f", rx, ry, rz) .. ")\n"
-            else
-                code = code .. "        local targetCFrame" .. partIndex .. " = rootPart.CFrame * CFrame.new(" .. string.format("%.3f, %.3f, %.3f", x, y, z) .. ") * CFrame.Angles(" .. string.format("%.3f, %.3f, %.3f", rx, ry, rz) .. ")\n"
-            end
-            
-            code = code .. "        local tween" .. partIndex .. " = TweenService:Create(part" .. partIndex .. ", tweenInfo" .. i .. ", {\n"
-            code = code .. "            CFrame = targetCFrame" .. partIndex .. ",\n"
-            code = code .. string.format("            Size = Vector3.new(%.3f, %.3f, %.3f)\n", data.Size.X, data.Size.Y, data.Size.Z)
-            code = code .. "        })\n"
-            code = code .. "        table.insert(tweens" .. i .. ", tween" .. partIndex .. ")\n"
-            code = code .. "    end\n"
-            
-            partIndex = partIndex + 1
-        end
-        
-        code = code .. "    \n"
-        code = code .. "    for _, tween in pairs(tweens" .. i .. ") do\n"
-        code = code .. "        tween:Play()\n"
-        code = code .. "    end\n"
-        code = code .. "    if #tweens" .. i .. " > 0 then\n"
-        code = code .. "        tweens" .. i .. "[1].Completed:Wait()\n"
-        code = code .. "    end\n\n"
-    end
-    
-    -- Add individual parts with relative positioning
-    for partName, positions in pairs(bodyPartPositions) do
-        code = code .. "    -- " .. partName .. " animation (relative)\n"
-        code = code .. "    local " .. partName:gsub(" ", ""):gsub("[^%w]", "") .. "Part = rig:FindFirstChild(\"" .. partName .. "\")\n"
-        code = code .. "    if " .. partName:gsub(" ", ""):gsub("[^%w]", "") .. "Part then\n"
-        
-        for j, data in ipairs(positions) do
-            local x, y, z = data.CFrame.Position.X, data.CFrame.Position.Y, data.CFrame.Position.Z
-            local rx, ry, rz = data.CFrame:toEulerAnglesXYZ()
-            
-            code = code .. "        local partTweenInfo = TweenInfo.new(" .. data.duration .. ", Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)\n"
-            
-            if partName == "HumanoidRootPart" then
-                code = code .. "        local targetCFrame = rootPart.CFrame * CFrame.new(" .. string.format("%.3f, %.3f, %.3f", x, y, z) .. ") * CFrame.Angles(" .. string.format("%.3f, %.3f, %.3f", rx, ry, rz) .. ")\n"
-            else
-                code = code .. "        local targetCFrame = rootPart.CFrame * CFrame.new(" .. string.format("%.3f, %.3f, %.3f", x, y, z) .. ") * CFrame.Angles(" .. string.format("%.3f, %.3f, %.3f", rx, ry, rz) .. ")\n"
-            end
-            
-            code = code .. "        local partTween = TweenService:Create(" .. partName:gsub(" ", ""):gsub("[^%w]", "") .. "Part, partTweenInfo, {\n"
-            code = code .. "            CFrame = targetCFrame,\n"
-            code = code .. string.format("            Size = Vector3.new(%.3f, %.3f, %.3f)\n", data.Size.X, data.Size.Y, data.Size.Z)
-            code = code .. "        })\n"
-            code = code .. "        partTween:Play()\n"
-            code = code .. "        partTween.Completed:Wait()\n"
-            
-            if j < #positions then
-                code = code .. "        wait(0.1)\n"
-            end
-        end
-        
-        code = code .. "    end\n"
-    end
-    
-    code = code .. [[end
-
--- Call this to play animation once
-playAnimation()
-
--- For infinite loop, uncomment below:
--- while true do
---     playAnimation()
---     wait(0.5)
--- end
-]]
-    
-    return code
-end
-
--- Save position with relative positioning
-local function savePosition(rig, specificPart, updateExisting)
-    if not rig or not rig:FindFirstChild("Humanoid") then 
-        return 
-    end
-    
-    -- Get root part for relative positioning
-    local rootPart = rig:FindFirstChild("HumanoidRootPart")
-    if not rootPart then
-        print("Warning: No HumanoidRootPart found for relative positioning")
-        return
-    end
-    
-    if specificPart then
-        if not bodyPartPositions[specificPart.Name] then
-            bodyPartPositions[specificPart.Name] = {}
-        end
-        
-        -- Calculate relative CFrame to root
-        local relativeCFrame = rootPart.CFrame:Inverse() * specificPart.CFrame
-        
-        local newData = {
-            CFrame = relativeCFrame, -- Store relative CFrame
-            Size = specificPart.Size,
-            duration = keyframeDuration,
-            timestamp = tick(),
-            position = specificPart.Position -- Keep for display
-        }
-        
-        if updateExisting and editingKeyframe and editingKeyframe.type == "part" and editingKeyframe.partName == specificPart.Name then
-            bodyPartPositions[specificPart.Name][editingKeyframe.index] = newData
-            local index = editingKeyframe.index
-            editingKeyframe = nil
-            return index, specificPart.Name, true
-        else
-            table.insert(bodyPartPositions[specificPart.Name], newData)
-            return #bodyPartPositions[specificPart.Name], specificPart.Name, false
-        end
-    else
-        local savedData = {
-            rigName = rig.Name,
-            duration = keyframeDuration,
-            parts = {},
-            timestamp = tick(),
-            rootCFrame = rootPart.CFrame -- Store root position for reference
-        }
-        
-        -- Save all parts relative to root
-        for _, part in pairs(rig:GetChildren()) do
-            if part:IsA("BasePart") and part ~= rootPart then
-                local relativeCFrame = rootPart.CFrame:Inverse() * part.CFrame
-                savedData.parts[part.Name] = {
-                    CFrame = relativeCFrame, -- Relative to root
-                    Size = part.Size,
-                    position = part.Position -- Keep for display
-                }
-            elseif part == rootPart then
-                -- Root part uses its own CFrame as reference
-                savedData.parts[part.Name] = {
-                    CFrame = CFrame.new(0, 0, 0), -- Identity for root
-                    Size = part.Size,
-                    position = part.Position
-                }
-            end
-        end
-        
-        local function savePartsRecursively(parent)
-            for _, child in pairs(parent:GetChildren()) do
-                if child:IsA("BasePart") and not savedData.parts[child.Name] and child ~= rootPart then
-                    local relativeCFrame = rootPart.CFrame:Inverse() * child.CFrame
-                    savedData.parts[child.Name] = {
-                        CFrame = relativeCFrame,
-                        Size = child.Size,
-                        position = child.Position
-                    }
-                elseif child:IsA("Model") then
-                    savePartsRecursively(child)
-                end
-            end
-        end
-        
-        savePartsRecursively(rig)
-        
-        if updateExisting and editingKeyframe and editingKeyframe.type == "fullbody" then
-            savedPositions[editingKeyframe.index] = savedData
-            local index = editingKeyframe.index
-            editingKeyframe = nil
-            return index, "Full Body", true
-        else
-            table.insert(savedPositions, savedData)
-            currentKeyframe = #savedPositions
-            return currentKeyframe, "Full Body", false
-        end
-    end
-end
-
 -- Update body parts list
 local function updateBodyPartsList(bodyPartsList, bodyPartsLayout)
     for _, child in pairs(bodyPartsList:GetChildren()) do
@@ -391,6 +187,81 @@ local function updateBodyPartsList(bodyPartsList, bodyPartsLayout)
         bodyPartsList.CanvasSize = UDim2.new(0, bodyPartsLayout.AbsoluteContentSize.X, 0, 0)
     end)
     bodyPartsList.CanvasSize = UDim2.new(0, bodyPartsLayout.AbsoluteContentSize.X, 0, 0)
+end
+
+-- Save position
+local function savePosition(rig, specificPart, updateExisting)
+    if not rig or not rig:FindFirstChild("Humanoid") then 
+        return 
+    end
+    
+    if specificPart then
+        if not bodyPartPositions[specificPart.Name] then
+            bodyPartPositions[specificPart.Name] = {}
+        end
+        
+        local newData = {
+            CFrame = specificPart.CFrame,
+            Size = specificPart.Size,
+            duration = keyframeDuration,
+            timestamp = tick(),
+            position = specificPart.Position
+        }
+        
+        if updateExisting and editingKeyframe and editingKeyframe.type == "part" and editingKeyframe.partName == specificPart.Name then
+            bodyPartPositions[specificPart.Name][editingKeyframe.index] = newData
+            local index = editingKeyframe.index
+            editingKeyframe = nil
+            return index, specificPart.Name, true
+        else
+            table.insert(bodyPartPositions[specificPart.Name], newData)
+            return #bodyPartPositions[specificPart.Name], specificPart.Name, false
+        end
+    else
+        local savedData = {
+            rigName = rig.Name,
+            duration = keyframeDuration,
+            parts = {},
+            timestamp = tick()
+        }
+        
+        for _, part in pairs(rig:GetChildren()) do
+            if part:IsA("BasePart") then
+                savedData.parts[part.Name] = {
+                    CFrame = part.CFrame,
+                    Size = part.Size,
+                    position = part.Position
+                }
+            end
+        end
+        
+        local function savePartsRecursively(parent)
+            for _, child in pairs(parent:GetChildren()) do
+                if child:IsA("BasePart") and not savedData.parts[child.Name] then
+                    savedData.parts[child.Name] = {
+                        CFrame = child.CFrame,
+                        Size = child.Size,
+                        position = child.Position
+                    }
+                elseif child:IsA("Model") then
+                    savePartsRecursively(child)
+                end
+            end
+        end
+        
+        savePartsRecursively(rig)
+        
+        if updateExisting and editingKeyframe and editingKeyframe.type == "fullbody" then
+            savedPositions[editingKeyframe.index] = savedData
+            local index = editingKeyframe.index
+            editingKeyframe = nil
+            return index, "Full Body", true
+        else
+            table.insert(savedPositions, savedData)
+            currentKeyframe = #savedPositions
+            return currentKeyframe, "Full Body", false
+        end
+    end
 end
 
 -- Check if rig exists
@@ -561,16 +432,40 @@ local function showKeyframePreview(rig)
     end
 end
 
--- Play single animation with relative positioning
+-- Export script
+local function exportAnimationScript()
+    if #savedPositions == 0 and not next(bodyPartPositions) then
+        return "-- No animation data to export"
+    end
+    
+    local code = "-- Exported animation from Moon Animator X\nlocal TweenService = game:GetService('TweenService')\nlocal rig = -- Set your rig here\n\nlocal function playAnimation()\n"
+    
+    for i, savedData in ipairs(savedPositions) do
+        code = code .. "    -- Keyframe " .. tostring(i) .. "\n"
+        code = code .. "    local tweenInfo" .. tostring(i) .. " = TweenInfo.new(" .. tostring(savedData.duration or keyframeDuration) .. ", Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)\n"
+        code = code .. "    local tweens" .. tostring(i) .. " = {}\n"
+        
+        for partName, data in pairs(savedData.parts) do
+            local x, y, z = data.CFrame.Position.X, data.CFrame.Position.Y, data.CFrame.Position.Z
+            local rx, ry, rz = data.CFrame:toEulerAnglesXYZ()
+            code = code .. string.format("    local tween_%s_%d = TweenService:Create(rig:FindFirstChild(\"%s\"), tweenInfo%d, {CFrame = CFrame.new(%.3f, %.3f, %.3f) * CFrame.Angles(%.3f, %.3f, %.3f), Size = Vector3.new(%.3f, %.3f, %.3f)})\n",
+                partName, i, partName, i, x, y, z, rx, ry, rz, data.Size.X, data.Size.Y, data.Size.Z)
+            code = code .. "    table.insert(tweens" .. tostring(i) .. ", tween_" .. partName .. "_" .. tostring(i) .. ")\n"
+        end
+        
+        code = code .. "    for _, tween in pairs(tweens" .. tostring(i) .. ") do tween:Play() end\n"
+        code = code .. "    if #tweens" .. tostring(i) .. " > 0 then tweens" .. tostring(i) .. "[1].Completed:Wait() end\n\n"
+    end
+    
+    code = code .. "end\n\nplayAnimation()"
+    
+    return code
+end
+
+-- Play single animation
 local function playAnimation(rig)
     if (#savedPositions == 0 and not next(bodyPartPositions)) or not rig then 
         return 
-    end
-    
-    local rootPart = rig:FindFirstChild("HumanoidRootPart")
-    if not rootPart then
-        print("Warning: No HumanoidRootPart found for animation")
-        return
     end
     
     isPlaying = true
@@ -589,17 +484,8 @@ local function playAnimation(rig)
             local part = rig:FindFirstChild(partName)
             
             if part and part:IsA("BasePart") then
-                local targetCFrame
-                if part == rootPart then
-                    -- Keep root at current position, just apply saved rotation/offset
-                    targetCFrame = rootPart.CFrame * data.CFrame
-                else
-                    -- Apply relative CFrame to current root position
-                    targetCFrame = rootPart.CFrame * data.CFrame
-                end
-                
                 local tween = TweenService:Create(part, tweenInfo, {
-                    CFrame = targetCFrame,
+                    CFrame = data.CFrame,
                     Size = data.Size
                 })
                 table.insert(tweens, tween)
@@ -625,16 +511,9 @@ local function playAnimation(rig)
             for i, data in ipairs(positions) do
                 if not isPlaying then break end
                 
-                local targetCFrame
-                if part == rootPart then
-                    targetCFrame = rootPart.CFrame * data.CFrame
-                else
-                    targetCFrame = rootPart.CFrame * data.CFrame
-                end
-                
                 local tweenInfo = TweenInfo.new(data.duration, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
                 local tween = TweenService:Create(part, tweenInfo, {
-                    CFrame = targetCFrame,
+                    CFrame = data.CFrame,
                     Size = data.Size
                 })
                 
@@ -651,16 +530,10 @@ local function playAnimation(rig)
     isPlaying = false
 end
 
--- Play loop animation with relative positioning
+-- Play loop animation
 local function playAnimationLoop(rig)
     if (#savedPositions == 0 and not next(bodyPartPositions)) or not rig then 
         return 
-    end
-    
-    local rootPart = rig:FindFirstChild("HumanoidRootPart")
-    if not rootPart then
-        print("Warning: No HumanoidRootPart found for loop animation")
-        return
     end
     
     isPlaying = true
@@ -683,15 +556,8 @@ local function playAnimationLoop(rig)
                 local part = rig:FindFirstChild(partName)
                 
                 if part and part:IsA("BasePart") then
-                    local targetCFrame
-                    if part == rootPart then
-                        targetCFrame = rootPart.CFrame * data.CFrame
-                    else
-                        targetCFrame = rootPart.CFrame * data.CFrame
-                    end
-                    
                     local tween = TweenService:Create(part, tweenInfo, {
-                        CFrame = targetCFrame,
+                        CFrame = data.CFrame,
                         Size = data.Size
                     })
                     table.insert(tweens, tween)
@@ -717,16 +583,9 @@ local function playAnimationLoop(rig)
                 for i, data in ipairs(positions) do
                     if not isLooping or not isPlaying then break end
                     
-                    local targetCFrame
-                    if part == rootPart then
-                        targetCFrame = rootPart.CFrame * data.CFrame
-                    else
-                        targetCFrame = rootPart.CFrame * data.CFrame
-                    end
-                    
                     local tweenInfo = TweenInfo.new(data.duration, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
                     local tween = TweenService:Create(part, tweenInfo, {
-                        CFrame = targetCFrame,
+                        CFrame = data.CFrame,
                         Size = data.Size
                     })
                     
@@ -757,7 +616,6 @@ end
 local function createMainGui()
     local screenGui = Instance.new("ScreenGui")
     screenGui.Name = "MoonAnimatorX"
-    screenGui.ResetOnSpawn = false
     screenGui.Parent = playerGui
     
     local mainFrame = Instance.new("Frame")
@@ -806,12 +664,11 @@ local function createMainGui()
     mainButtonsFrame.BorderColor3 = THEME.GRAY
     mainButtonsFrame.Parent = mainFrame
     
-    -- Create buttons
     local playButton = Instance.new("TextButton")
     playButton.Size = UDim2.new(0, 60, 0, 30)
     playButton.Position = UDim2.new(0, 5, 0, 5)
     playButton.BackgroundColor3 = THEME.ORANGE
-    playButton.Text = "Play"
+    playButton.Text = "▶ Play"
     playButton.TextColor3 = THEME.WHITE
     playButton.TextScaled = true
     playButton.Font = Enum.Font.GothamBold
@@ -822,7 +679,7 @@ local function createMainGui()
     loopButton.Size = UDim2.new(0, 60, 0, 30)
     loopButton.Position = UDim2.new(0, 70, 0, 5)
     loopButton.BackgroundColor3 = THEME.ORANGE
-    loopButton.Text = "Loop"
+    loopButton.Text = "🔄 Loop"
     loopButton.TextColor3 = THEME.WHITE
     loopButton.TextScaled = true
     loopButton.Font = Enum.Font.GothamBold
@@ -833,7 +690,7 @@ local function createMainGui()
     stopButton.Size = UDim2.new(0, 60, 0, 30)
     stopButton.Position = UDim2.new(0, 135, 0, 5)
     stopButton.BackgroundColor3 = THEME.ORANGE
-    stopButton.Text = "Stop"
+    stopButton.Text = "⏸ Stop"
     stopButton.TextColor3 = THEME.WHITE
     stopButton.TextScaled = true
     stopButton.Font = Enum.Font.GothamBold
@@ -844,7 +701,7 @@ local function createMainGui()
     resetButton.Size = UDim2.new(0, 60, 0, 30)
     resetButton.Position = UDim2.new(0, 200, 0, 5)
     resetButton.BackgroundColor3 = THEME.ORANGE
-    resetButton.Text = "Reset"
+    resetButton.Text = "🏠 Reset"
     resetButton.TextColor3 = THEME.WHITE
     resetButton.TextScaled = true
     resetButton.Font = Enum.Font.GothamBold
@@ -855,7 +712,7 @@ local function createMainGui()
     previewButton.Size = UDim2.new(0, 70, 0, 30)
     previewButton.Position = UDim2.new(0, 265, 0, 5)
     previewButton.BackgroundColor3 = THEME.ORANGE
-    previewButton.Text = "Preview"
+    previewButton.Text = "👁 Preview"
     previewButton.TextColor3 = THEME.WHITE
     previewButton.TextScaled = true
     previewButton.Font = Enum.Font.GothamBold
@@ -866,7 +723,7 @@ local function createMainGui()
     savePositionButton.Size = UDim2.new(0, 80, 0, 30)
     savePositionButton.Position = UDim2.new(0, 340, 0, 5)
     savePositionButton.BackgroundColor3 = THEME.ORANGE
-    savePositionButton.Text = "Save"
+    savePositionButton.Text = "💾 Save"
     savePositionButton.TextColor3 = THEME.WHITE
     savePositionButton.TextScaled = true
     savePositionButton.Font = Enum.Font.GothamBold
@@ -877,7 +734,7 @@ local function createMainGui()
     exportButton.Size = UDim2.new(0, 70, 0, 30)
     exportButton.Position = UDim2.new(0, 425, 0, 5)
     exportButton.BackgroundColor3 = THEME.ORANGE
-    exportButton.Text = "Export"
+    exportButton.Text = "📋 Export"
     exportButton.TextColor3 = THEME.WHITE
     exportButton.TextScaled = true
     exportButton.Font = Enum.Font.GothamBold
@@ -1056,7 +913,7 @@ end
 local function setupSystem()
     local gui, rigInfoLabel, partInfoLabel, playButton, loopButton, stopButton, resetButton, previewButton, savePositionButton, exportButton, clearAllButton, deleteSelectedButton, closeButton, mainFrame, durationInput, startFromInput, bodyPartsList, bodyPartsLayout = createMainGui()
     
-    -- Duration input
+    -- Update duration when input changes
     durationInput.FocusLost:Connect(function()
         local newDuration = tonumber(durationInput.Text)
         if newDuration and newDuration > 0 then
@@ -1066,7 +923,7 @@ local function setupSystem()
         end
     end)
     
-    -- Start from input
+    -- Update start keyframe when input changes
     startFromInput.FocusLost:Connect(function()
         local newStart = tonumber(startFromInput.Text)
         if newStart and newStart > 0 then
@@ -1076,7 +933,7 @@ local function setupSystem()
         end
     end)
     
-    -- Mouse selection
+    -- Mouse click detection for rig selection
     mouse.Button1Down:Connect(function()
         local target = mouse.Target
         if target and target:IsA("BasePart") then
@@ -1090,6 +947,7 @@ local function setupSystem()
                 partInfoLabel.Text = "No part selected - Right click on body part"
                 removeHighlight()
                 
+                -- Start rig monitoring
                 if rigCheckConnection then
                     rigCheckConnection:Disconnect()
                 end
@@ -1106,7 +964,7 @@ local function setupSystem()
         end
     end)
     
-    -- Right click part selection
+    -- Right click for part selection
     UserInputService.InputBegan:Connect(function(input, gameProcessed)
         if gameProcessed then return end
         
@@ -1126,7 +984,7 @@ local function setupSystem()
     
     local previewActive = false
     
-    -- Save button
+    -- Save Position button
     savePositionButton.MouseButton1Click:Connect(function()
         if selectedRig and checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) then
             local index, targetName, wasUpdated = savePosition(selectedRig, selectedPart, true)
@@ -1148,10 +1006,21 @@ local function setupSystem()
             end)
         else
             rigInfoLabel.Text = "Select a rig first!"
+            savePositionButton.BackgroundColor3 = THEME.GRAY
+            spawn(function()
+                wait(0.5)
+                savePositionButton.BackgroundColor3 = THEME.ORANGE
+                wait(1.5)
+                if selectedRig then
+                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
+                else
+                    rigInfoLabel.Text = "No rig selected - Click on a character"
+                end
+            end)
         end
     end)
     
-    -- Export button (COPIA PARA CLIPBOARD)
+    -- Export button
     exportButton.MouseButton1Click:Connect(function()
         if #savedPositions > 0 or next(bodyPartPositions) then
             local code = exportAnimationScript()
@@ -1180,11 +1049,6 @@ local function setupSystem()
             end)
         else
             rigInfoLabel.Text = "No animation data to export!"
-            exportButton.BackgroundColor3 = THEME.GRAY
-            spawn(function()
-                wait(0.5)
-                exportButton.BackgroundColor3 = THEME.ORANGE
-            end)
         end
     end)
     
@@ -1204,6 +1068,17 @@ local function setupSystem()
             end
         else
             rigInfoLabel.Text = "Select rig and save positions!"
+            previewButton.BackgroundColor3 = THEME.GRAY
+            spawn(function()
+                wait(0.5)
+                previewButton.BackgroundColor3 = THEME.ORANGE
+                wait(1.5)
+                if selectedRig then
+                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
+                else
+                    rigInfoLabel.Text = "No rig selected - Click on a character"
+                end
+            end)
         end
     end)
     
@@ -1249,6 +1124,17 @@ local function setupSystem()
             end
         else
             rigInfoLabel.Text = "Select rig and save keyframes first!"
+            loopButton.BackgroundColor3 = THEME.GRAY
+            spawn(function()
+                wait(0.5)
+                loopButton.BackgroundColor3 = THEME.ORANGE
+                wait(1.5)
+                if selectedRig then
+                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
+                else
+                    rigInfoLabel.Text = "No rig selected - Click on a character"
+                end
+            end)
         end
     end)
     
@@ -1315,7 +1201,20 @@ local function setupSystem()
         previewButton.BackgroundColor3 = THEME.ORANGE
         previewActive = false
         
+        clearAllButton.BackgroundColor3 = THEME.WHITE
+        clearAllButton.TextColor3 = THEME.BLACK
         rigInfoLabel.Text = "All keyframes cleared!"
+        spawn(function()
+            wait(0.3)
+            clearAllButton.BackgroundColor3 = THEME.GRAY
+            clearAllButton.TextColor3 = THEME.WHITE
+            wait(1)
+            if selectedRig then
+                rigInfoLabel.Text = "Selected: " .. selectedRig.Name
+            else
+                rigInfoLabel.Text = "No rig selected - Click on a character"
+            end
+        end)
     end)
     
     -- Delete Selected button
@@ -1325,12 +1224,37 @@ local function setupSystem()
             if deleted then
                 updateBodyPartsList(bodyPartsList, bodyPartsLayout)
                 clearKeyframePreview()
+                deleteSelectedButton.BackgroundColor3 = THEME.WHITE
+                deleteSelectedButton.TextColor3 = THEME.BLACK
                 rigInfoLabel.Text = "Selected keyframe deleted!"
+                
+                spawn(function()
+                    wait(0.3)
+                    deleteSelectedButton.BackgroundColor3 = THEME.GRAY
+                    deleteSelectedButton.TextColor3 = THEME.WHITE
+                    wait(1)
+                    if selectedRig then
+                        rigInfoLabel.Text = "Selected: " .. selectedRig.Name
+                    else
+                        rigInfoLabel.Text = "No rig selected - Click on a character"
+                    end
+                end)
             else
                 rigInfoLabel.Text = "Failed to delete keyframe!"
             end
         else
             rigInfoLabel.Text = "Select a keyframe first!"
+            deleteSelectedButton.BackgroundColor3 = THEME.GRAY
+            spawn(function()
+                wait(0.5)
+                deleteSelectedButton.BackgroundColor3 = THEME.GRAY
+                wait(1.5)
+                if selectedRig then
+                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
+                else
+                    rigInfoLabel.Text = "No rig selected - Click on a character"
+                end
+            end)
         end
     end)
     
@@ -1351,9 +1275,17 @@ local function setupSystem()
         gui:Destroy()
     end)
     
+    -- Initialize body parts list
     updateBodyPartsList(bodyPartsList, bodyPartsLayout)
     
     print("Moon Animator X loaded successfully!")
+    print("Instructions:")
+    print("1. Left click on a character to select rig")
+    print("2. Right click on body parts to select specific parts")
+    print("3. Use Save button to create keyframes")
+    print("4. Use Preview to see ghost positions")
+    print("5. Use Play for single animation or Loop for infinite")
 end
 
+-- Initialize the system
 setupSystem()
