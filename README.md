@@ -1,1291 +1,6321 @@
+-- GUI CLONADA AUTOMATICAMENTE
+-- Codigo gerado pelo GUI Cloner
+
+local CoreGui = game:GetService('CoreGui')
+
+local obj1 = Instance.new("ScreenGui")
+obj1.Name = "LoTus"
+obj1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+obj1.SafeAreaCompatibility = Enum.SafeAreaCompatibility.FullscreenExtension
+obj1.ClipToDeviceSafeArea = true
+obj1.ResetOnSpawn = false
+obj1.IgnoreGuiInset = true
+obj1.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+obj1.DisplayOrder = 0
+local obj2 = Instance.new("Frame")
+obj2.Visible = true
+obj2.BorderMode = Enum.BorderMode.Outline
+obj2.AnchorPoint = Vector2.new(0.5, 0)
+obj2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj2.ZIndex = 1
+obj2.BorderSizePixel = 0
+obj2.Size = UDim2.new(0.3090077340602875, 0, 0.5659966468811035, 0)
+obj2.ClipsDescendants = false
+obj2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj2.Rotation = 0
+obj2.Name = "Main"
+obj2.BackgroundTransparency = 0
+obj2.Position = UDim2.new(0.20380434393882751, 0, 0.38884222507476807, 0)
+obj2.LayoutOrder = 0
+obj2.Style = Enum.FrameStyle.Custom
+obj2.Active = false
+obj2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj3 = Instance.new("UICorner")
+obj3.Name = "UICorner"
+obj3.CornerRadius = UDim.new(0, 12)
+obj3.Parent = obj2
+
+local obj4 = Instance.new("UIStroke")
+obj4.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj4.LineJoinMode = Enum.LineJoinMode.Round
+obj4.Name = "UIStroke"
+obj4.Color = Color3.fromRGB(81, 78, 97)
+obj4.Transparency = 0.6000000238418579
+obj4.Thickness = 1
+obj4.Enabled = true
+obj4.Parent = obj2
+
+local obj5 = Instance.new("Frame")
+obj5.Visible = true
+obj5.BorderMode = Enum.BorderMode.Outline
+obj5.AnchorPoint = Vector2.new(0, 0)
+obj5.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj5.ZIndex = 1
+obj5.BorderSizePixel = 1
+obj5.Size = UDim2.new(0.899999737739563, 0, 0.06864770501852036, 0)
+obj5.ClipsDescendants = false
+obj5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj5.Rotation = 0
+obj5.Name = "TabContainer"
+obj5.BackgroundTransparency = 1
+obj5.Position = UDim2.new(0.05000012367963791, 0, 0.1710197776556015, 0)
+obj5.LayoutOrder = 0
+obj5.Style = Enum.FrameStyle.Custom
+obj5.Active = false
+obj5.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+local obj6 = Instance.new("TextButton")
+obj6.LayoutOrder = 0
+obj6.TextWrapped = false
+obj6.LineHeight = 1
+obj6.Active = true
+obj6.TextStrokeTransparency = 1
+obj6.TextTruncate = Enum.TextTruncate.None
+obj6.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj6.ZIndex = 1
+obj6.BorderSizePixel = 1
+obj6.RichText = false
+obj6.Modal = false
+obj6.AutoButtonColor = false
+obj6.TextYAlignment = Enum.TextYAlignment.Center
+obj6.TextScaled = false
+obj6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj6.BorderMode = Enum.BorderMode.Outline
+obj6.TextTransparency = 0
+obj6.AnchorPoint = Vector2.new(0, 0)
+obj6.Selected = false
+obj6.TextSize = 16
+obj6.Size = UDim2.new(0.15132401883602142, 0, 0.9005365371704102, 0)
+obj6.ClipsDescendants = false
+obj6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj6.Text = ""
+obj6.Name = "SelectedTabTemplate"
+obj6.Visible = true
+obj6.Rotation = 0
+obj6.Font = Enum.Font.GothamBold
+obj6.BackgroundTransparency = 0
+obj6.Position = UDim2.new(0.34117597341537476, 0, 0.09196347743272781, 0)
+obj6.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj6.MaxVisibleGraphemes = -1
+obj6.TextXAlignment = Enum.TextXAlignment.Center
+obj6.TextColor3 = Color3.fromRGB(173, 173, 173)
+local obj7 = Instance.new("UICorner")
+obj7.Name = "UICorner"
+obj7.CornerRadius = UDim.new(0, 6)
+obj7.Parent = obj6
+
+local obj8 = Instance.new("UIStroke")
+obj8.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj8.LineJoinMode = Enum.LineJoinMode.Round
+obj8.Name = "UIStroke"
+obj8.Color = Color3.fromRGB(130, 57, 255)
+obj8.Transparency = 0.699999988079071
+obj8.Thickness = 1.2000000476837158
+obj8.Enabled = true
+obj8.Parent = obj6
+
+local obj9 = Instance.new("UIGradient")
+obj9.Offset = Vector2.new(0, 0)
+obj9.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj9.Name = "UIGradient"
+obj9.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj9.Enabled = true
+obj9.Rotation = 90
+obj9.Parent = obj6
+
+local obj10 = Instance.new("TextLabel")
+obj10.Visible = true
+obj10.TextWrapped = true
+obj10.LineHeight = 1
+obj10.BorderMode = Enum.BorderMode.Outline
+obj10.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj10.Name = "TabText"
+obj10.TextStrokeTransparency = 1
+obj10.AnchorPoint = Vector2.new(0, 0)
+obj10.TextYAlignment = Enum.TextYAlignment.Center
+obj10.TextXAlignment = Enum.TextXAlignment.Center
+obj10.TextTruncate = Enum.TextTruncate.None
+obj10.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj10.ZIndex = 1
+obj10.BorderSizePixel = 0
+obj10.Size = UDim2.new(0.8999999761581421, 0, 0.8999999761581421, 0)
+obj10.TextTransparency = 0
+obj10.RichText = false
+obj10.TextSize = 8
+obj10.ClipsDescendants = false
+obj10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj10.Text = "Tab One"
+obj10.Active = false
+obj10.TextColor3 = Color3.fromRGB(173, 173, 173)
+obj10.Rotation = 0
+obj10.Font = Enum.Font.Gotham
+obj10.BackgroundTransparency = 1
+obj10.Position = UDim2.new(0.04530095309019089, 0, 0.030408181250095367, 0)
+obj10.LayoutOrder = 0
+obj10.MaxVisibleGraphemes = -1
+obj10.TextScaled = true
+obj10.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+obj10.Parent = obj6
+
+obj6.Parent = obj5
+
+local obj11 = Instance.new("UIListLayout")
+obj11.VerticalAlignment = Enum.VerticalAlignment.Center
+obj11.FillDirection = Enum.FillDirection.Horizontal
+obj11.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj11.Padding = UDim.new(0.014999999664723873, 0)
+obj11.Name = "UIListLayout"
+obj11.SortOrder = Enum.SortOrder.LayoutOrder
+obj11.Parent = obj5
+
+local obj12 = Instance.new("TextButton")
+obj12.LayoutOrder = 0
+obj12.TextWrapped = false
+obj12.LineHeight = 1
+obj12.Active = true
+obj12.TextStrokeTransparency = 1
+obj12.TextTruncate = Enum.TextTruncate.None
+obj12.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj12.ZIndex = 1
+obj12.BorderSizePixel = 1
+obj12.RichText = false
+obj12.Modal = false
+obj12.AutoButtonColor = false
+obj12.TextYAlignment = Enum.TextYAlignment.Center
+obj12.TextScaled = false
+obj12.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+obj12.BorderMode = Enum.BorderMode.Outline
+obj12.TextTransparency = 0
+obj12.AnchorPoint = Vector2.new(0, 0)
+obj12.Selected = false
+obj12.TextSize = 16
+obj12.Size = UDim2.new(0.15132401883602142, 0, 0.9005365371704102, 0)
+obj12.ClipsDescendants = false
+obj12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj12.Text = ""
+obj12.Name = "TabTemplate"
+obj12.Visible = true
+obj12.Rotation = 0
+obj12.Font = Enum.Font.GothamBold
+obj12.BackgroundTransparency = 0
+obj12.Position = UDim2.new(0.5075000524520874, 0, 0.09196347743272781, 0)
+obj12.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj12.MaxVisibleGraphemes = -1
+obj12.TextXAlignment = Enum.TextXAlignment.Center
+obj12.TextColor3 = Color3.fromRGB(173, 173, 173)
+local obj13 = Instance.new("UICorner")
+obj13.Name = "UICorner"
+obj13.CornerRadius = UDim.new(0, 6)
+obj13.Parent = obj12
+
+local obj14 = Instance.new("UIStroke")
+obj14.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj14.LineJoinMode = Enum.LineJoinMode.Round
+obj14.Name = "UIStroke"
+obj14.Color = Color3.fromRGB(81, 78, 97)
+obj14.Transparency = 0.699999988079071
+obj14.Thickness = 1.2000000476837158
+obj14.Enabled = true
+obj14.Parent = obj12
+
+local obj15 = Instance.new("TextLabel")
+obj15.Visible = true
+obj15.TextWrapped = true
+obj15.LineHeight = 1
+obj15.BorderMode = Enum.BorderMode.Outline
+obj15.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj15.Name = "TabText"
+obj15.TextStrokeTransparency = 1
+obj15.AnchorPoint = Vector2.new(0, 0)
+obj15.TextYAlignment = Enum.TextYAlignment.Center
+obj15.TextXAlignment = Enum.TextXAlignment.Center
+obj15.TextTruncate = Enum.TextTruncate.None
+obj15.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj15.ZIndex = 1
+obj15.BorderSizePixel = 0
+obj15.Size = UDim2.new(0.8999999761581421, 0, 0.8999999761581421, 0)
+obj15.TextTransparency = 0
+obj15.RichText = false
+obj15.TextSize = 8
+obj15.ClipsDescendants = false
+obj15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj15.Text = "Tab Two"
+obj15.Active = false
+obj15.TextColor3 = Color3.fromRGB(173, 173, 173)
+obj15.Rotation = 0
+obj15.Font = Enum.Font.Gotham
+obj15.BackgroundTransparency = 1
+obj15.Position = UDim2.new(0.04530026391148567, 0, 0.030408181250095367, 0)
+obj15.LayoutOrder = 0
+obj15.MaxVisibleGraphemes = -1
+obj15.TextScaled = true
+obj15.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+obj15.Parent = obj12
+
+obj12.Parent = obj5
+
+obj5.Parent = obj2
+
+local obj16 = Instance.new("ScrollingFrame")
+obj16.Visible = true
+obj16.Name = "FeatureContainer"
+obj16.BorderMode = Enum.BorderMode.Outline
+obj16.AutomaticCanvasSize = Enum.AutomaticSize.XY
+obj16.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+obj16.VerticalScrollBarInset = Enum.ScrollBarInset.None
+obj16.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+obj16.AnchorPoint = Vector2.new(0, 0)
+obj16.LayoutOrder = 0
+obj16.ScrollBarThickness = 0
+obj16.ScrollingDirection = Enum.ScrollingDirection.XY
+obj16.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj16.ZIndex = 1
+obj16.BorderSizePixel = 0
+obj16.Size = UDim2.new(0.8999999761581421, 0, 0.675000011920929, 0)
+obj16.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+obj16.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+obj16.ScrollBarImageTransparency = 0
+obj16.ClipsDescendants = true
+obj16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj16.CanvasPosition = Vector2.new(0, 0)
+obj16.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+obj16.ElasticBehavior = Enum.ElasticBehavior.Never
+obj16.Rotation = 0
+obj16.CanvasSize = UDim2.new(0, 0, 1, 0)
+obj16.BackgroundTransparency = 0
+obj16.Position = UDim2.new(0.05000000074505806, 0, 0.27300000190734863, 0)
+obj16.ScrollingEnabled = true
+obj16.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+obj16.Active = true
+obj16.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj17 = Instance.new("UICorner")
+obj17.Name = "UICorner"
+obj17.CornerRadius = UDim.new(0, 8)
+obj17.Parent = obj16
+
+local obj18 = Instance.new("UIStroke")
+obj18.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj18.LineJoinMode = Enum.LineJoinMode.Round
+obj18.Name = "UIStroke"
+obj18.Color = Color3.fromRGB(81, 78, 97)
+obj18.Transparency = 0.6000000238418579
+obj18.Thickness = 1
+obj18.Enabled = true
+obj18.Parent = obj16
+
+local obj19 = Instance.new("UIListLayout")
+obj19.VerticalAlignment = Enum.VerticalAlignment.Top
+obj19.FillDirection = Enum.FillDirection.Vertical
+obj19.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj19.Padding = UDim.new(0.03500000014901161, 0)
+obj19.Name = "UIListLayout"
+obj19.SortOrder = Enum.SortOrder.LayoutOrder
+obj19.Parent = obj16
+
+local obj20 = Instance.new("Frame")
+obj20.Visible = true
+obj20.BorderMode = Enum.BorderMode.Outline
+obj20.AnchorPoint = Vector2.new(0, 0)
+obj20.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj20.ZIndex = 1
+obj20.BorderSizePixel = 0
+obj20.Size = UDim2.new(0.91791170835495, 0, 0.11824006587266922, 0)
+obj20.ClipsDescendants = false
+obj20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj20.Rotation = 0
+obj20.Name = "ToggleFeature"
+obj20.BackgroundTransparency = 0
+obj20.Position = UDim2.new(0.024999983608722687, 0, 0.04006042331457138, 0)
+obj20.LayoutOrder = 0
+obj20.Style = Enum.FrameStyle.Custom
+obj20.Active = false
+obj20.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj21 = Instance.new("UICorner")
+obj21.Name = "UICorner"
+obj21.CornerRadius = UDim.new(0, 8)
+obj21.Parent = obj20
+
+local obj22 = Instance.new("UIStroke")
+obj22.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj22.LineJoinMode = Enum.LineJoinMode.Round
+obj22.Name = "UIStroke"
+obj22.Color = Color3.fromRGB(81, 78, 97)
+obj22.Transparency = 0.6000000238418579
+obj22.Thickness = 1
+obj22.Enabled = true
+obj22.Parent = obj20
+
+local obj23 = Instance.new("Frame")
+obj23.Visible = true
+obj23.BorderMode = Enum.BorderMode.Outline
+obj23.AnchorPoint = Vector2.new(0.5, 0.5)
+obj23.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj23.ZIndex = 1
+obj23.BorderSizePixel = 0
+obj23.Size = UDim2.new(0.13270297646522522, 0, 0.5603013634681702, 0)
+obj23.ClipsDescendants = false
+obj23.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj23.Rotation = 0
+obj23.Name = "Toggle"
+obj23.BackgroundTransparency = 0
+obj23.Position = UDim2.new(0.9300709366798401, 0, 0.4858141839504242, 0)
+obj23.LayoutOrder = 0
+obj23.Style = Enum.FrameStyle.Custom
+obj23.Active = false
+obj23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj24 = Instance.new("UICorner")
+obj24.Name = "UICorner"
+obj24.CornerRadius = UDim.new(1, 0)
+obj24.Parent = obj23
+
+local obj25 = Instance.new("UIStroke")
+obj25.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj25.LineJoinMode = Enum.LineJoinMode.Round
+obj25.Name = "UIStroke"
+obj25.Color = Color3.fromRGB(83, 59, 179)
+obj25.Transparency = 0.6000000238418579
+obj25.Thickness = 1
+obj25.Enabled = true
+obj25.Parent = obj23
+
+local obj26 = Instance.new("Frame")
+obj26.Visible = true
+obj26.BorderMode = Enum.BorderMode.Outline
+obj26.AnchorPoint = Vector2.new(0, 0)
+obj26.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj26.ZIndex = 1
+obj26.BorderSizePixel = 0
+obj26.Size = UDim2.new(0.4034079611301422, 0, 0.806819498538971, 0)
+obj26.ClipsDescendants = false
+obj26.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj26.Rotation = 0
+obj26.Name = "ToggleDot"
+obj26.BackgroundTransparency = 0
+obj26.Position = UDim2.new(0.5249999761581421, 0, 0.08699999749660492, 0)
+obj26.LayoutOrder = 0
+obj26.Style = Enum.FrameStyle.Custom
+obj26.Active = false
+obj26.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+local obj27 = Instance.new("UIAspectRatioConstraint")
+obj27.Name = "UIAspectRatioConstraint"
+obj27.AspectRatio = 1
+obj27.DominantAxis = Enum.DominantAxis.Width
+obj27.AspectType = Enum.AspectType.FitWithinMaxSize
+obj27.Parent = obj26
+
+local obj28 = Instance.new("UICorner")
+obj28.Name = "UICorner"
+obj28.CornerRadius = UDim.new(1, 0)
+obj28.Parent = obj26
+
+obj26.Parent = obj23
+
+local obj29 = Instance.new("TextButton")
+obj29.LayoutOrder = 0
+obj29.TextWrapped = false
+obj29.LineHeight = 1
+obj29.Active = true
+obj29.TextStrokeTransparency = 1
+obj29.TextTruncate = Enum.TextTruncate.None
+obj29.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj29.ZIndex = 1
+obj29.BorderSizePixel = 0
+obj29.RichText = false
+obj29.Modal = false
+obj29.AutoButtonColor = true
+obj29.TextYAlignment = Enum.TextYAlignment.Center
+obj29.TextScaled = false
+obj29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj29.BorderMode = Enum.BorderMode.Outline
+obj29.TextTransparency = 1
+obj29.AnchorPoint = Vector2.new(0, 0)
+obj29.Selected = false
+obj29.TextSize = 14
+obj29.Size = UDim2.new(1, 0, 1, 0)
+obj29.ClipsDescendants = false
+obj29.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj29.Text = ""
+obj29.Name = "ToggleBtn"
+obj29.Visible = true
+obj29.Rotation = 0
+obj29.Font = Enum.Font.SourceSans
+obj29.BackgroundTransparency = 1
+obj29.Position = UDim2.new(0, 0, 0, 0)
+obj29.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj29.MaxVisibleGraphemes = -1
+obj29.TextXAlignment = Enum.TextXAlignment.Center
+obj29.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj29.Parent = obj23
+
+local obj30 = Instance.new("UIAspectRatioConstraint")
+obj30.Name = "UIAspectRatioConstraint"
+obj30.AspectRatio = 2
+obj30.DominantAxis = Enum.DominantAxis.Width
+obj30.AspectType = Enum.AspectType.FitWithinMaxSize
+obj30.Parent = obj23
+
+local obj31 = Instance.new("UIGradient")
+obj31.Offset = Vector2.new(0, 0)
+obj31.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj31.Name = "UIGradient"
+obj31.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj31.Enabled = true
+obj31.Rotation = 90
+obj31.Parent = obj23
+
+obj23.Parent = obj20
+
+local obj32 = Instance.new("TextButton")
+obj32.LayoutOrder = 0
+obj32.TextWrapped = true
+obj32.LineHeight = 1
+obj32.Active = true
+obj32.TextStrokeTransparency = 1
+obj32.TextTruncate = Enum.TextTruncate.None
+obj32.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj32.ZIndex = 1
+obj32.BorderSizePixel = 1
+obj32.RichText = false
+obj32.Modal = false
+obj32.AutoButtonColor = false
+obj32.TextYAlignment = Enum.TextYAlignment.Center
+obj32.TextScaled = true
+obj32.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj32.BorderMode = Enum.BorderMode.Outline
+obj32.TextTransparency = 0
+obj32.AnchorPoint = Vector2.new(0, 0)
+obj32.Selected = false
+obj32.TextSize = 20
+obj32.Size = UDim2.new(0.27123552560806274, 0, 0.3811597228050232, 0)
+obj32.ClipsDescendants = false
+obj32.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj32.Text = "Toggle On"
+obj32.Name = "Name"
+obj32.Visible = true
+obj32.Rotation = 0
+obj32.Font = Enum.Font.Gotham
+obj32.BackgroundTransparency = 1
+obj32.Position = UDim2.new(0.028775906190276146, 0, 0.33984091877937317, 0)
+obj32.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj32.MaxVisibleGraphemes = -1
+obj32.TextXAlignment = Enum.TextXAlignment.Left
+obj32.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj33 = Instance.new("UICorner")
+obj33.Name = "UICorner"
+obj33.CornerRadius = UDim.new(0, 6)
+obj33.Parent = obj32
+
+obj32.Parent = obj20
+
+local obj34 = Instance.new("Frame")
+obj34.Visible = true
+obj34.BorderMode = Enum.BorderMode.Outline
+obj34.AnchorPoint = Vector2.new(0, 0)
+obj34.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj34.ZIndex = 1
+obj34.BorderSizePixel = 0
+obj34.Size = UDim2.new(0.126312717795372, 0, 0.4415152668952942, 0)
+obj34.ClipsDescendants = false
+obj34.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj34.Rotation = 0
+obj34.Name = "OpenFrame"
+obj34.BackgroundTransparency = 0
+obj34.Position = UDim2.new(0.7154789566993713, 0, 0.2881312072277069, 0)
+obj34.LayoutOrder = 0
+obj34.Style = Enum.FrameStyle.Custom
+obj34.Active = false
+obj34.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj35 = Instance.new("UICorner")
+obj35.Name = "UICorner"
+obj35.CornerRadius = UDim.new(1, 0)
+obj35.Parent = obj34
+
+local obj36 = Instance.new("UIStroke")
+obj36.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj36.LineJoinMode = Enum.LineJoinMode.Round
+obj36.Name = "UIStroke"
+obj36.Color = Color3.fromRGB(81, 78, 97)
+obj36.Transparency = 0.699999988079071
+obj36.Thickness = 1.2000000476837158
+obj36.Enabled = true
+obj36.Parent = obj34
+
+local obj37 = Instance.new("TextButton")
+obj37.LayoutOrder = 0
+obj37.TextWrapped = true
+obj37.LineHeight = 1
+obj37.Active = true
+obj37.TextStrokeTransparency = 1
+obj37.TextTruncate = Enum.TextTruncate.None
+obj37.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj37.ZIndex = 1
+obj37.BorderSizePixel = 1
+obj37.RichText = false
+obj37.Modal = false
+obj37.AutoButtonColor = false
+obj37.TextYAlignment = Enum.TextYAlignment.Center
+obj37.TextScaled = true
+obj37.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj37.BorderMode = Enum.BorderMode.Outline
+obj37.TextTransparency = 0
+obj37.AnchorPoint = Vector2.new(0, 0)
+obj37.Selected = false
+obj37.TextSize = 16
+obj37.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj37.ClipsDescendants = false
+obj37.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj37.Text = "Close"
+obj37.Name = "OpenBtn"
+obj37.Visible = true
+obj37.Rotation = 0
+obj37.Font = Enum.Font.Gotham
+obj37.BackgroundTransparency = 1
+obj37.Position = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj37.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj37.MaxVisibleGraphemes = -1
+obj37.TextXAlignment = Enum.TextXAlignment.Center
+obj37.TextColor3 = Color3.fromRGB(124, 124, 124)
+obj37.Parent = obj34
+
+obj34.Parent = obj20
+
+local obj38 = Instance.new("Frame")
+obj38.Visible = true
+obj38.BorderMode = Enum.BorderMode.Outline
+obj38.AnchorPoint = Vector2.new(0.5, 0)
+obj38.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj38.ZIndex = 1
+obj38.BorderSizePixel = 0
+obj38.Size = UDim2.new(0.14780683815479279, 0, 0.4415152668952942, 0)
+obj38.ClipsDescendants = false
+obj38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj38.Rotation = 0
+obj38.Name = "SetBind"
+obj38.BackgroundTransparency = 0
+obj38.Position = UDim2.new(0.6214421391487122, 0, 0.28813064098358154, 0)
+obj38.LayoutOrder = 0
+obj38.Style = Enum.FrameStyle.Custom
+obj38.Active = false
+obj38.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj39 = Instance.new("UICorner")
+obj39.Name = "UICorner"
+obj39.CornerRadius = UDim.new(1, 0)
+obj39.Parent = obj38
+
+local obj40 = Instance.new("UIStroke")
+obj40.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj40.LineJoinMode = Enum.LineJoinMode.Round
+obj40.Name = "UIStroke"
+obj40.Color = Color3.fromRGB(81, 78, 97)
+obj40.Transparency = 0.699999988079071
+obj40.Thickness = 1.2000000476837158
+obj40.Enabled = true
+obj40.Parent = obj38
+
+local obj41 = Instance.new("TextButton")
+obj41.LayoutOrder = 0
+obj41.TextWrapped = true
+obj41.LineHeight = 1
+obj41.Active = true
+obj41.TextStrokeTransparency = 1
+obj41.TextTruncate = Enum.TextTruncate.None
+obj41.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj41.ZIndex = 1
+obj41.BorderSizePixel = 1
+obj41.RichText = false
+obj41.Modal = false
+obj41.AutoButtonColor = false
+obj41.TextYAlignment = Enum.TextYAlignment.Center
+obj41.TextScaled = true
+obj41.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj41.BorderMode = Enum.BorderMode.Outline
+obj41.TextTransparency = 0
+obj41.AnchorPoint = Vector2.new(0, 0)
+obj41.Selected = false
+obj41.TextSize = 16
+obj41.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj41.ClipsDescendants = false
+obj41.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj41.Text = "Set Bind"
+obj41.Name = "SetBind"
+obj41.Visible = true
+obj41.Rotation = 0
+obj41.Font = Enum.Font.Gotham
+obj41.BackgroundTransparency = 1
+obj41.Position = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj41.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj41.MaxVisibleGraphemes = -1
+obj41.TextXAlignment = Enum.TextXAlignment.Center
+obj41.TextColor3 = Color3.fromRGB(124, 124, 124)
+obj41.Parent = obj38
+
+obj38.Parent = obj20
+
+obj20.Parent = obj16
+
+local obj42 = Instance.new("UIPadding")
+obj42.PaddingTop = UDim.new(0.03999999910593033, 0)
+obj42.Name = "UIPadding"
+obj42.PaddingBottom = UDim.new(0, 0)
+obj42.PaddingRight = UDim.new(0, 0)
+obj42.PaddingLeft = UDim.new(0, 0)
+obj42.Parent = obj16
+
+local obj43 = Instance.new("Frame")
+obj43.Visible = true
+obj43.BorderMode = Enum.BorderMode.Outline
+obj43.AnchorPoint = Vector2.new(0, 0)
+obj43.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj43.ZIndex = 1
+obj43.BorderSizePixel = 0
+obj43.Size = UDim2.new(0.91791170835495, 0, 0.11824006587266922, 0)
+obj43.ClipsDescendants = false
+obj43.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj43.Rotation = 0
+obj43.Name = "ToggleFeature"
+obj43.BackgroundTransparency = 0
+obj43.Position = UDim2.new(0.024999983608722687, 0, 0.04006042331457138, 0)
+obj43.LayoutOrder = 0
+obj43.Style = Enum.FrameStyle.Custom
+obj43.Active = false
+obj43.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj44 = Instance.new("UICorner")
+obj44.Name = "UICorner"
+obj44.CornerRadius = UDim.new(0, 8)
+obj44.Parent = obj43
+
+local obj45 = Instance.new("UIStroke")
+obj45.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj45.LineJoinMode = Enum.LineJoinMode.Round
+obj45.Name = "UIStroke"
+obj45.Color = Color3.fromRGB(81, 78, 97)
+obj45.Transparency = 0.6000000238418579
+obj45.Thickness = 1
+obj45.Enabled = true
+obj45.Parent = obj43
+
+local obj46 = Instance.new("Frame")
+obj46.Visible = true
+obj46.BorderMode = Enum.BorderMode.Outline
+obj46.AnchorPoint = Vector2.new(0.5, 0.5)
+obj46.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj46.ZIndex = 1
+obj46.BorderSizePixel = 0
+obj46.Size = UDim2.new(0.13270297646522522, 0, 0.5603013634681702, 0)
+obj46.ClipsDescendants = false
+obj46.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj46.Rotation = 0
+obj46.Name = "Toggle"
+obj46.BackgroundTransparency = 0
+obj46.Position = UDim2.new(0.9300709366798401, 0, 0.4858141839504242, 0)
+obj46.LayoutOrder = 0
+obj46.Style = Enum.FrameStyle.Custom
+obj46.Active = false
+obj46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj47 = Instance.new("UICorner")
+obj47.Name = "UICorner"
+obj47.CornerRadius = UDim.new(1, 0)
+obj47.Parent = obj46
+
+local obj48 = Instance.new("UIStroke")
+obj48.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj48.LineJoinMode = Enum.LineJoinMode.Round
+obj48.Name = "UIStroke"
+obj48.Color = Color3.fromRGB(67, 67, 67)
+obj48.Transparency = 0.6000000238418579
+obj48.Thickness = 1
+obj48.Enabled = true
+obj48.Parent = obj46
+
+local obj49 = Instance.new("Frame")
+obj49.Visible = true
+obj49.BorderMode = Enum.BorderMode.Outline
+obj49.AnchorPoint = Vector2.new(0, 0)
+obj49.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj49.ZIndex = 1
+obj49.BorderSizePixel = 0
+obj49.Size = UDim2.new(0.4034079611301422, 0, 0.806819498538971, 0)
+obj49.ClipsDescendants = false
+obj49.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj49.Rotation = 0
+obj49.Name = "ToggleDot"
+obj49.BackgroundTransparency = 0
+obj49.Position = UDim2.new(0.07500000298023224, 0, 0.08699999749660492, 0)
+obj49.LayoutOrder = 0
+obj49.Style = Enum.FrameStyle.Custom
+obj49.Active = false
+obj49.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+local obj50 = Instance.new("UIAspectRatioConstraint")
+obj50.Name = "UIAspectRatioConstraint"
+obj50.AspectRatio = 1
+obj50.DominantAxis = Enum.DominantAxis.Width
+obj50.AspectType = Enum.AspectType.FitWithinMaxSize
+obj50.Parent = obj49
+
+local obj51 = Instance.new("UICorner")
+obj51.Name = "UICorner"
+obj51.CornerRadius = UDim.new(1, 0)
+obj51.Parent = obj49
+
+obj49.Parent = obj46
+
+local obj52 = Instance.new("TextButton")
+obj52.LayoutOrder = 0
+obj52.TextWrapped = false
+obj52.LineHeight = 1
+obj52.Active = true
+obj52.TextStrokeTransparency = 1
+obj52.TextTruncate = Enum.TextTruncate.None
+obj52.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj52.ZIndex = 1
+obj52.BorderSizePixel = 0
+obj52.RichText = false
+obj52.Modal = false
+obj52.AutoButtonColor = true
+obj52.TextYAlignment = Enum.TextYAlignment.Center
+obj52.TextScaled = false
+obj52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj52.BorderMode = Enum.BorderMode.Outline
+obj52.TextTransparency = 1
+obj52.AnchorPoint = Vector2.new(0, 0)
+obj52.Selected = false
+obj52.TextSize = 14
+obj52.Size = UDim2.new(1, 0, 1, 0)
+obj52.ClipsDescendants = false
+obj52.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj52.Text = ""
+obj52.Name = "ToggleBtn"
+obj52.Visible = true
+obj52.Rotation = 0
+obj52.Font = Enum.Font.SourceSans
+obj52.BackgroundTransparency = 1
+obj52.Position = UDim2.new(0, 0, 0, 0)
+obj52.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj52.MaxVisibleGraphemes = -1
+obj52.TextXAlignment = Enum.TextXAlignment.Center
+obj52.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj52.Parent = obj46
+
+local obj53 = Instance.new("UIAspectRatioConstraint")
+obj53.Name = "UIAspectRatioConstraint"
+obj53.AspectRatio = 2
+obj53.DominantAxis = Enum.DominantAxis.Width
+obj53.AspectType = Enum.AspectType.FitWithinMaxSize
+obj53.Parent = obj46
+
+local obj54 = Instance.new("UIGradient")
+obj54.Offset = Vector2.new(0, 0)
+obj54.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj54.Name = "UIGradient"
+obj54.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(122, 122, 122)), ColorSequenceKeypoint.new(1, Color3.fromRGB(24, 24, 24))})
+obj54.Enabled = true
+obj54.Rotation = 90
+obj54.Parent = obj46
+
+obj46.Parent = obj43
+
+local obj55 = Instance.new("TextButton")
+obj55.LayoutOrder = 0
+obj55.TextWrapped = true
+obj55.LineHeight = 1
+obj55.Active = true
+obj55.TextStrokeTransparency = 1
+obj55.TextTruncate = Enum.TextTruncate.None
+obj55.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj55.ZIndex = 1
+obj55.BorderSizePixel = 1
+obj55.RichText = false
+obj55.Modal = false
+obj55.AutoButtonColor = false
+obj55.TextYAlignment = Enum.TextYAlignment.Center
+obj55.TextScaled = true
+obj55.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj55.BorderMode = Enum.BorderMode.Outline
+obj55.TextTransparency = 0
+obj55.AnchorPoint = Vector2.new(0, 0)
+obj55.Selected = false
+obj55.TextSize = 20
+obj55.Size = UDim2.new(0.34915176033973694, 0, 0.3811597228050232, 0)
+obj55.ClipsDescendants = false
+obj55.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj55.Text = "Toggle Off"
+obj55.Name = "Name"
+obj55.Visible = true
+obj55.Rotation = 0
+obj55.Font = Enum.Font.Gotham
+obj55.BackgroundTransparency = 1
+obj55.Position = UDim2.new(0.028775889426469803, 0, 0.3398411273956299, 0)
+obj55.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj55.MaxVisibleGraphemes = -1
+obj55.TextXAlignment = Enum.TextXAlignment.Left
+obj55.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj56 = Instance.new("UICorner")
+obj56.Name = "UICorner"
+obj56.CornerRadius = UDim.new(0, 6)
+obj56.Parent = obj55
+
+obj55.Parent = obj43
+
+local obj57 = Instance.new("Frame")
+obj57.Visible = true
+obj57.BorderMode = Enum.BorderMode.Outline
+obj57.AnchorPoint = Vector2.new(0, 0)
+obj57.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj57.ZIndex = 1
+obj57.BorderSizePixel = 0
+obj57.Size = UDim2.new(0.126312717795372, 0, 0.4415152668952942, 0)
+obj57.ClipsDescendants = false
+obj57.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj57.Rotation = 0
+obj57.Name = "OpenFrame"
+obj57.BackgroundTransparency = 0
+obj57.Position = UDim2.new(0.7154789566993713, 0, 0.2881312072277069, 0)
+obj57.LayoutOrder = 0
+obj57.Style = Enum.FrameStyle.Custom
+obj57.Active = false
+obj57.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj58 = Instance.new("UICorner")
+obj58.Name = "UICorner"
+obj58.CornerRadius = UDim.new(1, 0)
+obj58.Parent = obj57
+
+local obj59 = Instance.new("UIStroke")
+obj59.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj59.LineJoinMode = Enum.LineJoinMode.Round
+obj59.Name = "UIStroke"
+obj59.Color = Color3.fromRGB(81, 78, 97)
+obj59.Transparency = 0.699999988079071
+obj59.Thickness = 1.2000000476837158
+obj59.Enabled = true
+obj59.Parent = obj57
+
+local obj60 = Instance.new("TextButton")
+obj60.LayoutOrder = 0
+obj60.TextWrapped = true
+obj60.LineHeight = 1
+obj60.Active = true
+obj60.TextStrokeTransparency = 1
+obj60.TextTruncate = Enum.TextTruncate.None
+obj60.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj60.ZIndex = 1
+obj60.BorderSizePixel = 1
+obj60.RichText = false
+obj60.Modal = false
+obj60.AutoButtonColor = false
+obj60.TextYAlignment = Enum.TextYAlignment.Center
+obj60.TextScaled = true
+obj60.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj60.BorderMode = Enum.BorderMode.Outline
+obj60.TextTransparency = 0
+obj60.AnchorPoint = Vector2.new(0, 0)
+obj60.Selected = false
+obj60.TextSize = 16
+obj60.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj60.ClipsDescendants = false
+obj60.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj60.Text = "Open"
+obj60.Name = "OpenBtn"
+obj60.Visible = true
+obj60.Rotation = 0
+obj60.Font = Enum.Font.Gotham
+obj60.BackgroundTransparency = 1
+obj60.Position = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj60.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj60.MaxVisibleGraphemes = -1
+obj60.TextXAlignment = Enum.TextXAlignment.Center
+obj60.TextColor3 = Color3.fromRGB(124, 124, 124)
+obj60.Parent = obj57
+
+obj57.Parent = obj43
+
+local obj61 = Instance.new("Frame")
+obj61.Visible = true
+obj61.BorderMode = Enum.BorderMode.Outline
+obj61.AnchorPoint = Vector2.new(0.5, 0)
+obj61.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj61.ZIndex = 1
+obj61.BorderSizePixel = 0
+obj61.Size = UDim2.new(0.14780683815479279, 0, 0.4415152668952942, 0)
+obj61.ClipsDescendants = false
+obj61.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj61.Rotation = 0
+obj61.Name = "SetBind"
+obj61.BackgroundTransparency = 0
+obj61.Position = UDim2.new(0.6214421391487122, 0, 0.28813064098358154, 0)
+obj61.LayoutOrder = 0
+obj61.Style = Enum.FrameStyle.Custom
+obj61.Active = false
+obj61.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj62 = Instance.new("UICorner")
+obj62.Name = "UICorner"
+obj62.CornerRadius = UDim.new(1, 0)
+obj62.Parent = obj61
+
+local obj63 = Instance.new("UIStroke")
+obj63.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj63.LineJoinMode = Enum.LineJoinMode.Round
+obj63.Name = "UIStroke"
+obj63.Color = Color3.fromRGB(81, 78, 97)
+obj63.Transparency = 0.699999988079071
+obj63.Thickness = 1.2000000476837158
+obj63.Enabled = true
+obj63.Parent = obj61
+
+local obj64 = Instance.new("TextButton")
+obj64.LayoutOrder = 0
+obj64.TextWrapped = true
+obj64.LineHeight = 1
+obj64.Active = true
+obj64.TextStrokeTransparency = 1
+obj64.TextTruncate = Enum.TextTruncate.None
+obj64.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj64.ZIndex = 1
+obj64.BorderSizePixel = 1
+obj64.RichText = false
+obj64.Modal = false
+obj64.AutoButtonColor = false
+obj64.TextYAlignment = Enum.TextYAlignment.Center
+obj64.TextScaled = true
+obj64.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj64.BorderMode = Enum.BorderMode.Outline
+obj64.TextTransparency = 0
+obj64.AnchorPoint = Vector2.new(0, 0)
+obj64.Selected = false
+obj64.TextSize = 16
+obj64.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj64.ClipsDescendants = false
+obj64.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj64.Text = "Set Bind"
+obj64.Name = "SetBind"
+obj64.Visible = true
+obj64.Rotation = 0
+obj64.Font = Enum.Font.Gotham
+obj64.BackgroundTransparency = 1
+obj64.Position = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj64.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj64.MaxVisibleGraphemes = -1
+obj64.TextXAlignment = Enum.TextXAlignment.Center
+obj64.TextColor3 = Color3.fromRGB(124, 124, 124)
+obj64.Parent = obj61
+
+obj61.Parent = obj43
+
+obj43.Parent = obj16
+
+local obj65 = Instance.new("Frame")
+obj65.Visible = true
+obj65.BorderMode = Enum.BorderMode.Outline
+obj65.AnchorPoint = Vector2.new(0, 0)
+obj65.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj65.ZIndex = 1
+obj65.BorderSizePixel = 0
+obj65.Size = UDim2.new(0.91791170835495, 0, 0.11824006587266922, 0)
+obj65.ClipsDescendants = false
+obj65.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj65.Rotation = 0
+obj65.Name = "ButtonFeature"
+obj65.BackgroundTransparency = 0
+obj65.Position = UDim2.new(0.024999983608722687, 0, 0.04006042331457138, 0)
+obj65.LayoutOrder = 0
+obj65.Style = Enum.FrameStyle.Custom
+obj65.Active = false
+obj65.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj66 = Instance.new("UICorner")
+obj66.Name = "UICorner"
+obj66.CornerRadius = UDim.new(0, 8)
+obj66.Parent = obj65
+
+local obj67 = Instance.new("UIStroke")
+obj67.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj67.LineJoinMode = Enum.LineJoinMode.Round
+obj67.Name = "UIStroke"
+obj67.Color = Color3.fromRGB(81, 78, 97)
+obj67.Transparency = 0.6000000238418579
+obj67.Thickness = 1
+obj67.Enabled = true
+obj67.Parent = obj65
+
+local obj68 = Instance.new("TextButton")
+obj68.LayoutOrder = 0
+obj68.TextWrapped = true
+obj68.LineHeight = 1
+obj68.Active = true
+obj68.TextStrokeTransparency = 1
+obj68.TextTruncate = Enum.TextTruncate.None
+obj68.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj68.ZIndex = 1
+obj68.BorderSizePixel = 1
+obj68.RichText = false
+obj68.Modal = false
+obj68.AutoButtonColor = false
+obj68.TextYAlignment = Enum.TextYAlignment.Center
+obj68.TextScaled = true
+obj68.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj68.BorderMode = Enum.BorderMode.Outline
+obj68.TextTransparency = 0
+obj68.AnchorPoint = Vector2.new(0, 0)
+obj68.Selected = false
+obj68.TextSize = 20
+obj68.Size = UDim2.new(0.34915176033973694, 0, 0.3811597228050232, 0)
+obj68.ClipsDescendants = false
+obj68.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj68.Text = "Button"
+obj68.Name = "Name"
+obj68.Visible = true
+obj68.Rotation = 0
+obj68.Font = Enum.Font.Gotham
+obj68.BackgroundTransparency = 1
+obj68.Position = UDim2.new(0.028775889426469803, 0, 0.3398411273956299, 0)
+obj68.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj68.MaxVisibleGraphemes = -1
+obj68.TextXAlignment = Enum.TextXAlignment.Left
+obj68.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj69 = Instance.new("UICorner")
+obj69.Name = "UICorner"
+obj69.CornerRadius = UDim.new(0, 6)
+obj69.Parent = obj68
+
+obj68.Parent = obj65
+
+local obj70 = Instance.new("Frame")
+obj70.Visible = true
+obj70.BorderMode = Enum.BorderMode.Outline
+obj70.AnchorPoint = Vector2.new(0.5, 0)
+obj70.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj70.ZIndex = 1
+obj70.BorderSizePixel = 0
+obj70.Size = UDim2.new(0.126312717795372, 0, 0.4415152668952942, 0)
+obj70.ClipsDescendants = false
+obj70.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj70.Rotation = 0
+obj70.Name = "OpenFrame"
+obj70.BackgroundTransparency = 0
+obj70.Position = UDim2.new(0.9035525321960449, 0, 0.28813064098358154, 0)
+obj70.LayoutOrder = 0
+obj70.Style = Enum.FrameStyle.Custom
+obj70.Active = false
+obj70.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj71 = Instance.new("UICorner")
+obj71.Name = "UICorner"
+obj71.CornerRadius = UDim.new(0, 6)
+obj71.Parent = obj70
+
+local obj72 = Instance.new("UIStroke")
+obj72.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj72.LineJoinMode = Enum.LineJoinMode.Round
+obj72.Name = "UIStroke"
+obj72.Color = Color3.fromRGB(81, 78, 97)
+obj72.Transparency = 0.699999988079071
+obj72.Thickness = 1.2000000476837158
+obj72.Enabled = true
+obj72.Parent = obj70
+
+local obj73 = Instance.new("TextButton")
+obj73.LayoutOrder = 0
+obj73.TextWrapped = true
+obj73.LineHeight = 1
+obj73.Active = true
+obj73.TextStrokeTransparency = 1
+obj73.TextTruncate = Enum.TextTruncate.None
+obj73.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj73.ZIndex = 1
+obj73.BorderSizePixel = 1
+obj73.RichText = false
+obj73.Modal = false
+obj73.AutoButtonColor = false
+obj73.TextYAlignment = Enum.TextYAlignment.Center
+obj73.TextScaled = true
+obj73.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj73.BorderMode = Enum.BorderMode.Outline
+obj73.TextTransparency = 0
+obj73.AnchorPoint = Vector2.new(0, 0)
+obj73.Selected = false
+obj73.TextSize = 16
+obj73.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj73.ClipsDescendants = false
+obj73.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj73.Text = "Open"
+obj73.Name = "OpenBtn"
+obj73.Visible = true
+obj73.Rotation = 0
+obj73.Font = Enum.Font.Gotham
+obj73.BackgroundTransparency = 1
+obj73.Position = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj73.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj73.MaxVisibleGraphemes = -1
+obj73.TextXAlignment = Enum.TextXAlignment.Center
+obj73.TextColor3 = Color3.fromRGB(124, 124, 124)
+obj73.Parent = obj70
+
+obj70.Parent = obj65
+
+obj65.Parent = obj16
+
+obj16.Parent = obj2
+
+local obj74 = Instance.new("UIAspectRatioConstraint")
+obj74.Name = "UIAspectRatioConstraint"
+obj74.AspectRatio = 1
+obj74.DominantAxis = Enum.DominantAxis.Width
+obj74.AspectType = Enum.AspectType.FitWithinMaxSize
+obj74.Parent = obj2
+
+local obj75 = Instance.new("TextLabel")
+obj75.Visible = true
+obj75.TextWrapped = true
+obj75.LineHeight = 1
+obj75.BorderMode = Enum.BorderMode.Outline
+obj75.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj75.Name = "TextLabel"
+obj75.TextStrokeTransparency = 0
+obj75.AnchorPoint = Vector2.new(0, 0)
+obj75.TextYAlignment = Enum.TextYAlignment.Center
+obj75.TextXAlignment = Enum.TextXAlignment.Center
+obj75.TextTruncate = Enum.TextTruncate.None
+obj75.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj75.ZIndex = 1
+obj75.BorderSizePixel = 1
+obj75.Size = UDim2.new(1, 0, 0, 15)
+obj75.TextTransparency = 0
+obj75.RichText = false
+obj75.TextSize = 8
+obj75.ClipsDescendants = false
+obj75.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj75.Text = "LoTus"
+obj75.Active = false
+obj75.TextColor3 = Color3.fromRGB(255, 255, 255)
+obj75.Rotation = 0
+obj75.Font = Enum.Font.Arcade
+obj75.BackgroundTransparency = 1
+obj75.Position = UDim2.new(0, 0, 0, 15)
+obj75.LayoutOrder = 0
+obj75.MaxVisibleGraphemes = -1
+obj75.TextScaled = true
+obj75.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
+obj75.Parent = obj2
+
+obj2.Parent = obj1
+
+local obj76 = Instance.new("Frame")
+obj76.Visible = true
+obj76.BorderMode = Enum.BorderMode.Outline
+obj76.AnchorPoint = Vector2.new(0.5, 0)
+obj76.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj76.ZIndex = 1
+obj76.BorderSizePixel = 0
+obj76.Size = UDim2.new(0.23720739781856537, 0, 0.4344829022884369, 0)
+obj76.ClipsDescendants = false
+obj76.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj76.Rotation = 0
+obj76.Name = "ToggleWindow"
+obj76.BackgroundTransparency = 0
+obj76.Position = UDim2.new(0.48399999737739563, 0, 0.3889999985694885, 0)
+obj76.LayoutOrder = 0
+obj76.Style = Enum.FrameStyle.Custom
+obj76.Active = false
+obj76.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj77 = Instance.new("UICorner")
+obj77.Name = "UICorner"
+obj77.CornerRadius = UDim.new(0, 12)
+obj77.Parent = obj76
+
+local obj78 = Instance.new("ScrollingFrame")
+obj78.Visible = true
+obj78.Name = "FeatureContainer"
+obj78.BorderMode = Enum.BorderMode.Outline
+obj78.AutomaticCanvasSize = Enum.AutomaticSize.Y
+obj78.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+obj78.VerticalScrollBarInset = Enum.ScrollBarInset.None
+obj78.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+obj78.AnchorPoint = Vector2.new(0, 0)
+obj78.LayoutOrder = 0
+obj78.ScrollBarThickness = 0
+obj78.ScrollingDirection = Enum.ScrollingDirection.XY
+obj78.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj78.ZIndex = 1
+obj78.BorderSizePixel = 0
+obj78.Size = UDim2.new(0.86320561170578, 0, 0.7683374285697937, 0)
+obj78.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+obj78.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+obj78.ScrollBarImageTransparency = 0
+obj78.ClipsDescendants = true
+obj78.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj78.CanvasPosition = Vector2.new(0, 0)
+obj78.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+obj78.ElasticBehavior = Enum.ElasticBehavior.Never
+obj78.Rotation = 0
+obj78.CanvasSize = UDim2.new(0, 0, 1, 0)
+obj78.BackgroundTransparency = 0
+obj78.Position = UDim2.new(0.061944663524627686, 0, 0.17361675202846527, 0)
+obj78.ScrollingEnabled = true
+obj78.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+obj78.Active = true
+obj78.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj79 = Instance.new("UICorner")
+obj79.Name = "UICorner"
+obj79.CornerRadius = UDim.new(0, 12)
+obj79.Parent = obj78
+
+local obj80 = Instance.new("UIStroke")
+obj80.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj80.LineJoinMode = Enum.LineJoinMode.Round
+obj80.Name = "UIStroke"
+obj80.Color = Color3.fromRGB(81, 78, 97)
+obj80.Transparency = 0.6000000238418579
+obj80.Thickness = 1
+obj80.Enabled = true
+obj80.Parent = obj78
+
+local obj81 = Instance.new("UIListLayout")
+obj81.VerticalAlignment = Enum.VerticalAlignment.Top
+obj81.FillDirection = Enum.FillDirection.Vertical
+obj81.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj81.Padding = UDim.new(0.029999999329447746, 0)
+obj81.Name = "UIListLayout"
+obj81.SortOrder = Enum.SortOrder.LayoutOrder
+obj81.Parent = obj78
+
+local obj82 = Instance.new("UIPadding")
+obj82.PaddingTop = UDim.new(0.05000000074505806, 0)
+obj82.Name = "UIPadding"
+obj82.PaddingBottom = UDim.new(0, 0)
+obj82.PaddingRight = UDim.new(0, 0)
+obj82.PaddingLeft = UDim.new(0, 0)
+obj82.Parent = obj78
+
+local obj83 = Instance.new("Frame")
+obj83.Visible = true
+obj83.BorderMode = Enum.BorderMode.Outline
+obj83.AnchorPoint = Vector2.new(0, 0)
+obj83.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj83.ZIndex = 1
+obj83.BorderSizePixel = 0
+obj83.Size = UDim2.new(0.8671086430549622, 0, 0.1631612926721573, 0)
+obj83.ClipsDescendants = false
+obj83.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj83.Rotation = 0
+obj83.Name = "SliderCont"
+obj83.BackgroundTransparency = 0
+obj83.Position = UDim2.new(0.06644568592309952, 0, 0.03238601237535477, 0)
+obj83.LayoutOrder = 0
+obj83.Style = Enum.FrameStyle.Custom
+obj83.Active = false
+obj83.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj84 = Instance.new("UICorner")
+obj84.Name = "UICorner"
+obj84.CornerRadius = UDim.new(0, 8)
+obj84.Parent = obj83
+
+local obj85 = Instance.new("UIStroke")
+obj85.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj85.LineJoinMode = Enum.LineJoinMode.Round
+obj85.Name = "UIStroke"
+obj85.Color = Color3.fromRGB(81, 78, 97)
+obj85.Transparency = 0.6000000238418579
+obj85.Thickness = 1
+obj85.Enabled = true
+obj85.Parent = obj83
+
+local obj86 = Instance.new("Frame")
+obj86.Visible = true
+obj86.BorderMode = Enum.BorderMode.Outline
+obj86.AnchorPoint = Vector2.new(0, 0)
+obj86.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj86.ZIndex = 1
+obj86.BorderSizePixel = 0
+obj86.Size = UDim2.new(0.9233822226524353, 0, 0.17000000178813934, 0)
+obj86.ClipsDescendants = false
+obj86.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj86.Rotation = 0
+obj86.Name = "SliderBackground"
+obj86.BackgroundTransparency = 0
+obj86.Position = UDim2.new(0.03678612411022186, 0, 0.6412975788116455, 0)
+obj86.LayoutOrder = 0
+obj86.Style = Enum.FrameStyle.Custom
+obj86.Active = false
+obj86.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj87 = Instance.new("Frame")
+obj87.Visible = true
+obj87.BorderMode = Enum.BorderMode.Outline
+obj87.AnchorPoint = Vector2.new(0, 0)
+obj87.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj87.ZIndex = 1
+obj87.BorderSizePixel = 0
+obj87.Size = UDim2.new(0.5, 0, 1, 0)
+obj87.ClipsDescendants = false
+obj87.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj87.Rotation = 0
+obj87.Name = "Fill"
+obj87.BackgroundTransparency = 0
+obj87.Position = UDim2.new(0, 0, 0, 0)
+obj87.LayoutOrder = 0
+obj87.Style = Enum.FrameStyle.Custom
+obj87.Active = false
+obj87.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj88 = Instance.new("UICorner")
+obj88.Name = "UICorner"
+obj88.CornerRadius = UDim.new(1, 0)
+obj88.Parent = obj87
+
+local obj89 = Instance.new("UIStroke")
+obj89.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj89.LineJoinMode = Enum.LineJoinMode.Round
+obj89.Name = "UIStroke"
+obj89.Color = Color3.fromRGB(255, 255, 255)
+obj89.Transparency = 0.6000000238418579
+obj89.Thickness = 1.100000023841858
+obj89.Enabled = true
+local obj90 = Instance.new("UIGradient")
+obj90.Offset = Vector2.new(0, 0)
+obj90.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj90.Name = "UIGradient"
+obj90.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(136, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(60, 42, 102))})
+obj90.Enabled = true
+obj90.Rotation = 0
+obj90.Parent = obj89
+
+obj89.Parent = obj87
+
+local obj91 = Instance.new("UIGradient")
+obj91.Offset = Vector2.new(0, 0)
+obj91.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj91.Name = "UIGradient"
+obj91.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj91.Enabled = true
+obj91.Rotation = 90
+obj91.Parent = obj87
+
+obj87.Parent = obj86
+
+local obj92 = Instance.new("UICorner")
+obj92.Name = "UICorner"
+obj92.CornerRadius = UDim.new(1, 0)
+obj92.Parent = obj86
+
+local obj93 = Instance.new("UIStroke")
+obj93.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj93.LineJoinMode = Enum.LineJoinMode.Round
+obj93.Name = "UIStroke"
+obj93.Color = Color3.fromRGB(81, 78, 97)
+obj93.Transparency = 0.6000000238418579
+obj93.Thickness = 1
+obj93.Enabled = true
+obj93.Parent = obj86
+
+local obj94 = Instance.new("TextButton")
+obj94.LayoutOrder = 0
+obj94.TextWrapped = false
+obj94.LineHeight = 1
+obj94.Active = true
+obj94.TextStrokeTransparency = 1
+obj94.TextTruncate = Enum.TextTruncate.None
+obj94.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj94.ZIndex = 1
+obj94.BorderSizePixel = 0
+obj94.RichText = false
+obj94.Modal = false
+obj94.AutoButtonColor = true
+obj94.TextYAlignment = Enum.TextYAlignment.Center
+obj94.TextScaled = false
+obj94.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj94.BorderMode = Enum.BorderMode.Outline
+obj94.TextTransparency = 0
+obj94.AnchorPoint = Vector2.new(0, 0)
+obj94.Selected = false
+obj94.TextSize = 14
+obj94.Size = UDim2.new(1, 0, 1, 0)
+obj94.ClipsDescendants = false
+obj94.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj94.Text = ""
+obj94.Name = "TextButton"
+obj94.Visible = true
+obj94.Rotation = 0
+obj94.Font = Enum.Font.SourceSans
+obj94.BackgroundTransparency = 1
+obj94.Position = UDim2.new(0, 0, 0, 0)
+obj94.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj94.MaxVisibleGraphemes = -1
+obj94.TextXAlignment = Enum.TextXAlignment.Center
+obj94.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj94.Parent = obj86
+
+obj86.Parent = obj83
+
+local obj95 = Instance.new("TextBox")
+obj95.LayoutOrder = 0
+obj95.TextWrapped = true
+obj95.LineHeight = 1
+obj95.Active = true
+obj95.TextStrokeTransparency = 1
+obj95.PlaceholderColor3 = Color3.fromRGB(157, 157, 157)
+obj95.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj95.ZIndex = 1
+obj95.BorderSizePixel = 0
+obj95.TextEditable = true
+obj95.RichText = false
+obj95.TextYAlignment = Enum.TextYAlignment.Center
+obj95.TextScaled = true
+obj95.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj95.BorderMode = Enum.BorderMode.Outline
+obj95.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj95.AnchorPoint = Vector2.new(0, 0)
+obj95.Name = "NumberText"
+obj95.PlaceholderText = ""
+obj95.TextSize = 14
+obj95.ShowNativeInput = true
+obj95.TextXAlignment = Enum.TextXAlignment.Right
+obj95.TextTruncate = Enum.TextTruncate.None
+obj95.Visible = true
+obj95.ClipsDescendants = false
+obj95.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj95.Text = "67 studs"
+obj95.TextTransparency = 0
+obj95.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj95.Rotation = 0
+obj95.Font = Enum.Font.Gotham
+obj95.BackgroundTransparency = 1
+obj95.Position = UDim2.new(0.7263150811195374, 0, 0.17899999022483826, 0)
+obj95.Size = UDim2.new(0.23000000417232513, 0, 0.26499998569488525, 0)
+obj95.ClearTextOnFocus = true
+obj95.MaxVisibleGraphemes = -1
+obj95.MultiLine = false
+local obj96 = Instance.new("UICorner")
+obj96.Name = "UICorner"
+obj96.CornerRadius = UDim.new(0, 6)
+obj96.Parent = obj95
+
+obj95.Parent = obj83
+
+local obj97 = Instance.new("TextButton")
+obj97.LayoutOrder = 0
+obj97.TextWrapped = false
+obj97.LineHeight = 1
+obj97.Active = true
+obj97.TextStrokeTransparency = 1
+obj97.TextTruncate = Enum.TextTruncate.None
+obj97.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj97.ZIndex = 2
+obj97.BorderSizePixel = 0
+obj97.RichText = false
+obj97.Modal = false
+obj97.AutoButtonColor = true
+obj97.TextYAlignment = Enum.TextYAlignment.Center
+obj97.TextScaled = false
+obj97.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj97.BorderMode = Enum.BorderMode.Outline
+obj97.TextTransparency = 0
+obj97.AnchorPoint = Vector2.new(0, 0)
+obj97.Selected = false
+obj97.TextSize = 14
+obj97.Size = UDim2.new(1, 0, 1, 0)
+obj97.ClipsDescendants = false
+obj97.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj97.Text = ""
+obj97.Name = "SliderClickDetection"
+obj97.Visible = true
+obj97.Rotation = 0
+obj97.Font = Enum.Font.SourceSans
+obj97.BackgroundTransparency = 1
+obj97.Position = UDim2.new(0, 0, 0, 0)
+obj97.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj97.MaxVisibleGraphemes = -1
+obj97.TextXAlignment = Enum.TextXAlignment.Center
+obj97.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj97.Parent = obj83
+
+local obj98 = Instance.new("TextButton")
+obj98.LayoutOrder = 0
+obj98.TextWrapped = true
+obj98.LineHeight = 1
+obj98.Active = true
+obj98.TextStrokeTransparency = 1
+obj98.TextTruncate = Enum.TextTruncate.None
+obj98.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj98.ZIndex = 1
+obj98.BorderSizePixel = 1
+obj98.RichText = false
+obj98.Modal = false
+obj98.AutoButtonColor = false
+obj98.TextYAlignment = Enum.TextYAlignment.Center
+obj98.TextScaled = true
+obj98.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj98.BorderMode = Enum.BorderMode.Outline
+obj98.TextTransparency = 0
+obj98.AnchorPoint = Vector2.new(0, 0)
+obj98.Selected = false
+obj98.TextSize = 15
+obj98.Size = UDim2.new(0.667201817035675, 0, 0.36089974641799927, 0)
+obj98.ClipsDescendants = false
+obj98.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj98.Text = "Slider"
+obj98.Name = "SliderText"
+obj98.Visible = true
+obj98.Rotation = 0
+obj98.Font = Enum.Font.Gotham
+obj98.BackgroundTransparency = 1
+obj98.Position = UDim2.new(0.039863284677267075, 0, 0.13577765226364136, 0)
+obj98.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj98.MaxVisibleGraphemes = -1
+obj98.TextXAlignment = Enum.TextXAlignment.Left
+obj98.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj99 = Instance.new("UICorner")
+obj99.Name = "UICorner"
+obj99.CornerRadius = UDim.new(0, 6)
+obj99.Parent = obj98
+
+obj98.Parent = obj83
+
+obj83.Parent = obj78
+
+local obj100 = Instance.new("Frame")
+obj100.Visible = true
+obj100.BorderMode = Enum.BorderMode.Outline
+obj100.AnchorPoint = Vector2.new(0, 0)
+obj100.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj100.ZIndex = 1
+obj100.BorderSizePixel = 0
+obj100.Size = UDim2.new(0.8671087622642517, 0, 0.12070512771606445, 0)
+obj100.ClipsDescendants = false
+obj100.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj100.Rotation = 0
+obj100.Name = "ToggleCont"
+obj100.BackgroundTransparency = 0
+obj100.Position = UDim2.new(0.06644576042890549, 0, 0.4265926480293274, 0)
+obj100.LayoutOrder = 0
+obj100.Style = Enum.FrameStyle.Custom
+obj100.Active = false
+obj100.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj101 = Instance.new("UICorner")
+obj101.Name = "UICorner"
+obj101.CornerRadius = UDim.new(0, 8)
+obj101.Parent = obj100
+
+local obj102 = Instance.new("UIStroke")
+obj102.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj102.LineJoinMode = Enum.LineJoinMode.Round
+obj102.Name = "UIStroke"
+obj102.Color = Color3.fromRGB(81, 78, 97)
+obj102.Transparency = 0.6000000238418579
+obj102.Thickness = 1
+obj102.Enabled = true
+obj102.Parent = obj100
+
+local obj103 = Instance.new("TextButton")
+obj103.LayoutOrder = 0
+obj103.TextWrapped = true
+obj103.LineHeight = 1
+obj103.Active = true
+obj103.TextStrokeTransparency = 1
+obj103.TextTruncate = Enum.TextTruncate.None
+obj103.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj103.ZIndex = 1
+obj103.BorderSizePixel = 1
+obj103.RichText = false
+obj103.Modal = false
+obj103.AutoButtonColor = false
+obj103.TextYAlignment = Enum.TextYAlignment.Center
+obj103.TextScaled = true
+obj103.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj103.BorderMode = Enum.BorderMode.Outline
+obj103.TextTransparency = 0
+obj103.AnchorPoint = Vector2.new(0.5, 0.5)
+obj103.Selected = false
+obj103.TextSize = 15
+obj103.Size = UDim2.new(0.5694089531898499, 0, 0.5175748467445374, 0)
+obj103.ClipsDescendants = false
+obj103.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj103.Text = "Window Toggle"
+obj103.Name = "ToggleText"
+obj103.Visible = true
+obj103.Rotation = 0
+obj103.Font = Enum.Font.Gotham
+obj103.BackgroundTransparency = 1
+obj103.Position = UDim2.new(0.32497164607048035, 0, 0.4999999403953552, 0)
+obj103.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj103.MaxVisibleGraphemes = -1
+obj103.TextXAlignment = Enum.TextXAlignment.Left
+obj103.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj104 = Instance.new("UICorner")
+obj104.Name = "UICorner"
+obj104.CornerRadius = UDim.new(0, 6)
+obj104.Parent = obj103
+
+obj103.Parent = obj100
+
+local obj105 = Instance.new("Frame")
+obj105.Visible = true
+obj105.BorderMode = Enum.BorderMode.Outline
+obj105.AnchorPoint = Vector2.new(0.5, 0.5)
+obj105.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj105.ZIndex = 1
+obj105.BorderSizePixel = 0
+obj105.Size = UDim2.new(0.13270297646522522, 0, 0.5603013634681702, 0)
+obj105.ClipsDescendants = false
+obj105.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj105.Rotation = 0
+obj105.Name = "Toggle"
+obj105.BackgroundTransparency = 0
+obj105.Position = UDim2.new(0.8999999761581421, 0, 0.5, 0)
+obj105.LayoutOrder = 0
+obj105.Style = Enum.FrameStyle.Custom
+obj105.Active = false
+obj105.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj106 = Instance.new("UICorner")
+obj106.Name = "UICorner"
+obj106.CornerRadius = UDim.new(1, 0)
+obj106.Parent = obj105
+
+local obj107 = Instance.new("UIStroke")
+obj107.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj107.LineJoinMode = Enum.LineJoinMode.Round
+obj107.Name = "UIStroke"
+obj107.Color = Color3.fromRGB(83, 59, 179)
+obj107.Transparency = 0.6000000238418579
+obj107.Thickness = 1
+obj107.Enabled = true
+obj107.Parent = obj105
+
+local obj108 = Instance.new("Frame")
+obj108.Visible = true
+obj108.BorderMode = Enum.BorderMode.Outline
+obj108.AnchorPoint = Vector2.new(0, 0)
+obj108.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj108.ZIndex = 1
+obj108.BorderSizePixel = 0
+obj108.Size = UDim2.new(0.4034079611301422, 0, 0.806819498538971, 0)
+obj108.ClipsDescendants = false
+obj108.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj108.Rotation = 0
+obj108.Name = "ToggleDot"
+obj108.BackgroundTransparency = 0
+obj108.Position = UDim2.new(0.550000011920929, 0, 0.08699999749660492, 0)
+obj108.LayoutOrder = 0
+obj108.Style = Enum.FrameStyle.Custom
+obj108.Active = false
+obj108.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+local obj109 = Instance.new("UIAspectRatioConstraint")
+obj109.Name = "UIAspectRatioConstraint"
+obj109.AspectRatio = 1
+obj109.DominantAxis = Enum.DominantAxis.Width
+obj109.AspectType = Enum.AspectType.FitWithinMaxSize
+obj109.Parent = obj108
+
+local obj110 = Instance.new("UICorner")
+obj110.Name = "UICorner"
+obj110.CornerRadius = UDim.new(1, 0)
+obj110.Parent = obj108
+
+obj108.Parent = obj105
+
+local obj111 = Instance.new("TextButton")
+obj111.LayoutOrder = 0
+obj111.TextWrapped = false
+obj111.LineHeight = 1
+obj111.Active = true
+obj111.TextStrokeTransparency = 1
+obj111.TextTruncate = Enum.TextTruncate.None
+obj111.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj111.ZIndex = 1
+obj111.BorderSizePixel = 0
+obj111.RichText = false
+obj111.Modal = false
+obj111.AutoButtonColor = true
+obj111.TextYAlignment = Enum.TextYAlignment.Center
+obj111.TextScaled = false
+obj111.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj111.BorderMode = Enum.BorderMode.Outline
+obj111.TextTransparency = 1
+obj111.AnchorPoint = Vector2.new(0, 0)
+obj111.Selected = false
+obj111.TextSize = 14
+obj111.Size = UDim2.new(1, 0, 1, 0)
+obj111.ClipsDescendants = false
+obj111.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj111.Text = ""
+obj111.Name = "ToggleBtn"
+obj111.Visible = true
+obj111.Rotation = 0
+obj111.Font = Enum.Font.SourceSans
+obj111.BackgroundTransparency = 1
+obj111.Position = UDim2.new(0, 0, 0, 0)
+obj111.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj111.MaxVisibleGraphemes = -1
+obj111.TextXAlignment = Enum.TextXAlignment.Center
+obj111.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj111.Parent = obj105
+
+local obj112 = Instance.new("UIAspectRatioConstraint")
+obj112.Name = "UIAspectRatioConstraint"
+obj112.AspectRatio = 2
+obj112.DominantAxis = Enum.DominantAxis.Width
+obj112.AspectType = Enum.AspectType.FitWithinMaxSize
+obj112.Parent = obj105
+
+local obj113 = Instance.new("UIGradient")
+obj113.Offset = Vector2.new(0, 0)
+obj113.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj113.Name = "UIGradient"
+obj113.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj113.Enabled = true
+obj113.Rotation = 90
+obj113.Parent = obj105
+
+obj105.Parent = obj100
+
+local obj114 = Instance.new("Frame")
+obj114.Visible = true
+obj114.BorderMode = Enum.BorderMode.Outline
+obj114.AnchorPoint = Vector2.new(0.5, 0)
+obj114.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj114.ZIndex = 1
+obj114.BorderSizePixel = 0
+obj114.Size = UDim2.new(0.2160000056028366, 0, 0.5600000023841858, 0)
+obj114.ClipsDescendants = false
+obj114.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj114.Rotation = 0
+obj114.Name = "OpenFrame"
+obj114.BackgroundTransparency = 0
+obj114.Position = UDim2.new(0.6978018283843994, 0, 0.24121345579624176, 0)
+obj114.LayoutOrder = 0
+obj114.Style = Enum.FrameStyle.Custom
+obj114.Active = false
+obj114.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj115 = Instance.new("UICorner")
+obj115.Name = "UICorner"
+obj115.CornerRadius = UDim.new(1, 0)
+obj115.Parent = obj114
+
+local obj116 = Instance.new("UIStroke")
+obj116.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj116.LineJoinMode = Enum.LineJoinMode.Round
+obj116.Name = "UIStroke"
+obj116.Color = Color3.fromRGB(81, 78, 97)
+obj116.Transparency = 0.699999988079071
+obj116.Thickness = 1.2000000476837158
+obj116.Enabled = true
+obj116.Parent = obj114
+
+local obj117 = Instance.new("TextButton")
+obj117.LayoutOrder = 0
+obj117.TextWrapped = true
+obj117.LineHeight = 1
+obj117.Active = true
+obj117.TextStrokeTransparency = 1
+obj117.TextTruncate = Enum.TextTruncate.None
+obj117.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj117.ZIndex = 1
+obj117.BorderSizePixel = 1
+obj117.RichText = false
+obj117.Modal = false
+obj117.AutoButtonColor = false
+obj117.TextYAlignment = Enum.TextYAlignment.Center
+obj117.TextScaled = true
+obj117.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj117.BorderMode = Enum.BorderMode.Outline
+obj117.TextTransparency = 0
+obj117.AnchorPoint = Vector2.new(0, 0)
+obj117.Selected = false
+obj117.TextSize = 16
+obj117.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj117.ClipsDescendants = false
+obj117.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj117.Text = "Set Bind"
+obj117.Name = "OpenBtn"
+obj117.Visible = true
+obj117.Rotation = 0
+obj117.Font = Enum.Font.Gotham
+obj117.BackgroundTransparency = 1
+obj117.Position = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj117.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj117.MaxVisibleGraphemes = -1
+obj117.TextXAlignment = Enum.TextXAlignment.Center
+obj117.TextColor3 = Color3.fromRGB(124, 124, 124)
+obj117.Parent = obj114
+
+obj114.Parent = obj100
+
+obj100.Parent = obj78
+
+local obj118 = Instance.new("Frame")
+obj118.Visible = true
+obj118.BorderMode = Enum.BorderMode.Outline
+obj118.AnchorPoint = Vector2.new(0, 0)
+obj118.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj118.ZIndex = 1
+obj118.BorderSizePixel = 0
+obj118.Size = UDim2.new(0.8669999837875366, 0, 0.11500000208616257, 0)
+obj118.ClipsDescendants = false
+obj118.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj118.Rotation = 0
+obj118.Name = "DropdownCont"
+obj118.BackgroundTransparency = 0
+obj118.Position = UDim2.new(0.06644576042890549, 0, 0.4265926480293274, 0)
+obj118.LayoutOrder = 0
+obj118.Style = Enum.FrameStyle.Custom
+obj118.Active = false
+obj118.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj119 = Instance.new("UICorner")
+obj119.Name = "UICorner"
+obj119.CornerRadius = UDim.new(0, 8)
+obj119.Parent = obj118
+
+local obj120 = Instance.new("UIStroke")
+obj120.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj120.LineJoinMode = Enum.LineJoinMode.Round
+obj120.Name = "UIStroke"
+obj120.Color = Color3.fromRGB(81, 78, 97)
+obj120.Transparency = 0.6000000238418579
+obj120.Thickness = 1
+obj120.Enabled = true
+obj120.Parent = obj118
+
+local obj121 = Instance.new("TextButton")
+obj121.LayoutOrder = 0
+obj121.TextWrapped = true
+obj121.LineHeight = 1
+obj121.Active = true
+obj121.TextStrokeTransparency = 1
+obj121.TextTruncate = Enum.TextTruncate.None
+obj121.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj121.ZIndex = 1
+obj121.BorderSizePixel = 1
+obj121.RichText = false
+obj121.Modal = false
+obj121.AutoButtonColor = false
+obj121.TextYAlignment = Enum.TextYAlignment.Center
+obj121.TextScaled = true
+obj121.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj121.BorderMode = Enum.BorderMode.Outline
+obj121.TextTransparency = 0
+obj121.AnchorPoint = Vector2.new(0.5, 0.5)
+obj121.Selected = false
+obj121.TextSize = 15
+obj121.Size = UDim2.new(0.4613100290298462, 0, 0.5175748467445374, 0)
+obj121.ClipsDescendants = false
+obj121.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj121.Text = "Dropdown"
+obj121.Name = "DropdownText"
+obj121.Visible = true
+obj121.Rotation = 0
+obj121.Font = Enum.Font.Gotham
+obj121.BackgroundTransparency = 1
+obj121.Position = UDim2.new(0.2709227204322815, 0, 0.4999997615814209, 0)
+obj121.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj121.MaxVisibleGraphemes = -1
+obj121.TextXAlignment = Enum.TextXAlignment.Left
+obj121.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj122 = Instance.new("UICorner")
+obj122.Name = "UICorner"
+obj122.CornerRadius = UDim.new(0, 6)
+obj122.Parent = obj121
+
+obj121.Parent = obj118
+
+local obj123 = Instance.new("ImageLabel")
+obj123.Visible = true
+obj123.BorderMode = Enum.BorderMode.Outline
+obj123.AnchorPoint = Vector2.new(0, 0)
+obj123.Image = "http://www.roblox.com/asset/?id=6034818372"
+obj123.TileSize = UDim2.new(1, 0, 1, 0)
+obj123.ImageRectSize = Vector2.new(0, 0)
+obj123.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj123.ZIndex = 1
+obj123.BorderSizePixel = 0
+obj123.Size = UDim2.new(0.09264720231294632, 0, 0.7473453283309937, 0)
+obj123.Name = "DropdownImage"
+obj123.ScaleType = Enum.ScaleType.Stretch
+obj123.ImageColor3 = Color3.fromRGB(194, 194, 194)
+obj123.ClipsDescendants = false
+obj123.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj123.SliceCenter = Rect.new(0, 0, 0, 0)
+obj123.ResampleMode = Enum.ResamplerMode.Default
+obj123.ImageTransparency = 0
+obj123.Rotation = 0
+obj123.ImageRectOffset = Vector2.new(0, 0)
+obj123.BackgroundTransparency = 1
+obj123.Position = UDim2.new(0.8857952952384949, 0, 0.10726059228181839, 0)
+obj123.SliceScale = 1
+obj123.LayoutOrder = 0
+obj123.Active = false
+obj123.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+local obj124 = Instance.new("UIAspectRatioConstraint")
+obj124.Name = "UIAspectRatioConstraint"
+obj124.AspectRatio = 1
+obj124.DominantAxis = Enum.DominantAxis.Width
+obj124.AspectType = Enum.AspectType.FitWithinMaxSize
+obj124.Parent = obj123
+
+local obj125 = Instance.new("TextButton")
+obj125.LayoutOrder = 0
+obj125.TextWrapped = false
+obj125.LineHeight = 1
+obj125.Active = true
+obj125.TextStrokeTransparency = 1
+obj125.TextTruncate = Enum.TextTruncate.None
+obj125.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj125.ZIndex = 1
+obj125.BorderSizePixel = 0
+obj125.RichText = false
+obj125.Modal = false
+obj125.AutoButtonColor = true
+obj125.TextYAlignment = Enum.TextYAlignment.Center
+obj125.TextScaled = false
+obj125.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj125.BorderMode = Enum.BorderMode.Outline
+obj125.TextTransparency = 0
+obj125.AnchorPoint = Vector2.new(0, 0)
+obj125.Selected = false
+obj125.TextSize = 14
+obj125.Size = UDim2.new(1, 0, 1, 0)
+obj125.ClipsDescendants = false
+obj125.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj125.Text = ""
+obj125.Name = "DropdownButton"
+obj125.Visible = true
+obj125.Rotation = 0
+obj125.Font = Enum.Font.SourceSans
+obj125.BackgroundTransparency = 1
+obj125.Position = UDim2.new(0, 0, 0, 0)
+obj125.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj125.MaxVisibleGraphemes = -1
+obj125.TextXAlignment = Enum.TextXAlignment.Center
+obj125.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj125.Parent = obj123
+
+obj123.Parent = obj118
+
+local obj126 = Instance.new("ScrollingFrame")
+obj126.Visible = false
+obj126.Name = "DropdownSubCont"
+obj126.BorderMode = Enum.BorderMode.Outline
+obj126.AutomaticCanvasSize = Enum.AutomaticSize.XY
+obj126.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+obj126.VerticalScrollBarInset = Enum.ScrollBarInset.None
+obj126.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+obj126.AnchorPoint = Vector2.new(0, 0)
+obj126.LayoutOrder = 0
+obj126.ScrollBarThickness = 0
+obj126.ScrollingDirection = Enum.ScrollingDirection.XY
+obj126.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj126.ZIndex = 15
+obj126.BorderSizePixel = 0
+obj126.Size = UDim2.new(1.0019999742507935, 0, 3.472015857696533, 0)
+obj126.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+obj126.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+obj126.ScrollBarImageTransparency = 1
+obj126.ClipsDescendants = true
+obj126.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj126.CanvasPosition = Vector2.new(0, 0)
+obj126.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+obj126.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+obj126.Rotation = 0
+obj126.CanvasSize = UDim2.new(0, 0, 1, 0)
+obj126.BackgroundTransparency = 0
+obj126.Position = UDim2.new(0, 0, 1.2770016193389893, 0)
+obj126.ScrollingEnabled = true
+obj126.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+obj126.Active = true
+obj126.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj127 = Instance.new("UIPadding")
+obj127.PaddingTop = UDim.new(0.05000000074505806, 0)
+obj127.Name = "UIPadding"
+obj127.PaddingBottom = UDim.new(0, 0)
+obj127.PaddingRight = UDim.new(0, 0)
+obj127.PaddingLeft = UDim.new(0, 0)
+obj127.Parent = obj126
+
+local obj128 = Instance.new("UIListLayout")
+obj128.VerticalAlignment = Enum.VerticalAlignment.Top
+obj128.FillDirection = Enum.FillDirection.Vertical
+obj128.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj128.Padding = UDim.new(0.05000000074505806, 0)
+obj128.Name = "UIListLayout"
+obj128.SortOrder = Enum.SortOrder.LayoutOrder
+obj128.Parent = obj126
+
+local obj129 = Instance.new("Frame")
+obj129.Visible = true
+obj129.BorderMode = Enum.BorderMode.Outline
+obj129.AnchorPoint = Vector2.new(0, 0)
+obj129.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj129.ZIndex = 15
+obj129.BorderSizePixel = 0
+obj129.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj129.ClipsDescendants = false
+obj129.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj129.Rotation = 0
+obj129.Name = "Option"
+obj129.BackgroundTransparency = 0
+obj129.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj129.LayoutOrder = 0
+obj129.Style = Enum.FrameStyle.Custom
+obj129.Active = false
+obj129.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj130 = Instance.new("UICorner")
+obj130.Name = "UICorner"
+obj130.CornerRadius = UDim.new(0, 8)
+obj130.Parent = obj129
+
+local obj131 = Instance.new("UIStroke")
+obj131.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj131.LineJoinMode = Enum.LineJoinMode.Round
+obj131.Name = "UIStroke"
+obj131.Color = Color3.fromRGB(81, 78, 97)
+obj131.Transparency = 0.6000000238418579
+obj131.Thickness = 1
+obj131.Enabled = true
+obj131.Parent = obj129
+
+local obj132 = Instance.new("TextButton")
+obj132.LayoutOrder = 0
+obj132.TextWrapped = true
+obj132.LineHeight = 1
+obj132.Active = true
+obj132.TextStrokeTransparency = 1
+obj132.TextTruncate = Enum.TextTruncate.None
+obj132.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj132.ZIndex = 15
+obj132.BorderSizePixel = 1
+obj132.RichText = false
+obj132.Modal = false
+obj132.AutoButtonColor = false
+obj132.TextYAlignment = Enum.TextYAlignment.Center
+obj132.TextScaled = true
+obj132.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj132.BorderMode = Enum.BorderMode.Outline
+obj132.TextTransparency = 0
+obj132.AnchorPoint = Vector2.new(0, 0)
+obj132.Selected = false
+obj132.TextSize = 20
+obj132.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj132.ClipsDescendants = false
+obj132.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj132.Text = "Unselected"
+obj132.Name = "Name"
+obj132.Visible = true
+obj132.Rotation = 0
+obj132.Font = Enum.Font.GothamBold
+obj132.BackgroundTransparency = 1
+obj132.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj132.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj132.MaxVisibleGraphemes = -1
+obj132.TextXAlignment = Enum.TextXAlignment.Left
+obj132.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj133 = Instance.new("UICorner")
+obj133.Name = "UICorner"
+obj133.CornerRadius = UDim.new(0, 6)
+obj133.Parent = obj132
+
+obj132.Parent = obj129
+
+obj129.Parent = obj126
+
+local obj134 = Instance.new("Frame")
+obj134.Visible = true
+obj134.BorderMode = Enum.BorderMode.Outline
+obj134.AnchorPoint = Vector2.new(0, 0)
+obj134.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj134.ZIndex = 15
+obj134.BorderSizePixel = 0
+obj134.Size = UDim2.new(0.9179116487503052, 0, 0.2239435911178589, 0)
+obj134.ClipsDescendants = false
+obj134.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj134.Rotation = 0
+obj134.Name = "Option"
+obj134.BackgroundTransparency = 0
+obj134.Position = UDim2.new(0.04104423522949219, 0, 0.2994731664657593, 0)
+obj134.LayoutOrder = 0
+obj134.Style = Enum.FrameStyle.Custom
+obj134.Active = false
+obj134.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj135 = Instance.new("UICorner")
+obj135.Name = "UICorner"
+obj135.CornerRadius = UDim.new(0, 8)
+obj135.Parent = obj134
+
+local obj136 = Instance.new("UIStroke")
+obj136.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj136.LineJoinMode = Enum.LineJoinMode.Round
+obj136.Name = "UIStroke"
+obj136.Color = Color3.fromRGB(255, 255, 255)
+obj136.Transparency = 0.6000000238418579
+obj136.Thickness = 1
+obj136.Enabled = true
+local obj137 = Instance.new("UIGradient")
+obj137.Offset = Vector2.new(0, 0)
+obj137.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj137.Name = "UIGradient"
+obj137.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(136, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(60, 42, 102))})
+obj137.Enabled = true
+obj137.Rotation = 0
+obj137.Parent = obj136
+
+obj136.Parent = obj134
+
+local obj138 = Instance.new("TextButton")
+obj138.LayoutOrder = 0
+obj138.TextWrapped = true
+obj138.LineHeight = 1
+obj138.Active = true
+obj138.TextStrokeTransparency = 1
+obj138.TextTruncate = Enum.TextTruncate.None
+obj138.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj138.ZIndex = 15
+obj138.BorderSizePixel = 1
+obj138.RichText = false
+obj138.Modal = false
+obj138.AutoButtonColor = false
+obj138.TextYAlignment = Enum.TextYAlignment.Center
+obj138.TextScaled = true
+obj138.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj138.BorderMode = Enum.BorderMode.Outline
+obj138.TextTransparency = 0
+obj138.AnchorPoint = Vector2.new(0, 0)
+obj138.Selected = false
+obj138.TextSize = 20
+obj138.Size = UDim2.new(0.5891591906547546, 0, 0.6601587533950806, 0)
+obj138.ClipsDescendants = false
+obj138.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj138.Text = "Selected"
+obj138.Name = "Name"
+obj138.Visible = true
+obj138.Rotation = 0
+obj138.Font = Enum.Font.GothamBold
+obj138.BackgroundTransparency = 1
+obj138.Position = UDim2.new(0.028999730944633484, 0, 0.16789162158966064, 0)
+obj138.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj138.MaxVisibleGraphemes = -1
+obj138.TextXAlignment = Enum.TextXAlignment.Left
+obj138.TextColor3 = Color3.fromRGB(255, 255, 255)
+local obj139 = Instance.new("UICorner")
+obj139.Name = "UICorner"
+obj139.CornerRadius = UDim.new(0, 6)
+obj139.Parent = obj138
+
+obj138.Parent = obj134
+
+local obj140 = Instance.new("ImageLabel")
+obj140.Visible = true
+obj140.BorderMode = Enum.BorderMode.Outline
+obj140.AnchorPoint = Vector2.new(0, 0)
+obj140.Image = "http://www.roblox.com/asset/?id=6031094667"
+obj140.TileSize = UDim2.new(1, 0, 1, 0)
+obj140.ImageRectSize = Vector2.new(0, 0)
+obj140.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj140.ZIndex = 155
+obj140.BorderSizePixel = 0
+obj140.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj140.Name = "Check"
+obj140.ScaleType = Enum.ScaleType.Stretch
+obj140.ImageColor3 = Color3.fromRGB(255, 255, 255)
+obj140.ClipsDescendants = false
+obj140.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj140.SliceCenter = Rect.new(0, 0, 0, 0)
+obj140.ResampleMode = Enum.ResamplerMode.Default
+obj140.ImageTransparency = 0
+obj140.Rotation = 0
+obj140.ImageRectOffset = Vector2.new(0, 0)
+obj140.BackgroundTransparency = 1
+obj140.Position = UDim2.new(0.8899984359741211, 0, 0.09999845176935196, 0)
+obj140.SliceScale = 1
+obj140.LayoutOrder = 0
+obj140.Active = false
+obj140.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+local obj141 = Instance.new("UIAspectRatioConstraint")
+obj141.Name = "UIAspectRatioConstraint"
+obj141.AspectRatio = 1
+obj141.DominantAxis = Enum.DominantAxis.Width
+obj141.AspectType = Enum.AspectType.FitWithinMaxSize
+obj141.Parent = obj140
+
+obj140.Parent = obj134
+
+local obj142 = Instance.new("UIGradient")
+obj142.Offset = Vector2.new(0, 0)
+obj142.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj142.Name = "UIGradient"
+obj142.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj142.Enabled = true
+obj142.Rotation = 90
+obj142.Parent = obj134
+
+obj134.Parent = obj126
+
+local obj143 = Instance.new("UICorner")
+obj143.Name = "UICorner"
+obj143.CornerRadius = UDim.new(0, 8)
+obj143.Parent = obj126
+
+local obj144 = Instance.new("UIStroke")
+obj144.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj144.LineJoinMode = Enum.LineJoinMode.Round
+obj144.Name = "UIStroke"
+obj144.Color = Color3.fromRGB(81, 78, 97)
+obj144.Transparency = 0.6000000238418579
+obj144.Thickness = 1
+obj144.Enabled = true
+obj144.Parent = obj126
+
+local obj145 = Instance.new("Frame")
+obj145.Visible = true
+obj145.BorderMode = Enum.BorderMode.Outline
+obj145.AnchorPoint = Vector2.new(0, 0)
+obj145.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj145.ZIndex = 15
+obj145.BorderSizePixel = 0
+obj145.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj145.ClipsDescendants = false
+obj145.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj145.Rotation = 0
+obj145.Name = "Option"
+obj145.BackgroundTransparency = 0
+obj145.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj145.LayoutOrder = 0
+obj145.Style = Enum.FrameStyle.Custom
+obj145.Active = false
+obj145.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj146 = Instance.new("UICorner")
+obj146.Name = "UICorner"
+obj146.CornerRadius = UDim.new(0, 8)
+obj146.Parent = obj145
+
+local obj147 = Instance.new("UIStroke")
+obj147.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj147.LineJoinMode = Enum.LineJoinMode.Round
+obj147.Name = "UIStroke"
+obj147.Color = Color3.fromRGB(81, 78, 97)
+obj147.Transparency = 0.6000000238418579
+obj147.Thickness = 1
+obj147.Enabled = true
+obj147.Parent = obj145
+
+local obj148 = Instance.new("TextButton")
+obj148.LayoutOrder = 0
+obj148.TextWrapped = true
+obj148.LineHeight = 1
+obj148.Active = true
+obj148.TextStrokeTransparency = 1
+obj148.TextTruncate = Enum.TextTruncate.None
+obj148.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj148.ZIndex = 15
+obj148.BorderSizePixel = 1
+obj148.RichText = false
+obj148.Modal = false
+obj148.AutoButtonColor = false
+obj148.TextYAlignment = Enum.TextYAlignment.Center
+obj148.TextScaled = true
+obj148.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj148.BorderMode = Enum.BorderMode.Outline
+obj148.TextTransparency = 0
+obj148.AnchorPoint = Vector2.new(0, 0)
+obj148.Selected = false
+obj148.TextSize = 20
+obj148.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj148.ClipsDescendants = false
+obj148.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj148.Text = "Unselected"
+obj148.Name = "Name"
+obj148.Visible = true
+obj148.Rotation = 0
+obj148.Font = Enum.Font.GothamBold
+obj148.BackgroundTransparency = 1
+obj148.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj148.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj148.MaxVisibleGraphemes = -1
+obj148.TextXAlignment = Enum.TextXAlignment.Left
+obj148.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj149 = Instance.new("UICorner")
+obj149.Name = "UICorner"
+obj149.CornerRadius = UDim.new(0, 6)
+obj149.Parent = obj148
+
+obj148.Parent = obj145
+
+obj145.Parent = obj126
+
+local obj150 = Instance.new("Frame")
+obj150.Visible = true
+obj150.BorderMode = Enum.BorderMode.Outline
+obj150.AnchorPoint = Vector2.new(0, 0)
+obj150.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj150.ZIndex = 15
+obj150.BorderSizePixel = 0
+obj150.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj150.ClipsDescendants = false
+obj150.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj150.Rotation = 0
+obj150.Name = "Option"
+obj150.BackgroundTransparency = 0
+obj150.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj150.LayoutOrder = 0
+obj150.Style = Enum.FrameStyle.Custom
+obj150.Active = false
+obj150.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj151 = Instance.new("UICorner")
+obj151.Name = "UICorner"
+obj151.CornerRadius = UDim.new(0, 8)
+obj151.Parent = obj150
+
+local obj152 = Instance.new("UIStroke")
+obj152.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj152.LineJoinMode = Enum.LineJoinMode.Round
+obj152.Name = "UIStroke"
+obj152.Color = Color3.fromRGB(81, 78, 97)
+obj152.Transparency = 0.6000000238418579
+obj152.Thickness = 1
+obj152.Enabled = true
+obj152.Parent = obj150
+
+local obj153 = Instance.new("TextButton")
+obj153.LayoutOrder = 0
+obj153.TextWrapped = true
+obj153.LineHeight = 1
+obj153.Active = true
+obj153.TextStrokeTransparency = 1
+obj153.TextTruncate = Enum.TextTruncate.None
+obj153.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj153.ZIndex = 15
+obj153.BorderSizePixel = 1
+obj153.RichText = false
+obj153.Modal = false
+obj153.AutoButtonColor = false
+obj153.TextYAlignment = Enum.TextYAlignment.Center
+obj153.TextScaled = true
+obj153.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj153.BorderMode = Enum.BorderMode.Outline
+obj153.TextTransparency = 0
+obj153.AnchorPoint = Vector2.new(0, 0)
+obj153.Selected = false
+obj153.TextSize = 20
+obj153.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj153.ClipsDescendants = false
+obj153.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj153.Text = "Unselected"
+obj153.Name = "Name"
+obj153.Visible = true
+obj153.Rotation = 0
+obj153.Font = Enum.Font.GothamBold
+obj153.BackgroundTransparency = 1
+obj153.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj153.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj153.MaxVisibleGraphemes = -1
+obj153.TextXAlignment = Enum.TextXAlignment.Left
+obj153.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj154 = Instance.new("UICorner")
+obj154.Name = "UICorner"
+obj154.CornerRadius = UDim.new(0, 6)
+obj154.Parent = obj153
+
+obj153.Parent = obj150
+
+obj150.Parent = obj126
+
+local obj155 = Instance.new("Frame")
+obj155.Visible = true
+obj155.BorderMode = Enum.BorderMode.Outline
+obj155.AnchorPoint = Vector2.new(0, 0)
+obj155.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj155.ZIndex = 15
+obj155.BorderSizePixel = 0
+obj155.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj155.ClipsDescendants = false
+obj155.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj155.Rotation = 0
+obj155.Name = "Option"
+obj155.BackgroundTransparency = 0
+obj155.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj155.LayoutOrder = 0
+obj155.Style = Enum.FrameStyle.Custom
+obj155.Active = false
+obj155.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj156 = Instance.new("UICorner")
+obj156.Name = "UICorner"
+obj156.CornerRadius = UDim.new(0, 8)
+obj156.Parent = obj155
+
+local obj157 = Instance.new("UIStroke")
+obj157.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj157.LineJoinMode = Enum.LineJoinMode.Round
+obj157.Name = "UIStroke"
+obj157.Color = Color3.fromRGB(81, 78, 97)
+obj157.Transparency = 0.6000000238418579
+obj157.Thickness = 1
+obj157.Enabled = true
+obj157.Parent = obj155
+
+local obj158 = Instance.new("TextButton")
+obj158.LayoutOrder = 0
+obj158.TextWrapped = true
+obj158.LineHeight = 1
+obj158.Active = true
+obj158.TextStrokeTransparency = 1
+obj158.TextTruncate = Enum.TextTruncate.None
+obj158.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj158.ZIndex = 15
+obj158.BorderSizePixel = 1
+obj158.RichText = false
+obj158.Modal = false
+obj158.AutoButtonColor = false
+obj158.TextYAlignment = Enum.TextYAlignment.Center
+obj158.TextScaled = true
+obj158.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj158.BorderMode = Enum.BorderMode.Outline
+obj158.TextTransparency = 0
+obj158.AnchorPoint = Vector2.new(0, 0)
+obj158.Selected = false
+obj158.TextSize = 20
+obj158.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj158.ClipsDescendants = false
+obj158.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj158.Text = "Unselected"
+obj158.Name = "Name"
+obj158.Visible = true
+obj158.Rotation = 0
+obj158.Font = Enum.Font.GothamBold
+obj158.BackgroundTransparency = 1
+obj158.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj158.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj158.MaxVisibleGraphemes = -1
+obj158.TextXAlignment = Enum.TextXAlignment.Left
+obj158.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj159 = Instance.new("UICorner")
+obj159.Name = "UICorner"
+obj159.CornerRadius = UDim.new(0, 6)
+obj159.Parent = obj158
+
+obj158.Parent = obj155
+
+obj155.Parent = obj126
+
+obj126.Parent = obj118
+
+obj118.Parent = obj78
+
+local obj160 = Instance.new("Frame")
+obj160.Visible = true
+obj160.BorderMode = Enum.BorderMode.Outline
+obj160.AnchorPoint = Vector2.new(0, 0)
+obj160.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj160.ZIndex = 1
+obj160.BorderSizePixel = 0
+obj160.Size = UDim2.new(0.8671087026596069, 0, 0.6056743860244751, 0)
+obj160.ClipsDescendants = false
+obj160.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj160.Rotation = 0
+obj160.Name = "ColorPickerCont"
+obj160.BackgroundTransparency = 0
+obj160.Position = UDim2.new(0.06644570827484131, 0, 0.33340805768966675, 0)
+obj160.LayoutOrder = 0
+obj160.Style = Enum.FrameStyle.Custom
+obj160.Active = false
+obj160.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj161 = Instance.new("UICorner")
+obj161.Name = "UICorner"
+obj161.CornerRadius = UDim.new(0, 8)
+obj161.Parent = obj160
+
+local obj162 = Instance.new("UIStroke")
+obj162.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj162.LineJoinMode = Enum.LineJoinMode.Round
+obj162.Name = "UIStroke"
+obj162.Color = Color3.fromRGB(81, 78, 97)
+obj162.Transparency = 0.6000000238418579
+obj162.Thickness = 1
+obj162.Enabled = true
+obj162.Parent = obj160
+
+local obj163 = Instance.new("TextButton")
+obj163.LayoutOrder = 0
+obj163.TextWrapped = true
+obj163.LineHeight = 1
+obj163.Active = true
+obj163.TextStrokeTransparency = 1
+obj163.TextTruncate = Enum.TextTruncate.None
+obj163.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj163.ZIndex = 1
+obj163.BorderSizePixel = 1
+obj163.RichText = false
+obj163.Modal = false
+obj163.AutoButtonColor = false
+obj163.TextYAlignment = Enum.TextYAlignment.Center
+obj163.TextScaled = true
+obj163.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj163.BorderMode = Enum.BorderMode.Outline
+obj163.TextTransparency = 0
+obj163.AnchorPoint = Vector2.new(0.5, 0.5)
+obj163.Selected = false
+obj163.TextSize = 15
+obj163.Size = UDim2.new(0.5690000057220459, 0, 0.10000000149011612, 0)
+obj163.ClipsDescendants = false
+obj163.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj163.Text = "Color Picker"
+obj163.Name = "ToggleText"
+obj163.Visible = true
+obj163.Rotation = 0
+obj163.Font = Enum.Font.Gotham
+obj163.BackgroundTransparency = 1
+obj163.Position = UDim2.new(0.32499998807907104, 0, 0.10000000149011612, 0)
+obj163.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj163.MaxVisibleGraphemes = -1
+obj163.TextXAlignment = Enum.TextXAlignment.Left
+obj163.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj164 = Instance.new("UICorner")
+obj164.Name = "UICorner"
+obj164.CornerRadius = UDim.new(0, 6)
+obj164.Parent = obj163
+
+obj163.Parent = obj160
+
+local obj165 = Instance.new("ImageLabel")
+obj165.Visible = true
+obj165.BorderMode = Enum.BorderMode.Outline
+obj165.AnchorPoint = Vector2.new(0, 0)
+obj165.Image = "http://www.roblox.com/asset/?id=6034818372"
+obj165.TileSize = UDim2.new(1, 0, 1, 0)
+obj165.ImageRectSize = Vector2.new(0, 0)
+obj165.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj165.ZIndex = 1
+obj165.BorderSizePixel = 0
+obj165.Size = UDim2.new(0.09264720231294632, 0, 0.7473453283309937, 0)
+obj165.Name = "DropdownImage"
+obj165.ScaleType = Enum.ScaleType.Stretch
+obj165.ImageColor3 = Color3.fromRGB(194, 194, 194)
+obj165.ClipsDescendants = false
+obj165.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj165.SliceCenter = Rect.new(0, 0, 0, 0)
+obj165.ResampleMode = Enum.ResamplerMode.Default
+obj165.ImageTransparency = 0
+obj165.Rotation = 180
+obj165.ImageRectOffset = Vector2.new(0, 0)
+obj165.BackgroundTransparency = 1
+obj165.Position = UDim2.new(0.8780692219734192, 0, 0.02081228420138359, 0)
+obj165.SliceScale = 1
+obj165.LayoutOrder = 0
+obj165.Active = false
+obj165.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+local obj166 = Instance.new("UIAspectRatioConstraint")
+obj166.Name = "UIAspectRatioConstraint"
+obj166.AspectRatio = 1
+obj166.DominantAxis = Enum.DominantAxis.Width
+obj166.AspectType = Enum.AspectType.FitWithinMaxSize
+obj166.Parent = obj165
+
+local obj167 = Instance.new("TextButton")
+obj167.LayoutOrder = 0
+obj167.TextWrapped = false
+obj167.LineHeight = 1
+obj167.Active = true
+obj167.TextStrokeTransparency = 1
+obj167.TextTruncate = Enum.TextTruncate.None
+obj167.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj167.ZIndex = 1
+obj167.BorderSizePixel = 0
+obj167.RichText = false
+obj167.Modal = false
+obj167.AutoButtonColor = true
+obj167.TextYAlignment = Enum.TextYAlignment.Center
+obj167.TextScaled = false
+obj167.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj167.BorderMode = Enum.BorderMode.Outline
+obj167.TextTransparency = 0
+obj167.AnchorPoint = Vector2.new(0, 0)
+obj167.Selected = false
+obj167.TextSize = 14
+obj167.Size = UDim2.new(1, 0, 1, 0)
+obj167.ClipsDescendants = false
+obj167.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj167.Text = ""
+obj167.Name = "DropdownButton"
+obj167.Visible = true
+obj167.Rotation = 0
+obj167.Font = Enum.Font.SourceSans
+obj167.BackgroundTransparency = 1
+obj167.Position = UDim2.new(0, 0, 0, 0)
+obj167.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj167.MaxVisibleGraphemes = -1
+obj167.TextXAlignment = Enum.TextXAlignment.Center
+obj167.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj167.Parent = obj165
+
+obj165.Parent = obj160
+
+local obj168 = Instance.new("CanvasGroup")
+obj168.LayoutOrder = 0
+obj168.Name = "CanvasGroup"
+obj168.Active = false
+obj168.BorderMode = Enum.BorderMode.Outline
+obj168.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj168.Visible = true
+obj168.ClipsDescendants = true
+obj168.Size = UDim2.new(1, 0, 1, 0)
+obj168.AnchorPoint = Vector2.new(0, 0)
+obj168.Rotation = 0
+obj168.BackgroundTransparency = 1
+obj168.Position = UDim2.new(0, 0, 0, 0)
+obj168.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj168.ZIndex = 1
+obj168.BorderSizePixel = 0
+obj168.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj169 = Instance.new("ImageButton")
+obj169.Visible = true
+obj169.Name = "ImageButton"
+obj169.BorderMode = Enum.BorderMode.Outline
+obj169.ResampleMode = Enum.ResamplerMode.Default
+obj169.Modal = false
+obj169.SliceCenter = Rect.new(0, 0, 0, 0)
+obj169.ScaleType = Enum.ScaleType.Fit
+obj169.AnchorPoint = Vector2.new(0.5, 0.5)
+obj169.Image = "rbxassetid://97520092464471"
+obj169.TileSize = UDim2.new(1, 0, 1, 0)
+obj169.ImageRectSize = Vector2.new(0, 0)
+obj169.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj169.ZIndex = 1
+obj169.BorderSizePixel = 0
+obj169.Size = UDim2.new(0.35279417037963867, 0, 0.5453206896781921, 0)
+obj169.ImageTransparency = 0
+obj169.HoverImage = ""
+obj169.PressedImage = ""
+obj169.ClipsDescendants = false
+obj169.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj169.ImageColor3 = Color3.fromRGB(255, 255, 255)
+obj169.Selected = false
+obj169.AutoButtonColor = true
+obj169.Rotation = 0
+obj169.ImageRectOffset = Vector2.new(0, 0)
+obj169.BackgroundTransparency = 1
+obj169.Position = UDim2.new(0.2129080891609192, 0, 0.5087306499481201, 0)
+obj169.SliceScale = 1
+obj169.LayoutOrder = 0
+obj169.Active = true
+obj169.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj170 = Instance.new("UIAspectRatioConstraint")
+obj170.Name = "UIAspectRatioConstraint"
+obj170.AspectRatio = 1
+obj170.DominantAxis = Enum.DominantAxis.Width
+obj170.AspectType = Enum.AspectType.FitWithinMaxSize
+obj170.Parent = obj169
+
+local obj171 = Instance.new("UICorner")
+obj171.Name = "UICorner"
+obj171.CornerRadius = UDim.new(1, 0)
+obj171.Parent = obj169
+
+local obj172 = Instance.new("Frame")
+obj172.Visible = true
+obj172.BorderMode = Enum.BorderMode.Outline
+obj172.AnchorPoint = Vector2.new(0, 0)
+obj172.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj172.ZIndex = 1
+obj172.BorderSizePixel = 0
+obj172.Size = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj172.ClipsDescendants = false
+obj172.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj172.Rotation = 0
+obj172.Name = "Frame"
+obj172.BackgroundTransparency = 0.949999988079071
+obj172.Position = UDim2.new(0.07289458066225052, 0, 0.5168530941009521, 0)
+obj172.LayoutOrder = 0
+obj172.Style = Enum.FrameStyle.Custom
+obj172.Active = false
+obj172.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+local obj173 = Instance.new("UIAspectRatioConstraint")
+obj173.Name = "UIAspectRatioConstraint"
+obj173.AspectRatio = 1
+obj173.DominantAxis = Enum.DominantAxis.Width
+obj173.AspectType = Enum.AspectType.FitWithinMaxSize
+obj173.Parent = obj172
+
+local obj174 = Instance.new("UIStroke")
+obj174.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj174.LineJoinMode = Enum.LineJoinMode.Round
+obj174.Name = "UIStroke"
+obj174.Color = Color3.fromRGB(0, 0, 0)
+obj174.Transparency = 0.6000000238418579
+obj174.Thickness = 1
+obj174.Enabled = true
+obj174.Parent = obj172
+
+local obj175 = Instance.new("UICorner")
+obj175.Name = "UICorner"
+obj175.CornerRadius = UDim.new(1, 0)
+obj175.Parent = obj172
+
+obj172.Parent = obj169
+
+obj169.Parent = obj168
+
+local obj176 = Instance.new("Frame")
+obj176.Visible = true
+obj176.BorderMode = Enum.BorderMode.Outline
+obj176.AnchorPoint = Vector2.new(1, 0)
+obj176.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj176.ZIndex = 1
+obj176.BorderSizePixel = 0
+obj176.Size = UDim2.new(0.5, 0, 0.5378047823905945, 0)
+obj176.ClipsDescendants = false
+obj176.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj176.Rotation = 0
+obj176.Name = "RightCont"
+obj176.BackgroundTransparency = 1
+obj176.Position = UDim2.new(0.9613702893257141, 0, 0.2796165943145752, 0)
+obj176.LayoutOrder = 0
+obj176.Style = Enum.FrameStyle.Custom
+obj176.Active = false
+obj176.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj177 = Instance.new("UIPadding")
+obj177.PaddingTop = UDim.new(0, 0)
+obj177.Name = "UIPadding"
+obj177.PaddingBottom = UDim.new(0, 0)
+obj177.PaddingRight = UDim.new(0, 10)
+obj177.PaddingLeft = UDim.new(0, 0)
+obj177.Parent = obj176
+
+local obj178 = Instance.new("Frame")
+obj178.Visible = true
+obj178.BorderMode = Enum.BorderMode.Outline
+obj178.AnchorPoint = Vector2.new(0, 0)
+obj178.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj178.ZIndex = 1
+obj178.BorderSizePixel = 0
+obj178.Size = UDim2.new(1, 0, 0.20000000298023224, 0)
+obj178.ClipsDescendants = false
+obj178.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj178.Rotation = 0
+obj178.Name = "HexCode"
+obj178.BackgroundTransparency = 1
+obj178.Position = UDim2.new(0, 0, 0, 0)
+obj178.LayoutOrder = 0
+obj178.Style = Enum.FrameStyle.Custom
+obj178.Active = false
+obj178.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj179 = Instance.new("TextBox")
+obj179.LayoutOrder = 0
+obj179.TextWrapped = true
+obj179.LineHeight = 1
+obj179.Active = true
+obj179.TextStrokeTransparency = 1
+obj179.PlaceholderColor3 = Color3.fromRGB(140, 140, 140)
+obj179.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj179.ZIndex = 1
+obj179.BorderSizePixel = 0
+obj179.TextEditable = true
+obj179.RichText = false
+obj179.TextYAlignment = Enum.TextYAlignment.Center
+obj179.TextScaled = true
+obj179.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj179.BorderMode = Enum.BorderMode.Outline
+obj179.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj179.AnchorPoint = Vector2.new(1, 0)
+obj179.Name = "TextBox"
+obj179.PlaceholderText = ""
+obj179.TextSize = 14
+obj179.ShowNativeInput = true
+obj179.TextXAlignment = Enum.TextXAlignment.Center
+obj179.TextTruncate = Enum.TextTruncate.None
+obj179.Visible = true
+obj179.ClipsDescendants = false
+obj179.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj179.Text = "#7437f5"
+obj179.TextTransparency = 0
+obj179.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj179.Rotation = 0
+obj179.Font = Enum.Font.TitilliumWeb
+obj179.BackgroundTransparency = 0
+obj179.Position = UDim2.new(1.0000001192092896, 0, 0, 0)
+obj179.Size = UDim2.new(0.5, 0, 1, 0)
+obj179.ClearTextOnFocus = false
+obj179.MaxVisibleGraphemes = -1
+obj179.MultiLine = false
+local obj180 = Instance.new("UICorner")
+obj180.Name = "UICorner"
+obj180.CornerRadius = UDim.new(0, 8)
+obj180.Parent = obj179
+
+obj179.Parent = obj178
+
+local obj181 = Instance.new("TextLabel")
+obj181.Visible = true
+obj181.TextWrapped = true
+obj181.LineHeight = 1
+obj181.BorderMode = Enum.BorderMode.Outline
+obj181.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj181.Name = "TextLabel"
+obj181.TextStrokeTransparency = 1
+obj181.AnchorPoint = Vector2.new(0, 0)
+obj181.TextYAlignment = Enum.TextYAlignment.Center
+obj181.TextXAlignment = Enum.TextXAlignment.Center
+obj181.TextTruncate = Enum.TextTruncate.None
+obj181.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj181.ZIndex = 1
+obj181.BorderSizePixel = 0
+obj181.Size = UDim2.new(0.45717671513557434, 0, 0.9999998807907104, 0)
+obj181.TextTransparency = 0
+obj181.RichText = false
+obj181.TextSize = 14
+obj181.ClipsDescendants = false
+obj181.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj181.Text = "Hex Code"
+obj181.Active = false
+obj181.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj181.Rotation = 0
+obj181.Font = Enum.Font.SourceSans
+obj181.BackgroundTransparency = 1
+obj181.Position = UDim2.new(0, 0, 0, 0)
+obj181.LayoutOrder = 0
+obj181.MaxVisibleGraphemes = -1
+obj181.TextScaled = true
+obj181.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj181.Parent = obj178
+
+obj178.Parent = obj176
+
+local obj182 = Instance.new("UIListLayout")
+obj182.VerticalAlignment = Enum.VerticalAlignment.Center
+obj182.FillDirection = Enum.FillDirection.Vertical
+obj182.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj182.Padding = UDim.new(0.15000000596046448, 0)
+obj182.Name = "UIListLayout"
+obj182.SortOrder = Enum.SortOrder.LayoutOrder
+obj182.Parent = obj176
+
+local obj183 = Instance.new("Frame")
+obj183.Visible = true
+obj183.BorderMode = Enum.BorderMode.Outline
+obj183.AnchorPoint = Vector2.new(0, 0)
+obj183.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj183.ZIndex = 1
+obj183.BorderSizePixel = 0
+obj183.Size = UDim2.new(1, 0, 0.800000011920929, 0)
+obj183.ClipsDescendants = false
+obj183.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj183.Rotation = 0
+obj183.Name = "RGBandHSV"
+obj183.BackgroundTransparency = 1
+obj183.Position = UDim2.new(0, 0, 0, 0)
+obj183.LayoutOrder = 0
+obj183.Style = Enum.FrameStyle.Custom
+obj183.Active = false
+obj183.BackgroundColor3 = Color3.fromRGB(255, 20, 24)
+local obj184 = Instance.new("UIListLayout")
+obj184.VerticalAlignment = Enum.VerticalAlignment.Top
+obj184.FillDirection = Enum.FillDirection.Vertical
+obj184.HorizontalAlignment = Enum.HorizontalAlignment.Left
+obj184.Padding = UDim.new(0.10000000149011612, 0)
+obj184.Name = "UIListLayout"
+obj184.SortOrder = Enum.SortOrder.LayoutOrder
+obj184.Parent = obj183
+
+local obj185 = Instance.new("Frame")
+obj185.Visible = true
+obj185.BorderMode = Enum.BorderMode.Outline
+obj185.AnchorPoint = Vector2.new(0, 0)
+obj185.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj185.ZIndex = 1
+obj185.BorderSizePixel = 0
+obj185.Size = UDim2.new(1, 0, 0.5, 0)
+obj185.ClipsDescendants = false
+obj185.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj185.Rotation = 0
+obj185.Name = "RGB"
+obj185.BackgroundTransparency = 1
+obj185.Position = UDim2.new(0, 0, 0, 0)
+obj185.LayoutOrder = 0
+obj185.Style = Enum.FrameStyle.Custom
+obj185.Active = false
+obj185.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj186 = Instance.new("Frame")
+obj186.Visible = true
+obj186.BorderMode = Enum.BorderMode.Outline
+obj186.AnchorPoint = Vector2.new(0, 0)
+obj186.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj186.ZIndex = 1
+obj186.BorderSizePixel = 0
+obj186.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj186.ClipsDescendants = false
+obj186.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj186.Rotation = 0
+obj186.Name = "R"
+obj186.BackgroundTransparency = 1
+obj186.Position = UDim2.new(0, 0, 0, 0)
+obj186.LayoutOrder = 0
+obj186.Style = Enum.FrameStyle.Custom
+obj186.Active = false
+obj186.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj187 = Instance.new("TextLabel")
+obj187.Visible = true
+obj187.TextWrapped = true
+obj187.LineHeight = 1
+obj187.BorderMode = Enum.BorderMode.Outline
+obj187.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj187.Name = "RLabel"
+obj187.TextStrokeTransparency = 1
+obj187.AnchorPoint = Vector2.new(0, 0)
+obj187.TextYAlignment = Enum.TextYAlignment.Center
+obj187.TextXAlignment = Enum.TextXAlignment.Center
+obj187.TextTruncate = Enum.TextTruncate.None
+obj187.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj187.ZIndex = 1
+obj187.BorderSizePixel = 0
+obj187.Size = UDim2.new(1, 0, 0.5, 0)
+obj187.TextTransparency = 0
+obj187.RichText = false
+obj187.TextSize = 14
+obj187.ClipsDescendants = false
+obj187.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj187.Text = "R"
+obj187.Active = false
+obj187.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj187.Rotation = 0
+obj187.Font = Enum.Font.TitilliumWeb
+obj187.BackgroundTransparency = 1
+obj187.Position = UDim2.new(0, 0, 0.5, 0)
+obj187.LayoutOrder = 0
+obj187.MaxVisibleGraphemes = -1
+obj187.TextScaled = true
+obj187.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj187.Parent = obj186
+
+local obj188 = Instance.new("TextBox")
+obj188.LayoutOrder = 0
+obj188.TextWrapped = true
+obj188.LineHeight = 1
+obj188.Active = true
+obj188.TextStrokeTransparency = 1
+obj188.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj188.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj188.ZIndex = 1
+obj188.BorderSizePixel = 0
+obj188.TextEditable = true
+obj188.RichText = false
+obj188.TextYAlignment = Enum.TextYAlignment.Center
+obj188.TextScaled = true
+obj188.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj188.BorderMode = Enum.BorderMode.Outline
+obj188.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj188.AnchorPoint = Vector2.new(0, 0)
+obj188.Name = "RBox"
+obj188.PlaceholderText = ""
+obj188.TextSize = 14
+obj188.ShowNativeInput = true
+obj188.TextXAlignment = Enum.TextXAlignment.Center
+obj188.TextTruncate = Enum.TextTruncate.None
+obj188.Visible = true
+obj188.ClipsDescendants = false
+obj188.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj188.Text = "116"
+obj188.TextTransparency = 0
+obj188.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj188.Rotation = 0
+obj188.Font = Enum.Font.TitilliumWeb
+obj188.BackgroundTransparency = 0
+obj188.Position = UDim2.new(0, 0, 0, 0)
+obj188.Size = UDim2.new(1, 0, 0.5, 0)
+obj188.ClearTextOnFocus = false
+obj188.MaxVisibleGraphemes = -1
+obj188.MultiLine = false
+local obj189 = Instance.new("UICorner")
+obj189.Name = "UICorner"
+obj189.CornerRadius = UDim.new(0, 8)
+obj189.Parent = obj188
+
+obj188.Parent = obj186
+
+obj186.Parent = obj185
+
+local obj190 = Instance.new("Frame")
+obj190.Visible = true
+obj190.BorderMode = Enum.BorderMode.Outline
+obj190.AnchorPoint = Vector2.new(0, 0)
+obj190.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj190.ZIndex = 1
+obj190.BorderSizePixel = 0
+obj190.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj190.ClipsDescendants = false
+obj190.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj190.Rotation = 0
+obj190.Name = "G"
+obj190.BackgroundTransparency = 1
+obj190.Position = UDim2.new(0.3330000042915344, 0, 0, 0)
+obj190.LayoutOrder = 0
+obj190.Style = Enum.FrameStyle.Custom
+obj190.Active = false
+obj190.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj191 = Instance.new("TextLabel")
+obj191.Visible = true
+obj191.TextWrapped = true
+obj191.LineHeight = 1
+obj191.BorderMode = Enum.BorderMode.Outline
+obj191.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj191.Name = "GLabel"
+obj191.TextStrokeTransparency = 1
+obj191.AnchorPoint = Vector2.new(0, 0)
+obj191.TextYAlignment = Enum.TextYAlignment.Center
+obj191.TextXAlignment = Enum.TextXAlignment.Center
+obj191.TextTruncate = Enum.TextTruncate.None
+obj191.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj191.ZIndex = 1
+obj191.BorderSizePixel = 0
+obj191.Size = UDim2.new(1, 0, 0.5, 0)
+obj191.TextTransparency = 0
+obj191.RichText = false
+obj191.TextSize = 14
+obj191.ClipsDescendants = false
+obj191.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj191.Text = "G"
+obj191.Active = false
+obj191.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj191.Rotation = 0
+obj191.Font = Enum.Font.TitilliumWeb
+obj191.BackgroundTransparency = 1
+obj191.Position = UDim2.new(0, 0, 0.5, 0)
+obj191.LayoutOrder = 0
+obj191.MaxVisibleGraphemes = -1
+obj191.TextScaled = true
+obj191.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj191.Parent = obj190
+
+local obj192 = Instance.new("TextBox")
+obj192.LayoutOrder = 0
+obj192.TextWrapped = true
+obj192.LineHeight = 1
+obj192.Active = true
+obj192.TextStrokeTransparency = 1
+obj192.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj192.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj192.ZIndex = 1
+obj192.BorderSizePixel = 0
+obj192.TextEditable = true
+obj192.RichText = false
+obj192.TextYAlignment = Enum.TextYAlignment.Center
+obj192.TextScaled = true
+obj192.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj192.BorderMode = Enum.BorderMode.Outline
+obj192.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj192.AnchorPoint = Vector2.new(0, 0)
+obj192.Name = "GBox"
+obj192.PlaceholderText = ""
+obj192.TextSize = 14
+obj192.ShowNativeInput = true
+obj192.TextXAlignment = Enum.TextXAlignment.Center
+obj192.TextTruncate = Enum.TextTruncate.None
+obj192.Visible = true
+obj192.ClipsDescendants = false
+obj192.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj192.Text = "55"
+obj192.TextTransparency = 0
+obj192.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj192.Rotation = 0
+obj192.Font = Enum.Font.TitilliumWeb
+obj192.BackgroundTransparency = 0
+obj192.Position = UDim2.new(0, 0, 0, 0)
+obj192.Size = UDim2.new(1, 0, 0.5, 0)
+obj192.ClearTextOnFocus = false
+obj192.MaxVisibleGraphemes = -1
+obj192.MultiLine = false
+local obj193 = Instance.new("UICorner")
+obj193.Name = "UICorner"
+obj193.CornerRadius = UDim.new(0, 8)
+obj193.Parent = obj192
+
+obj192.Parent = obj190
+
+obj190.Parent = obj185
+
+local obj194 = Instance.new("Frame")
+obj194.Visible = true
+obj194.BorderMode = Enum.BorderMode.Outline
+obj194.AnchorPoint = Vector2.new(0, 0)
+obj194.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj194.ZIndex = 1
+obj194.BorderSizePixel = 0
+obj194.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj194.ClipsDescendants = false
+obj194.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj194.Rotation = 0
+obj194.Name = "B"
+obj194.BackgroundTransparency = 1
+obj194.Position = UDim2.new(0.6669999957084656, 0, 0, 0)
+obj194.LayoutOrder = 0
+obj194.Style = Enum.FrameStyle.Custom
+obj194.Active = false
+obj194.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj195 = Instance.new("TextBox")
+obj195.LayoutOrder = 0
+obj195.TextWrapped = true
+obj195.LineHeight = 1
+obj195.Active = true
+obj195.TextStrokeTransparency = 1
+obj195.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj195.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj195.ZIndex = 1
+obj195.BorderSizePixel = 0
+obj195.TextEditable = true
+obj195.RichText = false
+obj195.TextYAlignment = Enum.TextYAlignment.Center
+obj195.TextScaled = true
+obj195.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj195.BorderMode = Enum.BorderMode.Outline
+obj195.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj195.AnchorPoint = Vector2.new(0, 0)
+obj195.Name = "BBox"
+obj195.PlaceholderText = ""
+obj195.TextSize = 14
+obj195.ShowNativeInput = true
+obj195.TextXAlignment = Enum.TextXAlignment.Center
+obj195.TextTruncate = Enum.TextTruncate.None
+obj195.Visible = true
+obj195.ClipsDescendants = false
+obj195.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj195.Text = "245"
+obj195.TextTransparency = 0
+obj195.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj195.Rotation = 0
+obj195.Font = Enum.Font.TitilliumWeb
+obj195.BackgroundTransparency = 0
+obj195.Position = UDim2.new(0, 0, 0, 0)
+obj195.Size = UDim2.new(1, 0, 0.5, 0)
+obj195.ClearTextOnFocus = false
+obj195.MaxVisibleGraphemes = -1
+obj195.MultiLine = false
+local obj196 = Instance.new("UICorner")
+obj196.Name = "UICorner"
+obj196.CornerRadius = UDim.new(0, 8)
+obj196.Parent = obj195
+
+obj195.Parent = obj194
+
+local obj197 = Instance.new("TextLabel")
+obj197.Visible = true
+obj197.TextWrapped = true
+obj197.LineHeight = 1
+obj197.BorderMode = Enum.BorderMode.Outline
+obj197.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj197.Name = "BLabel"
+obj197.TextStrokeTransparency = 1
+obj197.AnchorPoint = Vector2.new(0, 0)
+obj197.TextYAlignment = Enum.TextYAlignment.Center
+obj197.TextXAlignment = Enum.TextXAlignment.Center
+obj197.TextTruncate = Enum.TextTruncate.None
+obj197.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj197.ZIndex = 1
+obj197.BorderSizePixel = 0
+obj197.Size = UDim2.new(1, 0, 0.5, 0)
+obj197.TextTransparency = 0
+obj197.RichText = false
+obj197.TextSize = 14
+obj197.ClipsDescendants = false
+obj197.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj197.Text = "B"
+obj197.Active = false
+obj197.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj197.Rotation = 0
+obj197.Font = Enum.Font.TitilliumWeb
+obj197.BackgroundTransparency = 1
+obj197.Position = UDim2.new(0, 0, 0.5, 0)
+obj197.LayoutOrder = 0
+obj197.MaxVisibleGraphemes = -1
+obj197.TextScaled = true
+obj197.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj197.Parent = obj194
+
+obj194.Parent = obj185
+
+local obj198 = Instance.new("UIListLayout")
+obj198.VerticalAlignment = Enum.VerticalAlignment.Top
+obj198.FillDirection = Enum.FillDirection.Horizontal
+obj198.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj198.Padding = UDim.new(0, 3)
+obj198.Name = "UIListLayout"
+obj198.SortOrder = Enum.SortOrder.LayoutOrder
+obj198.Parent = obj185
+
+obj185.Parent = obj183
+
+local obj199 = Instance.new("Frame")
+obj199.Visible = true
+obj199.BorderMode = Enum.BorderMode.Outline
+obj199.AnchorPoint = Vector2.new(0, 0)
+obj199.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj199.ZIndex = 1
+obj199.BorderSizePixel = 0
+obj199.Size = UDim2.new(1, 0, 0.5, 0)
+obj199.ClipsDescendants = false
+obj199.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj199.Rotation = 0
+obj199.Name = "HSV"
+obj199.BackgroundTransparency = 1
+obj199.Position = UDim2.new(0, 0, 0, 0)
+obj199.LayoutOrder = 0
+obj199.Style = Enum.FrameStyle.Custom
+obj199.Active = false
+obj199.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj200 = Instance.new("Frame")
+obj200.Visible = true
+obj200.BorderMode = Enum.BorderMode.Outline
+obj200.AnchorPoint = Vector2.new(0, 0)
+obj200.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj200.ZIndex = 1
+obj200.BorderSizePixel = 0
+obj200.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj200.ClipsDescendants = false
+obj200.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj200.Rotation = 0
+obj200.Name = "Value"
+obj200.BackgroundTransparency = 1
+obj200.Position = UDim2.new(0.6669999957084656, 0, 0, 0)
+obj200.LayoutOrder = 2
+obj200.Style = Enum.FrameStyle.Custom
+obj200.Active = false
+obj200.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj201 = Instance.new("TextBox")
+obj201.LayoutOrder = 0
+obj201.TextWrapped = true
+obj201.LineHeight = 1
+obj201.Active = true
+obj201.TextStrokeTransparency = 1
+obj201.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj201.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj201.ZIndex = 1
+obj201.BorderSizePixel = 0
+obj201.TextEditable = true
+obj201.RichText = false
+obj201.TextYAlignment = Enum.TextYAlignment.Center
+obj201.TextScaled = true
+obj201.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj201.BorderMode = Enum.BorderMode.Outline
+obj201.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj201.AnchorPoint = Vector2.new(0, 0)
+obj201.Name = "VBox"
+obj201.PlaceholderText = ""
+obj201.TextSize = 14
+obj201.ShowNativeInput = true
+obj201.TextXAlignment = Enum.TextXAlignment.Center
+obj201.TextTruncate = Enum.TextTruncate.None
+obj201.Visible = true
+obj201.ClipsDescendants = false
+obj201.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj201.Text = "245"
+obj201.TextTransparency = 0
+obj201.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj201.Rotation = 0
+obj201.Font = Enum.Font.TitilliumWeb
+obj201.BackgroundTransparency = 0
+obj201.Position = UDim2.new(0, 0, 0, 0)
+obj201.Size = UDim2.new(1, 0, 0.5, 0)
+obj201.ClearTextOnFocus = false
+obj201.MaxVisibleGraphemes = -1
+obj201.MultiLine = false
+local obj202 = Instance.new("UICorner")
+obj202.Name = "UICorner"
+obj202.CornerRadius = UDim.new(0, 8)
+obj202.Parent = obj201
+
+obj201.Parent = obj200
+
+local obj203 = Instance.new("TextLabel")
+obj203.Visible = true
+obj203.TextWrapped = true
+obj203.LineHeight = 1
+obj203.BorderMode = Enum.BorderMode.Outline
+obj203.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj203.Name = "VLabel"
+obj203.TextStrokeTransparency = 1
+obj203.AnchorPoint = Vector2.new(0, 0)
+obj203.TextYAlignment = Enum.TextYAlignment.Center
+obj203.TextXAlignment = Enum.TextXAlignment.Center
+obj203.TextTruncate = Enum.TextTruncate.None
+obj203.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj203.ZIndex = 1
+obj203.BorderSizePixel = 0
+obj203.Size = UDim2.new(1, 0, 0.5, 0)
+obj203.TextTransparency = 0
+obj203.RichText = false
+obj203.TextSize = 14
+obj203.ClipsDescendants = false
+obj203.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj203.Text = "V"
+obj203.Active = false
+obj203.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj203.Rotation = 0
+obj203.Font = Enum.Font.TitilliumWeb
+obj203.BackgroundTransparency = 1
+obj203.Position = UDim2.new(0, 0, 0.5, 0)
+obj203.LayoutOrder = 0
+obj203.MaxVisibleGraphemes = -1
+obj203.TextScaled = true
+obj203.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj203.Parent = obj200
+
+obj200.Parent = obj199
+
+local obj204 = Instance.new("Frame")
+obj204.Visible = true
+obj204.BorderMode = Enum.BorderMode.Outline
+obj204.AnchorPoint = Vector2.new(0, 0)
+obj204.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj204.ZIndex = 1
+obj204.BorderSizePixel = 0
+obj204.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj204.ClipsDescendants = false
+obj204.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj204.Rotation = 0
+obj204.Name = "Saturation"
+obj204.BackgroundTransparency = 1
+obj204.Position = UDim2.new(0.3330000042915344, 0, 0, 0)
+obj204.LayoutOrder = 1
+obj204.Style = Enum.FrameStyle.Custom
+obj204.Active = false
+obj204.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj205 = Instance.new("TextBox")
+obj205.LayoutOrder = 0
+obj205.TextWrapped = true
+obj205.LineHeight = 1
+obj205.Active = true
+obj205.TextStrokeTransparency = 1
+obj205.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj205.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj205.ZIndex = 1
+obj205.BorderSizePixel = 0
+obj205.TextEditable = true
+obj205.RichText = false
+obj205.TextYAlignment = Enum.TextYAlignment.Center
+obj205.TextScaled = true
+obj205.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj205.BorderMode = Enum.BorderMode.Outline
+obj205.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj205.AnchorPoint = Vector2.new(0, 0)
+obj205.Name = "SBox"
+obj205.PlaceholderText = ""
+obj205.TextSize = 14
+obj205.ShowNativeInput = true
+obj205.TextXAlignment = Enum.TextXAlignment.Center
+obj205.TextTruncate = Enum.TextTruncate.None
+obj205.Visible = true
+obj205.ClipsDescendants = false
+obj205.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj205.Text = "198"
+obj205.TextTransparency = 0
+obj205.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj205.Rotation = 0
+obj205.Font = Enum.Font.TitilliumWeb
+obj205.BackgroundTransparency = 0
+obj205.Position = UDim2.new(0, 0, 0, 0)
+obj205.Size = UDim2.new(1, 0, 0.5, 0)
+obj205.ClearTextOnFocus = false
+obj205.MaxVisibleGraphemes = -1
+obj205.MultiLine = false
+local obj206 = Instance.new("UICorner")
+obj206.Name = "UICorner"
+obj206.CornerRadius = UDim.new(0, 8)
+obj206.Parent = obj205
+
+obj205.Parent = obj204
+
+local obj207 = Instance.new("TextLabel")
+obj207.Visible = true
+obj207.TextWrapped = true
+obj207.LineHeight = 1
+obj207.BorderMode = Enum.BorderMode.Outline
+obj207.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj207.Name = "SLabel"
+obj207.TextStrokeTransparency = 1
+obj207.AnchorPoint = Vector2.new(0, 0)
+obj207.TextYAlignment = Enum.TextYAlignment.Center
+obj207.TextXAlignment = Enum.TextXAlignment.Center
+obj207.TextTruncate = Enum.TextTruncate.None
+obj207.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj207.ZIndex = 1
+obj207.BorderSizePixel = 0
+obj207.Size = UDim2.new(1, 0, 0.5, 0)
+obj207.TextTransparency = 0
+obj207.RichText = false
+obj207.TextSize = 14
+obj207.ClipsDescendants = false
+obj207.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj207.Text = "S"
+obj207.Active = false
+obj207.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj207.Rotation = 0
+obj207.Font = Enum.Font.TitilliumWeb
+obj207.BackgroundTransparency = 1
+obj207.Position = UDim2.new(0, 0, 0.5, 0)
+obj207.LayoutOrder = 0
+obj207.MaxVisibleGraphemes = -1
+obj207.TextScaled = true
+obj207.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj207.Parent = obj204
+
+obj204.Parent = obj199
+
+local obj208 = Instance.new("Frame")
+obj208.Visible = true
+obj208.BorderMode = Enum.BorderMode.Outline
+obj208.AnchorPoint = Vector2.new(0, 0)
+obj208.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj208.ZIndex = 1
+obj208.BorderSizePixel = 0
+obj208.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj208.ClipsDescendants = false
+obj208.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj208.Rotation = 0
+obj208.Name = "Hue"
+obj208.BackgroundTransparency = 1
+obj208.Position = UDim2.new(0, 0, 0, 0)
+obj208.LayoutOrder = 0
+obj208.Style = Enum.FrameStyle.Custom
+obj208.Active = false
+obj208.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj209 = Instance.new("TextBox")
+obj209.LayoutOrder = 0
+obj209.TextWrapped = true
+obj209.LineHeight = 1
+obj209.Active = true
+obj209.TextStrokeTransparency = 1
+obj209.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj209.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj209.ZIndex = 1
+obj209.BorderSizePixel = 0
+obj209.TextEditable = true
+obj209.RichText = false
+obj209.TextYAlignment = Enum.TextYAlignment.Center
+obj209.TextScaled = true
+obj209.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj209.BorderMode = Enum.BorderMode.Outline
+obj209.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj209.AnchorPoint = Vector2.new(0, 0)
+obj209.Name = "HBox"
+obj209.PlaceholderText = ""
+obj209.TextSize = 14
+obj209.ShowNativeInput = true
+obj209.TextXAlignment = Enum.TextXAlignment.Center
+obj209.TextTruncate = Enum.TextTruncate.None
+obj209.Visible = true
+obj209.ClipsDescendants = false
+obj209.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj209.Text = "259"
+obj209.TextTransparency = 0
+obj209.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj209.Rotation = 0
+obj209.Font = Enum.Font.TitilliumWeb
+obj209.BackgroundTransparency = 0
+obj209.Position = UDim2.new(0, 0, 0, 0)
+obj209.Size = UDim2.new(1, 0, 0.5, 0)
+obj209.ClearTextOnFocus = false
+obj209.MaxVisibleGraphemes = -1
+obj209.MultiLine = false
+local obj210 = Instance.new("UICorner")
+obj210.Name = "UICorner"
+obj210.CornerRadius = UDim.new(0, 8)
+obj210.Parent = obj209
+
+obj209.Parent = obj208
+
+local obj211 = Instance.new("TextLabel")
+obj211.Visible = true
+obj211.TextWrapped = true
+obj211.LineHeight = 1
+obj211.BorderMode = Enum.BorderMode.Outline
+obj211.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj211.Name = "HLabel"
+obj211.TextStrokeTransparency = 1
+obj211.AnchorPoint = Vector2.new(0, 0)
+obj211.TextYAlignment = Enum.TextYAlignment.Center
+obj211.TextXAlignment = Enum.TextXAlignment.Center
+obj211.TextTruncate = Enum.TextTruncate.None
+obj211.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj211.ZIndex = 1
+obj211.BorderSizePixel = 0
+obj211.Size = UDim2.new(1, 0, 0.5, 0)
+obj211.TextTransparency = 0
+obj211.RichText = false
+obj211.TextSize = 14
+obj211.ClipsDescendants = false
+obj211.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj211.Text = "H"
+obj211.Active = false
+obj211.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj211.Rotation = 0
+obj211.Font = Enum.Font.TitilliumWeb
+obj211.BackgroundTransparency = 1
+obj211.Position = UDim2.new(0, 0, 0.5, 0)
+obj211.LayoutOrder = 0
+obj211.MaxVisibleGraphemes = -1
+obj211.TextScaled = true
+obj211.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj211.Parent = obj208
+
+obj208.Parent = obj199
+
+local obj212 = Instance.new("UIListLayout")
+obj212.VerticalAlignment = Enum.VerticalAlignment.Top
+obj212.FillDirection = Enum.FillDirection.Horizontal
+obj212.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj212.Padding = UDim.new(0, 3)
+obj212.Name = "UIListLayout"
+obj212.SortOrder = Enum.SortOrder.LayoutOrder
+obj212.Parent = obj199
+
+obj199.Parent = obj183
+
+obj183.Parent = obj176
+
+obj176.Parent = obj168
+
+local obj213 = Instance.new("Frame")
+obj213.Visible = true
+obj213.BorderMode = Enum.BorderMode.Outline
+obj213.AnchorPoint = Vector2.new(0.5, 1)
+obj213.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj213.ZIndex = 1
+obj213.BorderSizePixel = 0
+obj213.Size = UDim2.new(0.35279393196105957, 0, 0.09639519453048706, 0)
+obj213.ClipsDescendants = false
+obj213.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj213.Rotation = 0
+obj213.Name = "BrightnessSlider"
+obj213.BackgroundTransparency = 0
+obj213.Position = UDim2.new(0.21290840208530426, 0, 0.9471487402915955, 0)
+obj213.LayoutOrder = 0
+obj213.Style = Enum.FrameStyle.Custom
+obj213.Active = false
+obj213.BackgroundColor3 = Color3.fromRGB(116, 55, 245)
+local obj214 = Instance.new("UICorner")
+obj214.Name = "UICorner"
+obj214.CornerRadius = UDim.new(1, 0)
+obj214.Parent = obj213
+
+local obj215 = Instance.new("UIGradient")
+obj215.Offset = Vector2.new(0, 0)
+obj215.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj215.Name = "UIGradient"
+obj215.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))})
+obj215.Enabled = true
+obj215.Rotation = 180
+obj215.Parent = obj213
+
+local obj216 = Instance.new("UIStroke")
+obj216.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj216.LineJoinMode = Enum.LineJoinMode.Round
+obj216.Name = "UIStroke"
+obj216.Color = Color3.fromRGB(81, 78, 97)
+obj216.Transparency = 0.6000000238418579
+obj216.Thickness = 1
+obj216.Enabled = true
+obj216.Parent = obj213
+
+local obj217 = Instance.new("TextButton")
+obj217.LayoutOrder = 0
+obj217.TextWrapped = false
+obj217.LineHeight = 1
+obj217.Active = true
+obj217.TextStrokeTransparency = 1
+obj217.TextTruncate = Enum.TextTruncate.None
+obj217.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj217.ZIndex = 1
+obj217.BorderSizePixel = 0
+obj217.RichText = false
+obj217.Modal = false
+obj217.AutoButtonColor = true
+obj217.TextYAlignment = Enum.TextYAlignment.Center
+obj217.TextScaled = false
+obj217.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj217.BorderMode = Enum.BorderMode.Outline
+obj217.TextTransparency = 0
+obj217.AnchorPoint = Vector2.new(0, 0)
+obj217.Selected = false
+obj217.TextSize = 14
+obj217.Size = UDim2.new(1, 0, 1, 0)
+obj217.ClipsDescendants = false
+obj217.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj217.Text = ""
+obj217.Name = "BrightnessSliderButton"
+obj217.Visible = true
+obj217.Rotation = 0
+obj217.Font = Enum.Font.SourceSans
+obj217.BackgroundTransparency = 1
+obj217.Position = UDim2.new(0, 0, 0, 0)
+obj217.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj217.MaxVisibleGraphemes = -1
+obj217.TextXAlignment = Enum.TextXAlignment.Center
+obj217.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj217.Parent = obj213
+
+obj213.Parent = obj168
+
+obj168.Parent = obj160
+
+obj160.Parent = obj78
+
+obj78.Parent = obj76
+
+local obj218 = Instance.new("UIStroke")
+obj218.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj218.LineJoinMode = Enum.LineJoinMode.Round
+obj218.Name = "UIStroke"
+obj218.Color = Color3.fromRGB(81, 78, 97)
+obj218.Transparency = 0.6000000238418579
+obj218.Thickness = 1
+obj218.Enabled = true
+obj218.Parent = obj76
+
+local obj219 = Instance.new("UIAspectRatioConstraint")
+obj219.Name = "UIAspectRatioConstraint"
+obj219.AspectRatio = 1
+obj219.DominantAxis = Enum.DominantAxis.Width
+obj219.AspectType = Enum.AspectType.FitWithinMaxSize
+obj219.Parent = obj76
+
+local obj220 = Instance.new("TextLabel")
+obj220.Visible = true
+obj220.TextWrapped = true
+obj220.LineHeight = 1
+obj220.BorderMode = Enum.BorderMode.Outline
+obj220.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj220.Name = "Title"
+obj220.TextStrokeTransparency = 1
+obj220.AnchorPoint = Vector2.new(0, 0)
+obj220.TextYAlignment = Enum.TextYAlignment.Center
+obj220.TextXAlignment = Enum.TextXAlignment.Center
+obj220.TextTruncate = Enum.TextTruncate.None
+obj220.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj220.ZIndex = 1
+obj220.BorderSizePixel = 1
+obj220.Size = UDim2.new(0.5001263618469238, 0, 0.09071909636259079, 0)
+obj220.TextTransparency = 0
+obj220.RichText = false
+obj220.TextSize = 8
+obj220.ClipsDescendants = false
+obj220.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj220.Text = "Example"
+obj220.Active = false
+obj220.TextColor3 = Color3.fromRGB(173, 173, 173)
+obj220.Rotation = 0
+obj220.Font = Enum.Font.Gotham
+obj220.BackgroundTransparency = 1
+obj220.Position = UDim2.new(0.24614939093589783, 0, 0.04349999502301216, 0)
+obj220.LayoutOrder = 0
+obj220.MaxVisibleGraphemes = -1
+obj220.TextScaled = true
+obj220.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+local obj221 = Instance.new("UICorner")
+obj221.Name = "UICorner"
+obj221.CornerRadius = UDim.new(0, 6)
+obj221.Parent = obj220
+
+obj220.Parent = obj76
+
+obj76.Parent = obj1
+
+local obj222 = Instance.new("Frame")
+obj222.Visible = true
+obj222.BorderMode = Enum.BorderMode.Outline
+obj222.AnchorPoint = Vector2.new(0.5, 0)
+obj222.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj222.ZIndex = 1
+obj222.BorderSizePixel = 0
+obj222.Size = UDim2.new(0.23720739781856537, 0, 0.4344829022884369, 0)
+obj222.ClipsDescendants = false
+obj222.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj222.Rotation = 0
+obj222.Name = "ButtonWindow"
+obj222.BackgroundTransparency = 0
+obj222.Position = UDim2.new(0.7283260226249695, 0, 0.3890000283718109, 0)
+obj222.LayoutOrder = 0
+obj222.Style = Enum.FrameStyle.Custom
+obj222.Active = false
+obj222.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj223 = Instance.new("UICorner")
+obj223.Name = "UICorner"
+obj223.CornerRadius = UDim.new(0, 12)
+obj223.Parent = obj222
+
+local obj224 = Instance.new("ScrollingFrame")
+obj224.Visible = true
+obj224.Name = "FeatureContainer"
+obj224.BorderMode = Enum.BorderMode.Outline
+obj224.AutomaticCanvasSize = Enum.AutomaticSize.Y
+obj224.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+obj224.VerticalScrollBarInset = Enum.ScrollBarInset.None
+obj224.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+obj224.AnchorPoint = Vector2.new(0, 0)
+obj224.LayoutOrder = 0
+obj224.ScrollBarThickness = 0
+obj224.ScrollingDirection = Enum.ScrollingDirection.XY
+obj224.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj224.ZIndex = 1
+obj224.BorderSizePixel = 0
+obj224.Size = UDim2.new(0.8630000352859497, 0, 0.640144407749176, 0)
+obj224.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+obj224.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+obj224.ScrollBarImageTransparency = 0
+obj224.ClipsDescendants = true
+obj224.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj224.CanvasPosition = Vector2.new(0, 0)
+obj224.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+obj224.ElasticBehavior = Enum.ElasticBehavior.Never
+obj224.Rotation = 0
+obj224.CanvasSize = UDim2.new(0, 0, 1, 0)
+obj224.BackgroundTransparency = 0
+obj224.Position = UDim2.new(0.06194483861327171, 0, 0.17361657321453094, 0)
+obj224.ScrollingEnabled = true
+obj224.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+obj224.Active = true
+obj224.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj225 = Instance.new("UICorner")
+obj225.Name = "UICorner"
+obj225.CornerRadius = UDim.new(0, 12)
+obj225.Parent = obj224
+
+local obj226 = Instance.new("UIStroke")
+obj226.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj226.LineJoinMode = Enum.LineJoinMode.Round
+obj226.Name = "UIStroke"
+obj226.Color = Color3.fromRGB(81, 78, 97)
+obj226.Transparency = 0.6000000238418579
+obj226.Thickness = 1
+obj226.Enabled = true
+obj226.Parent = obj224
+
+local obj227 = Instance.new("UIListLayout")
+obj227.VerticalAlignment = Enum.VerticalAlignment.Top
+obj227.FillDirection = Enum.FillDirection.Vertical
+obj227.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj227.Padding = UDim.new(0.029999999329447746, 0)
+obj227.Name = "UIListLayout"
+obj227.SortOrder = Enum.SortOrder.LayoutOrder
+obj227.Parent = obj224
+
+local obj228 = Instance.new("UIPadding")
+obj228.PaddingTop = UDim.new(0.05000000074505806, 0)
+obj228.Name = "UIPadding"
+obj228.PaddingBottom = UDim.new(0, 0)
+obj228.PaddingRight = UDim.new(0, 0)
+obj228.PaddingLeft = UDim.new(0, 0)
+obj228.Parent = obj224
+
+local obj229 = Instance.new("Frame")
+obj229.Visible = true
+obj229.BorderMode = Enum.BorderMode.Outline
+obj229.AnchorPoint = Vector2.new(0, 0)
+obj229.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj229.ZIndex = 1
+obj229.BorderSizePixel = 0
+obj229.Size = UDim2.new(0.8671086430549622, 0, 0.1631612926721573, 0)
+obj229.ClipsDescendants = false
+obj229.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj229.Rotation = 0
+obj229.Name = "SliderCont"
+obj229.BackgroundTransparency = 0
+obj229.Position = UDim2.new(0.06644568592309952, 0, 0.03238601237535477, 0)
+obj229.LayoutOrder = 0
+obj229.Style = Enum.FrameStyle.Custom
+obj229.Active = false
+obj229.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj230 = Instance.new("UICorner")
+obj230.Name = "UICorner"
+obj230.CornerRadius = UDim.new(0, 8)
+obj230.Parent = obj229
+
+local obj231 = Instance.new("UIStroke")
+obj231.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj231.LineJoinMode = Enum.LineJoinMode.Round
+obj231.Name = "UIStroke"
+obj231.Color = Color3.fromRGB(81, 78, 97)
+obj231.Transparency = 0.6000000238418579
+obj231.Thickness = 1
+obj231.Enabled = true
+obj231.Parent = obj229
+
+local obj232 = Instance.new("Frame")
+obj232.Visible = true
+obj232.BorderMode = Enum.BorderMode.Outline
+obj232.AnchorPoint = Vector2.new(0, 0)
+obj232.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj232.ZIndex = 1
+obj232.BorderSizePixel = 0
+obj232.Size = UDim2.new(0.9233822226524353, 0, 0.17000000178813934, 0)
+obj232.ClipsDescendants = false
+obj232.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj232.Rotation = 0
+obj232.Name = "SliderBackground"
+obj232.BackgroundTransparency = 0
+obj232.Position = UDim2.new(0.03678612411022186, 0, 0.6412975788116455, 0)
+obj232.LayoutOrder = 0
+obj232.Style = Enum.FrameStyle.Custom
+obj232.Active = false
+obj232.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+local obj233 = Instance.new("Frame")
+obj233.Visible = true
+obj233.BorderMode = Enum.BorderMode.Outline
+obj233.AnchorPoint = Vector2.new(0, 0)
+obj233.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj233.ZIndex = 1
+obj233.BorderSizePixel = 0
+obj233.Size = UDim2.new(0.5, 0, 1, 0)
+obj233.ClipsDescendants = false
+obj233.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj233.Rotation = 0
+obj233.Name = "Fill"
+obj233.BackgroundTransparency = 0
+obj233.Position = UDim2.new(0, 0, 0, 0)
+obj233.LayoutOrder = 0
+obj233.Style = Enum.FrameStyle.Custom
+obj233.Active = false
+obj233.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj234 = Instance.new("UICorner")
+obj234.Name = "UICorner"
+obj234.CornerRadius = UDim.new(1, 0)
+obj234.Parent = obj233
+
+local obj235 = Instance.new("UIStroke")
+obj235.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj235.LineJoinMode = Enum.LineJoinMode.Round
+obj235.Name = "UIStroke"
+obj235.Color = Color3.fromRGB(255, 255, 255)
+obj235.Transparency = 0.6000000238418579
+obj235.Thickness = 1.100000023841858
+obj235.Enabled = true
+local obj236 = Instance.new("UIGradient")
+obj236.Offset = Vector2.new(0, 0)
+obj236.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj236.Name = "UIGradient"
+obj236.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(136, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(60, 42, 102))})
+obj236.Enabled = true
+obj236.Rotation = 0
+obj236.Parent = obj235
+
+obj235.Parent = obj233
+
+local obj237 = Instance.new("UIGradient")
+obj237.Offset = Vector2.new(0, 0)
+obj237.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj237.Name = "UIGradient"
+obj237.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj237.Enabled = true
+obj237.Rotation = 90
+obj237.Parent = obj233
+
+obj233.Parent = obj232
+
+local obj238 = Instance.new("UICorner")
+obj238.Name = "UICorner"
+obj238.CornerRadius = UDim.new(1, 0)
+obj238.Parent = obj232
+
+local obj239 = Instance.new("UIStroke")
+obj239.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj239.LineJoinMode = Enum.LineJoinMode.Round
+obj239.Name = "UIStroke"
+obj239.Color = Color3.fromRGB(81, 78, 97)
+obj239.Transparency = 0.6000000238418579
+obj239.Thickness = 1
+obj239.Enabled = true
+obj239.Parent = obj232
+
+local obj240 = Instance.new("TextButton")
+obj240.LayoutOrder = 0
+obj240.TextWrapped = false
+obj240.LineHeight = 1
+obj240.Active = true
+obj240.TextStrokeTransparency = 1
+obj240.TextTruncate = Enum.TextTruncate.None
+obj240.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj240.ZIndex = 1
+obj240.BorderSizePixel = 0
+obj240.RichText = false
+obj240.Modal = false
+obj240.AutoButtonColor = true
+obj240.TextYAlignment = Enum.TextYAlignment.Center
+obj240.TextScaled = false
+obj240.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj240.BorderMode = Enum.BorderMode.Outline
+obj240.TextTransparency = 0
+obj240.AnchorPoint = Vector2.new(0, 0)
+obj240.Selected = false
+obj240.TextSize = 14
+obj240.Size = UDim2.new(1, 0, 1, 0)
+obj240.ClipsDescendants = false
+obj240.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj240.Text = ""
+obj240.Name = "TextButton"
+obj240.Visible = true
+obj240.Rotation = 0
+obj240.Font = Enum.Font.SourceSans
+obj240.BackgroundTransparency = 1
+obj240.Position = UDim2.new(0, 0, 0, 0)
+obj240.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj240.MaxVisibleGraphemes = -1
+obj240.TextXAlignment = Enum.TextXAlignment.Center
+obj240.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj240.Parent = obj232
+
+obj232.Parent = obj229
+
+local obj241 = Instance.new("TextBox")
+obj241.LayoutOrder = 0
+obj241.TextWrapped = true
+obj241.LineHeight = 1
+obj241.Active = true
+obj241.TextStrokeTransparency = 1
+obj241.PlaceholderColor3 = Color3.fromRGB(157, 157, 157)
+obj241.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj241.ZIndex = 1
+obj241.BorderSizePixel = 0
+obj241.TextEditable = true
+obj241.RichText = false
+obj241.TextYAlignment = Enum.TextYAlignment.Center
+obj241.TextScaled = true
+obj241.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj241.BorderMode = Enum.BorderMode.Outline
+obj241.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj241.AnchorPoint = Vector2.new(0, 0)
+obj241.Name = "NumberText"
+obj241.PlaceholderText = ""
+obj241.TextSize = 14
+obj241.ShowNativeInput = true
+obj241.TextXAlignment = Enum.TextXAlignment.Right
+obj241.TextTruncate = Enum.TextTruncate.None
+obj241.Visible = true
+obj241.ClipsDescendants = false
+obj241.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj241.Text = "67 studs"
+obj241.TextTransparency = 0
+obj241.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj241.Rotation = 0
+obj241.Font = Enum.Font.Gotham
+obj241.BackgroundTransparency = 1
+obj241.Position = UDim2.new(0.7263150811195374, 0, 0.17899999022483826, 0)
+obj241.Size = UDim2.new(0.23000000417232513, 0, 0.26499998569488525, 0)
+obj241.ClearTextOnFocus = true
+obj241.MaxVisibleGraphemes = -1
+obj241.MultiLine = false
+local obj242 = Instance.new("UICorner")
+obj242.Name = "UICorner"
+obj242.CornerRadius = UDim.new(0, 6)
+obj242.Parent = obj241
+
+obj241.Parent = obj229
+
+local obj243 = Instance.new("TextButton")
+obj243.LayoutOrder = 0
+obj243.TextWrapped = false
+obj243.LineHeight = 1
+obj243.Active = true
+obj243.TextStrokeTransparency = 1
+obj243.TextTruncate = Enum.TextTruncate.None
+obj243.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj243.ZIndex = 2
+obj243.BorderSizePixel = 0
+obj243.RichText = false
+obj243.Modal = false
+obj243.AutoButtonColor = true
+obj243.TextYAlignment = Enum.TextYAlignment.Center
+obj243.TextScaled = false
+obj243.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj243.BorderMode = Enum.BorderMode.Outline
+obj243.TextTransparency = 0
+obj243.AnchorPoint = Vector2.new(0, 0)
+obj243.Selected = false
+obj243.TextSize = 14
+obj243.Size = UDim2.new(1, 0, 1, 0)
+obj243.ClipsDescendants = false
+obj243.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj243.Text = ""
+obj243.Name = "SliderClickDetection"
+obj243.Visible = true
+obj243.Rotation = 0
+obj243.Font = Enum.Font.SourceSans
+obj243.BackgroundTransparency = 1
+obj243.Position = UDim2.new(0, 0, 0, 0)
+obj243.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj243.MaxVisibleGraphemes = -1
+obj243.TextXAlignment = Enum.TextXAlignment.Center
+obj243.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj243.Parent = obj229
+
+local obj244 = Instance.new("TextButton")
+obj244.LayoutOrder = 0
+obj244.TextWrapped = true
+obj244.LineHeight = 1
+obj244.Active = true
+obj244.TextStrokeTransparency = 1
+obj244.TextTruncate = Enum.TextTruncate.None
+obj244.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj244.ZIndex = 1
+obj244.BorderSizePixel = 1
+obj244.RichText = false
+obj244.Modal = false
+obj244.AutoButtonColor = false
+obj244.TextYAlignment = Enum.TextYAlignment.Center
+obj244.TextScaled = true
+obj244.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj244.BorderMode = Enum.BorderMode.Outline
+obj244.TextTransparency = 0
+obj244.AnchorPoint = Vector2.new(0, 0)
+obj244.Selected = false
+obj244.TextSize = 15
+obj244.Size = UDim2.new(0.667201817035675, 0, 0.36089974641799927, 0)
+obj244.ClipsDescendants = false
+obj244.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj244.Text = "Slider"
+obj244.Name = "SliderText"
+obj244.Visible = true
+obj244.Rotation = 0
+obj244.Font = Enum.Font.Gotham
+obj244.BackgroundTransparency = 1
+obj244.Position = UDim2.new(0.039863284677267075, 0, 0.13577765226364136, 0)
+obj244.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj244.MaxVisibleGraphemes = -1
+obj244.TextXAlignment = Enum.TextXAlignment.Left
+obj244.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj245 = Instance.new("UICorner")
+obj245.Name = "UICorner"
+obj245.CornerRadius = UDim.new(0, 6)
+obj245.Parent = obj244
+
+obj244.Parent = obj229
+
+obj229.Parent = obj224
+
+local obj246 = Instance.new("Frame")
+obj246.Visible = true
+obj246.BorderMode = Enum.BorderMode.Outline
+obj246.AnchorPoint = Vector2.new(0, 0)
+obj246.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj246.ZIndex = 1
+obj246.BorderSizePixel = 0
+obj246.Size = UDim2.new(0.8671087622642517, 0, 0.12070512771606445, 0)
+obj246.ClipsDescendants = false
+obj246.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj246.Rotation = 0
+obj246.Name = "ToggleCont"
+obj246.BackgroundTransparency = 0
+obj246.Position = UDim2.new(0.06644576042890549, 0, 0.4265926480293274, 0)
+obj246.LayoutOrder = 0
+obj246.Style = Enum.FrameStyle.Custom
+obj246.Active = false
+obj246.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj247 = Instance.new("UICorner")
+obj247.Name = "UICorner"
+obj247.CornerRadius = UDim.new(0, 8)
+obj247.Parent = obj246
+
+local obj248 = Instance.new("UIStroke")
+obj248.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj248.LineJoinMode = Enum.LineJoinMode.Round
+obj248.Name = "UIStroke"
+obj248.Color = Color3.fromRGB(81, 78, 97)
+obj248.Transparency = 0.6000000238418579
+obj248.Thickness = 1
+obj248.Enabled = true
+obj248.Parent = obj246
+
+local obj249 = Instance.new("TextButton")
+obj249.LayoutOrder = 0
+obj249.TextWrapped = true
+obj249.LineHeight = 1
+obj249.Active = true
+obj249.TextStrokeTransparency = 1
+obj249.TextTruncate = Enum.TextTruncate.None
+obj249.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj249.ZIndex = 1
+obj249.BorderSizePixel = 1
+obj249.RichText = false
+obj249.Modal = false
+obj249.AutoButtonColor = false
+obj249.TextYAlignment = Enum.TextYAlignment.Center
+obj249.TextScaled = true
+obj249.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj249.BorderMode = Enum.BorderMode.Outline
+obj249.TextTransparency = 0
+obj249.AnchorPoint = Vector2.new(0.5, 0.5)
+obj249.Selected = false
+obj249.TextSize = 15
+obj249.Size = UDim2.new(0.5694089531898499, 0, 0.5175748467445374, 0)
+obj249.ClipsDescendants = false
+obj249.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj249.Text = "Window Toggle"
+obj249.Name = "ToggleText"
+obj249.Visible = true
+obj249.Rotation = 0
+obj249.Font = Enum.Font.Gotham
+obj249.BackgroundTransparency = 1
+obj249.Position = UDim2.new(0.32497164607048035, 0, 0.4999999403953552, 0)
+obj249.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj249.MaxVisibleGraphemes = -1
+obj249.TextXAlignment = Enum.TextXAlignment.Left
+obj249.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj250 = Instance.new("UICorner")
+obj250.Name = "UICorner"
+obj250.CornerRadius = UDim.new(0, 6)
+obj250.Parent = obj249
+
+obj249.Parent = obj246
+
+local obj251 = Instance.new("Frame")
+obj251.Visible = true
+obj251.BorderMode = Enum.BorderMode.Outline
+obj251.AnchorPoint = Vector2.new(0.5, 0.5)
+obj251.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj251.ZIndex = 1
+obj251.BorderSizePixel = 0
+obj251.Size = UDim2.new(0.13270297646522522, 0, 0.5603013634681702, 0)
+obj251.ClipsDescendants = false
+obj251.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj251.Rotation = 0
+obj251.Name = "Toggle"
+obj251.BackgroundTransparency = 0
+obj251.Position = UDim2.new(0.8999999761581421, 0, 0.5, 0)
+obj251.LayoutOrder = 0
+obj251.Style = Enum.FrameStyle.Custom
+obj251.Active = false
+obj251.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj252 = Instance.new("UICorner")
+obj252.Name = "UICorner"
+obj252.CornerRadius = UDim.new(1, 0)
+obj252.Parent = obj251
+
+local obj253 = Instance.new("UIStroke")
+obj253.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj253.LineJoinMode = Enum.LineJoinMode.Round
+obj253.Name = "UIStroke"
+obj253.Color = Color3.fromRGB(83, 59, 179)
+obj253.Transparency = 0.6000000238418579
+obj253.Thickness = 1
+obj253.Enabled = true
+obj253.Parent = obj251
+
+local obj254 = Instance.new("Frame")
+obj254.Visible = true
+obj254.BorderMode = Enum.BorderMode.Outline
+obj254.AnchorPoint = Vector2.new(0, 0)
+obj254.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj254.ZIndex = 1
+obj254.BorderSizePixel = 0
+obj254.Size = UDim2.new(0.4034079611301422, 0, 0.806819498538971, 0)
+obj254.ClipsDescendants = false
+obj254.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj254.Rotation = 0
+obj254.Name = "ToggleDot"
+obj254.BackgroundTransparency = 0
+obj254.Position = UDim2.new(0.550000011920929, 0, 0.08699999749660492, 0)
+obj254.LayoutOrder = 0
+obj254.Style = Enum.FrameStyle.Custom
+obj254.Active = false
+obj254.BackgroundColor3 = Color3.fromRGB(216, 216, 216)
+local obj255 = Instance.new("UIAspectRatioConstraint")
+obj255.Name = "UIAspectRatioConstraint"
+obj255.AspectRatio = 1
+obj255.DominantAxis = Enum.DominantAxis.Width
+obj255.AspectType = Enum.AspectType.FitWithinMaxSize
+obj255.Parent = obj254
+
+local obj256 = Instance.new("UICorner")
+obj256.Name = "UICorner"
+obj256.CornerRadius = UDim.new(1, 0)
+obj256.Parent = obj254
+
+obj254.Parent = obj251
+
+local obj257 = Instance.new("TextButton")
+obj257.LayoutOrder = 0
+obj257.TextWrapped = false
+obj257.LineHeight = 1
+obj257.Active = true
+obj257.TextStrokeTransparency = 1
+obj257.TextTruncate = Enum.TextTruncate.None
+obj257.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj257.ZIndex = 1
+obj257.BorderSizePixel = 0
+obj257.RichText = false
+obj257.Modal = false
+obj257.AutoButtonColor = true
+obj257.TextYAlignment = Enum.TextYAlignment.Center
+obj257.TextScaled = false
+obj257.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj257.BorderMode = Enum.BorderMode.Outline
+obj257.TextTransparency = 1
+obj257.AnchorPoint = Vector2.new(0, 0)
+obj257.Selected = false
+obj257.TextSize = 14
+obj257.Size = UDim2.new(1, 0, 1, 0)
+obj257.ClipsDescendants = false
+obj257.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj257.Text = ""
+obj257.Name = "ToggleBtn"
+obj257.Visible = true
+obj257.Rotation = 0
+obj257.Font = Enum.Font.SourceSans
+obj257.BackgroundTransparency = 1
+obj257.Position = UDim2.new(0, 0, 0, 0)
+obj257.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj257.MaxVisibleGraphemes = -1
+obj257.TextXAlignment = Enum.TextXAlignment.Center
+obj257.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj257.Parent = obj251
+
+local obj258 = Instance.new("UIAspectRatioConstraint")
+obj258.Name = "UIAspectRatioConstraint"
+obj258.AspectRatio = 2
+obj258.DominantAxis = Enum.DominantAxis.Width
+obj258.AspectType = Enum.AspectType.FitWithinMaxSize
+obj258.Parent = obj251
+
+local obj259 = Instance.new("UIGradient")
+obj259.Offset = Vector2.new(0, 0)
+obj259.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj259.Name = "UIGradient"
+obj259.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj259.Enabled = true
+obj259.Rotation = 90
+obj259.Parent = obj251
+
+obj251.Parent = obj246
+
+obj246.Parent = obj224
+
+local obj260 = Instance.new("Frame")
+obj260.Visible = true
+obj260.BorderMode = Enum.BorderMode.Outline
+obj260.AnchorPoint = Vector2.new(0, 0)
+obj260.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj260.ZIndex = 1
+obj260.BorderSizePixel = 0
+obj260.Size = UDim2.new(0.8669999837875366, 0, 0.11500000208616257, 0)
+obj260.ClipsDescendants = false
+obj260.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj260.Rotation = 0
+obj260.Name = "DropdownCont"
+obj260.BackgroundTransparency = 0
+obj260.Position = UDim2.new(0.06644576042890549, 0, 0.4265926480293274, 0)
+obj260.LayoutOrder = 0
+obj260.Style = Enum.FrameStyle.Custom
+obj260.Active = false
+obj260.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj261 = Instance.new("UICorner")
+obj261.Name = "UICorner"
+obj261.CornerRadius = UDim.new(0, 8)
+obj261.Parent = obj260
+
+local obj262 = Instance.new("UIStroke")
+obj262.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj262.LineJoinMode = Enum.LineJoinMode.Round
+obj262.Name = "UIStroke"
+obj262.Color = Color3.fromRGB(81, 78, 97)
+obj262.Transparency = 0.6000000238418579
+obj262.Thickness = 1
+obj262.Enabled = true
+obj262.Parent = obj260
+
+local obj263 = Instance.new("TextButton")
+obj263.LayoutOrder = 0
+obj263.TextWrapped = true
+obj263.LineHeight = 1
+obj263.Active = true
+obj263.TextStrokeTransparency = 1
+obj263.TextTruncate = Enum.TextTruncate.None
+obj263.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj263.ZIndex = 1
+obj263.BorderSizePixel = 1
+obj263.RichText = false
+obj263.Modal = false
+obj263.AutoButtonColor = false
+obj263.TextYAlignment = Enum.TextYAlignment.Center
+obj263.TextScaled = true
+obj263.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj263.BorderMode = Enum.BorderMode.Outline
+obj263.TextTransparency = 0
+obj263.AnchorPoint = Vector2.new(0.5, 0.5)
+obj263.Selected = false
+obj263.TextSize = 15
+obj263.Size = UDim2.new(0.4613100290298462, 0, 0.5175748467445374, 0)
+obj263.ClipsDescendants = false
+obj263.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj263.Text = "Dropdown"
+obj263.Name = "DropdownText"
+obj263.Visible = true
+obj263.Rotation = 0
+obj263.Font = Enum.Font.Gotham
+obj263.BackgroundTransparency = 1
+obj263.Position = UDim2.new(0.2709227204322815, 0, 0.4999997615814209, 0)
+obj263.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj263.MaxVisibleGraphemes = -1
+obj263.TextXAlignment = Enum.TextXAlignment.Left
+obj263.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj264 = Instance.new("UICorner")
+obj264.Name = "UICorner"
+obj264.CornerRadius = UDim.new(0, 6)
+obj264.Parent = obj263
+
+obj263.Parent = obj260
+
+local obj265 = Instance.new("ImageLabel")
+obj265.Visible = true
+obj265.BorderMode = Enum.BorderMode.Outline
+obj265.AnchorPoint = Vector2.new(0, 0)
+obj265.Image = "http://www.roblox.com/asset/?id=6034818372"
+obj265.TileSize = UDim2.new(1, 0, 1, 0)
+obj265.ImageRectSize = Vector2.new(0, 0)
+obj265.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj265.ZIndex = 1
+obj265.BorderSizePixel = 0
+obj265.Size = UDim2.new(0.09264720231294632, 0, 0.7473453283309937, 0)
+obj265.Name = "DropdownImage"
+obj265.ScaleType = Enum.ScaleType.Stretch
+obj265.ImageColor3 = Color3.fromRGB(194, 194, 194)
+obj265.ClipsDescendants = false
+obj265.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj265.SliceCenter = Rect.new(0, 0, 0, 0)
+obj265.ResampleMode = Enum.ResamplerMode.Default
+obj265.ImageTransparency = 0
+obj265.Rotation = 0
+obj265.ImageRectOffset = Vector2.new(0, 0)
+obj265.BackgroundTransparency = 1
+obj265.Position = UDim2.new(0.8857952952384949, 0, 0.10726059228181839, 0)
+obj265.SliceScale = 1
+obj265.LayoutOrder = 0
+obj265.Active = false
+obj265.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+local obj266 = Instance.new("UIAspectRatioConstraint")
+obj266.Name = "UIAspectRatioConstraint"
+obj266.AspectRatio = 1
+obj266.DominantAxis = Enum.DominantAxis.Width
+obj266.AspectType = Enum.AspectType.FitWithinMaxSize
+obj266.Parent = obj265
+
+local obj267 = Instance.new("TextButton")
+obj267.LayoutOrder = 0
+obj267.TextWrapped = false
+obj267.LineHeight = 1
+obj267.Active = true
+obj267.TextStrokeTransparency = 1
+obj267.TextTruncate = Enum.TextTruncate.None
+obj267.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj267.ZIndex = 1
+obj267.BorderSizePixel = 0
+obj267.RichText = false
+obj267.Modal = false
+obj267.AutoButtonColor = true
+obj267.TextYAlignment = Enum.TextYAlignment.Center
+obj267.TextScaled = false
+obj267.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj267.BorderMode = Enum.BorderMode.Outline
+obj267.TextTransparency = 0
+obj267.AnchorPoint = Vector2.new(0, 0)
+obj267.Selected = false
+obj267.TextSize = 14
+obj267.Size = UDim2.new(1, 0, 1, 0)
+obj267.ClipsDescendants = false
+obj267.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj267.Text = ""
+obj267.Name = "DropdownButton"
+obj267.Visible = true
+obj267.Rotation = 0
+obj267.Font = Enum.Font.SourceSans
+obj267.BackgroundTransparency = 1
+obj267.Position = UDim2.new(0, 0, 0, 0)
+obj267.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj267.MaxVisibleGraphemes = -1
+obj267.TextXAlignment = Enum.TextXAlignment.Center
+obj267.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj267.Parent = obj265
+
+obj265.Parent = obj260
+
+local obj268 = Instance.new("ScrollingFrame")
+obj268.Visible = false
+obj268.Name = "DropdownSubCont"
+obj268.BorderMode = Enum.BorderMode.Outline
+obj268.AutomaticCanvasSize = Enum.AutomaticSize.XY
+obj268.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Right
+obj268.VerticalScrollBarInset = Enum.ScrollBarInset.None
+obj268.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
+obj268.AnchorPoint = Vector2.new(0, 0)
+obj268.LayoutOrder = 0
+obj268.ScrollBarThickness = 0
+obj268.ScrollingDirection = Enum.ScrollingDirection.XY
+obj268.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj268.ZIndex = 15
+obj268.BorderSizePixel = 0
+obj268.Size = UDim2.new(1.0019999742507935, 0, 3.472015857696533, 0)
+obj268.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+obj268.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+obj268.ScrollBarImageTransparency = 1
+obj268.ClipsDescendants = true
+obj268.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj268.CanvasPosition = Vector2.new(0, 0)
+obj268.HorizontalScrollBarInset = Enum.ScrollBarInset.None
+obj268.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+obj268.Rotation = 0
+obj268.CanvasSize = UDim2.new(0, 0, 1, 0)
+obj268.BackgroundTransparency = 0
+obj268.Position = UDim2.new(0, 0, 1.2770016193389893, 0)
+obj268.ScrollingEnabled = true
+obj268.BottomImage = "rbxasset://textures/ui/Scroll/scroll-bottom.png"
+obj268.Active = true
+obj268.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj269 = Instance.new("UIPadding")
+obj269.PaddingTop = UDim.new(0.05000000074505806, 0)
+obj269.Name = "UIPadding"
+obj269.PaddingBottom = UDim.new(0, 0)
+obj269.PaddingRight = UDim.new(0, 0)
+obj269.PaddingLeft = UDim.new(0, 0)
+obj269.Parent = obj268
+
+local obj270 = Instance.new("UIListLayout")
+obj270.VerticalAlignment = Enum.VerticalAlignment.Top
+obj270.FillDirection = Enum.FillDirection.Vertical
+obj270.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj270.Padding = UDim.new(0.05000000074505806, 0)
+obj270.Name = "UIListLayout"
+obj270.SortOrder = Enum.SortOrder.LayoutOrder
+obj270.Parent = obj268
+
+local obj271 = Instance.new("Frame")
+obj271.Visible = true
+obj271.BorderMode = Enum.BorderMode.Outline
+obj271.AnchorPoint = Vector2.new(0, 0)
+obj271.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj271.ZIndex = 15
+obj271.BorderSizePixel = 0
+obj271.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj271.ClipsDescendants = false
+obj271.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj271.Rotation = 0
+obj271.Name = "Option"
+obj271.BackgroundTransparency = 0
+obj271.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj271.LayoutOrder = 0
+obj271.Style = Enum.FrameStyle.Custom
+obj271.Active = false
+obj271.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj272 = Instance.new("UICorner")
+obj272.Name = "UICorner"
+obj272.CornerRadius = UDim.new(0, 8)
+obj272.Parent = obj271
+
+local obj273 = Instance.new("UIStroke")
+obj273.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj273.LineJoinMode = Enum.LineJoinMode.Round
+obj273.Name = "UIStroke"
+obj273.Color = Color3.fromRGB(81, 78, 97)
+obj273.Transparency = 0.6000000238418579
+obj273.Thickness = 1
+obj273.Enabled = true
+obj273.Parent = obj271
+
+local obj274 = Instance.new("TextButton")
+obj274.LayoutOrder = 0
+obj274.TextWrapped = true
+obj274.LineHeight = 1
+obj274.Active = true
+obj274.TextStrokeTransparency = 1
+obj274.TextTruncate = Enum.TextTruncate.None
+obj274.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj274.ZIndex = 15
+obj274.BorderSizePixel = 1
+obj274.RichText = false
+obj274.Modal = false
+obj274.AutoButtonColor = false
+obj274.TextYAlignment = Enum.TextYAlignment.Center
+obj274.TextScaled = true
+obj274.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj274.BorderMode = Enum.BorderMode.Outline
+obj274.TextTransparency = 0
+obj274.AnchorPoint = Vector2.new(0, 0)
+obj274.Selected = false
+obj274.TextSize = 20
+obj274.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj274.ClipsDescendants = false
+obj274.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj274.Text = "Unselected"
+obj274.Name = "Name"
+obj274.Visible = true
+obj274.Rotation = 0
+obj274.Font = Enum.Font.GothamBold
+obj274.BackgroundTransparency = 1
+obj274.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj274.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj274.MaxVisibleGraphemes = -1
+obj274.TextXAlignment = Enum.TextXAlignment.Left
+obj274.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj275 = Instance.new("UICorner")
+obj275.Name = "UICorner"
+obj275.CornerRadius = UDim.new(0, 6)
+obj275.Parent = obj274
+
+obj274.Parent = obj271
+
+obj271.Parent = obj268
+
+local obj276 = Instance.new("Frame")
+obj276.Visible = true
+obj276.BorderMode = Enum.BorderMode.Outline
+obj276.AnchorPoint = Vector2.new(0, 0)
+obj276.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj276.ZIndex = 15
+obj276.BorderSizePixel = 0
+obj276.Size = UDim2.new(0.9179116487503052, 0, 0.2239435911178589, 0)
+obj276.ClipsDescendants = false
+obj276.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj276.Rotation = 0
+obj276.Name = "Option"
+obj276.BackgroundTransparency = 0
+obj276.Position = UDim2.new(0.04104423522949219, 0, 0.2994731664657593, 0)
+obj276.LayoutOrder = 0
+obj276.Style = Enum.FrameStyle.Custom
+obj276.Active = false
+obj276.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj277 = Instance.new("UICorner")
+obj277.Name = "UICorner"
+obj277.CornerRadius = UDim.new(0, 8)
+obj277.Parent = obj276
+
+local obj278 = Instance.new("UIStroke")
+obj278.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj278.LineJoinMode = Enum.LineJoinMode.Round
+obj278.Name = "UIStroke"
+obj278.Color = Color3.fromRGB(255, 255, 255)
+obj278.Transparency = 0.6000000238418579
+obj278.Thickness = 1
+obj278.Enabled = true
+local obj279 = Instance.new("UIGradient")
+obj279.Offset = Vector2.new(0, 0)
+obj279.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj279.Name = "UIGradient"
+obj279.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(136, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(60, 42, 102))})
+obj279.Enabled = true
+obj279.Rotation = 0
+obj279.Parent = obj278
+
+obj278.Parent = obj276
+
+local obj280 = Instance.new("TextButton")
+obj280.LayoutOrder = 0
+obj280.TextWrapped = true
+obj280.LineHeight = 1
+obj280.Active = true
+obj280.TextStrokeTransparency = 1
+obj280.TextTruncate = Enum.TextTruncate.None
+obj280.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj280.ZIndex = 15
+obj280.BorderSizePixel = 1
+obj280.RichText = false
+obj280.Modal = false
+obj280.AutoButtonColor = false
+obj280.TextYAlignment = Enum.TextYAlignment.Center
+obj280.TextScaled = true
+obj280.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj280.BorderMode = Enum.BorderMode.Outline
+obj280.TextTransparency = 0
+obj280.AnchorPoint = Vector2.new(0, 0)
+obj280.Selected = false
+obj280.TextSize = 20
+obj280.Size = UDim2.new(0.5891591906547546, 0, 0.6601587533950806, 0)
+obj280.ClipsDescendants = false
+obj280.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj280.Text = "Selected"
+obj280.Name = "Name"
+obj280.Visible = true
+obj280.Rotation = 0
+obj280.Font = Enum.Font.GothamBold
+obj280.BackgroundTransparency = 1
+obj280.Position = UDim2.new(0.028999730944633484, 0, 0.16789162158966064, 0)
+obj280.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj280.MaxVisibleGraphemes = -1
+obj280.TextXAlignment = Enum.TextXAlignment.Left
+obj280.TextColor3 = Color3.fromRGB(255, 255, 255)
+local obj281 = Instance.new("UICorner")
+obj281.Name = "UICorner"
+obj281.CornerRadius = UDim.new(0, 6)
+obj281.Parent = obj280
+
+obj280.Parent = obj276
+
+local obj282 = Instance.new("ImageLabel")
+obj282.Visible = true
+obj282.BorderMode = Enum.BorderMode.Outline
+obj282.AnchorPoint = Vector2.new(0, 0)
+obj282.Image = "http://www.roblox.com/asset/?id=6031094667"
+obj282.TileSize = UDim2.new(1, 0, 1, 0)
+obj282.ImageRectSize = Vector2.new(0, 0)
+obj282.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj282.ZIndex = 155
+obj282.BorderSizePixel = 0
+obj282.Size = UDim2.new(0.800000011920929, 0, 0.800000011920929, 0)
+obj282.Name = "Check"
+obj282.ScaleType = Enum.ScaleType.Stretch
+obj282.ImageColor3 = Color3.fromRGB(255, 255, 255)
+obj282.ClipsDescendants = false
+obj282.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj282.SliceCenter = Rect.new(0, 0, 0, 0)
+obj282.ResampleMode = Enum.ResamplerMode.Default
+obj282.ImageTransparency = 0
+obj282.Rotation = 0
+obj282.ImageRectOffset = Vector2.new(0, 0)
+obj282.BackgroundTransparency = 1
+obj282.Position = UDim2.new(0.8899984359741211, 0, 0.09999845176935196, 0)
+obj282.SliceScale = 1
+obj282.LayoutOrder = 0
+obj282.Active = false
+obj282.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+local obj283 = Instance.new("UIAspectRatioConstraint")
+obj283.Name = "UIAspectRatioConstraint"
+obj283.AspectRatio = 1
+obj283.DominantAxis = Enum.DominantAxis.Width
+obj283.AspectType = Enum.AspectType.FitWithinMaxSize
+obj283.Parent = obj282
+
+obj282.Parent = obj276
+
+local obj284 = Instance.new("UIGradient")
+obj284.Offset = Vector2.new(0, 0)
+obj284.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj284.Name = "UIGradient"
+obj284.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(106, 0, 255)), ColorSequenceKeypoint.new(1, Color3.fromRGB(32, 22, 54))})
+obj284.Enabled = true
+obj284.Rotation = 90
+obj284.Parent = obj276
+
+obj276.Parent = obj268
+
+local obj285 = Instance.new("UICorner")
+obj285.Name = "UICorner"
+obj285.CornerRadius = UDim.new(0, 8)
+obj285.Parent = obj268
+
+local obj286 = Instance.new("UIStroke")
+obj286.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj286.LineJoinMode = Enum.LineJoinMode.Round
+obj286.Name = "UIStroke"
+obj286.Color = Color3.fromRGB(81, 78, 97)
+obj286.Transparency = 0.6000000238418579
+obj286.Thickness = 1
+obj286.Enabled = true
+obj286.Parent = obj268
+
+local obj287 = Instance.new("Frame")
+obj287.Visible = true
+obj287.BorderMode = Enum.BorderMode.Outline
+obj287.AnchorPoint = Vector2.new(0, 0)
+obj287.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj287.ZIndex = 15
+obj287.BorderSizePixel = 0
+obj287.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj287.ClipsDescendants = false
+obj287.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj287.Rotation = 0
+obj287.Name = "Option"
+obj287.BackgroundTransparency = 0
+obj287.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj287.LayoutOrder = 0
+obj287.Style = Enum.FrameStyle.Custom
+obj287.Active = false
+obj287.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj288 = Instance.new("UICorner")
+obj288.Name = "UICorner"
+obj288.CornerRadius = UDim.new(0, 8)
+obj288.Parent = obj287
+
+local obj289 = Instance.new("UIStroke")
+obj289.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj289.LineJoinMode = Enum.LineJoinMode.Round
+obj289.Name = "UIStroke"
+obj289.Color = Color3.fromRGB(81, 78, 97)
+obj289.Transparency = 0.6000000238418579
+obj289.Thickness = 1
+obj289.Enabled = true
+obj289.Parent = obj287
+
+local obj290 = Instance.new("TextButton")
+obj290.LayoutOrder = 0
+obj290.TextWrapped = true
+obj290.LineHeight = 1
+obj290.Active = true
+obj290.TextStrokeTransparency = 1
+obj290.TextTruncate = Enum.TextTruncate.None
+obj290.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj290.ZIndex = 15
+obj290.BorderSizePixel = 1
+obj290.RichText = false
+obj290.Modal = false
+obj290.AutoButtonColor = false
+obj290.TextYAlignment = Enum.TextYAlignment.Center
+obj290.TextScaled = true
+obj290.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj290.BorderMode = Enum.BorderMode.Outline
+obj290.TextTransparency = 0
+obj290.AnchorPoint = Vector2.new(0, 0)
+obj290.Selected = false
+obj290.TextSize = 20
+obj290.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj290.ClipsDescendants = false
+obj290.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj290.Text = "Unselected"
+obj290.Name = "Name"
+obj290.Visible = true
+obj290.Rotation = 0
+obj290.Font = Enum.Font.GothamBold
+obj290.BackgroundTransparency = 1
+obj290.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj290.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj290.MaxVisibleGraphemes = -1
+obj290.TextXAlignment = Enum.TextXAlignment.Left
+obj290.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj291 = Instance.new("UICorner")
+obj291.Name = "UICorner"
+obj291.CornerRadius = UDim.new(0, 6)
+obj291.Parent = obj290
+
+obj290.Parent = obj287
+
+obj287.Parent = obj268
+
+local obj292 = Instance.new("Frame")
+obj292.Visible = true
+obj292.BorderMode = Enum.BorderMode.Outline
+obj292.AnchorPoint = Vector2.new(0, 0)
+obj292.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj292.ZIndex = 15
+obj292.BorderSizePixel = 0
+obj292.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj292.ClipsDescendants = false
+obj292.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj292.Rotation = 0
+obj292.Name = "Option"
+obj292.BackgroundTransparency = 0
+obj292.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj292.LayoutOrder = 0
+obj292.Style = Enum.FrameStyle.Custom
+obj292.Active = false
+obj292.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj293 = Instance.new("UICorner")
+obj293.Name = "UICorner"
+obj293.CornerRadius = UDim.new(0, 8)
+obj293.Parent = obj292
+
+local obj294 = Instance.new("UIStroke")
+obj294.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj294.LineJoinMode = Enum.LineJoinMode.Round
+obj294.Name = "UIStroke"
+obj294.Color = Color3.fromRGB(81, 78, 97)
+obj294.Transparency = 0.6000000238418579
+obj294.Thickness = 1
+obj294.Enabled = true
+obj294.Parent = obj292
+
+local obj295 = Instance.new("TextButton")
+obj295.LayoutOrder = 0
+obj295.TextWrapped = true
+obj295.LineHeight = 1
+obj295.Active = true
+obj295.TextStrokeTransparency = 1
+obj295.TextTruncate = Enum.TextTruncate.None
+obj295.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj295.ZIndex = 15
+obj295.BorderSizePixel = 1
+obj295.RichText = false
+obj295.Modal = false
+obj295.AutoButtonColor = false
+obj295.TextYAlignment = Enum.TextYAlignment.Center
+obj295.TextScaled = true
+obj295.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj295.BorderMode = Enum.BorderMode.Outline
+obj295.TextTransparency = 0
+obj295.AnchorPoint = Vector2.new(0, 0)
+obj295.Selected = false
+obj295.TextSize = 20
+obj295.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj295.ClipsDescendants = false
+obj295.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj295.Text = "Unselected"
+obj295.Name = "Name"
+obj295.Visible = true
+obj295.Rotation = 0
+obj295.Font = Enum.Font.GothamBold
+obj295.BackgroundTransparency = 1
+obj295.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj295.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj295.MaxVisibleGraphemes = -1
+obj295.TextXAlignment = Enum.TextXAlignment.Left
+obj295.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj296 = Instance.new("UICorner")
+obj296.Name = "UICorner"
+obj296.CornerRadius = UDim.new(0, 6)
+obj296.Parent = obj295
+
+obj295.Parent = obj292
+
+obj292.Parent = obj268
+
+local obj297 = Instance.new("Frame")
+obj297.Visible = true
+obj297.BorderMode = Enum.BorderMode.Outline
+obj297.AnchorPoint = Vector2.new(0, 0)
+obj297.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj297.ZIndex = 15
+obj297.BorderSizePixel = 0
+obj297.Size = UDim2.new(0.9179116487503052, 0, 0.22394366562366486, 0)
+obj297.ClipsDescendants = false
+obj297.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj297.Rotation = 0
+obj297.Name = "Option"
+obj297.BackgroundTransparency = 0
+obj297.Position = UDim2.new(0.04104423522949219, 0, -8.932793349458734e-08, 0)
+obj297.LayoutOrder = 0
+obj297.Style = Enum.FrameStyle.Custom
+obj297.Active = false
+obj297.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+local obj298 = Instance.new("UICorner")
+obj298.Name = "UICorner"
+obj298.CornerRadius = UDim.new(0, 8)
+obj298.Parent = obj297
+
+local obj299 = Instance.new("UIStroke")
+obj299.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj299.LineJoinMode = Enum.LineJoinMode.Round
+obj299.Name = "UIStroke"
+obj299.Color = Color3.fromRGB(81, 78, 97)
+obj299.Transparency = 0.6000000238418579
+obj299.Thickness = 1
+obj299.Enabled = true
+obj299.Parent = obj297
+
+local obj300 = Instance.new("TextButton")
+obj300.LayoutOrder = 0
+obj300.TextWrapped = true
+obj300.LineHeight = 1
+obj300.Active = true
+obj300.TextStrokeTransparency = 1
+obj300.TextTruncate = Enum.TextTruncate.None
+obj300.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj300.ZIndex = 15
+obj300.BorderSizePixel = 1
+obj300.RichText = false
+obj300.Modal = false
+obj300.AutoButtonColor = false
+obj300.TextYAlignment = Enum.TextYAlignment.Center
+obj300.TextScaled = true
+obj300.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj300.BorderMode = Enum.BorderMode.Outline
+obj300.TextTransparency = 0
+obj300.AnchorPoint = Vector2.new(0, 0)
+obj300.Selected = false
+obj300.TextSize = 20
+obj300.Size = UDim2.new(0.5891591906547546, 0, 0.6601586937904358, 0)
+obj300.ClipsDescendants = false
+obj300.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj300.Text = "Unselected"
+obj300.Name = "Name"
+obj300.Visible = true
+obj300.Rotation = 0
+obj300.Font = Enum.Font.GothamBold
+obj300.BackgroundTransparency = 1
+obj300.Position = UDim2.new(0.028999730944633484, 0, 0.16789160668849945, 0)
+obj300.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj300.MaxVisibleGraphemes = -1
+obj300.TextXAlignment = Enum.TextXAlignment.Left
+obj300.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj301 = Instance.new("UICorner")
+obj301.Name = "UICorner"
+obj301.CornerRadius = UDim.new(0, 6)
+obj301.Parent = obj300
+
+obj300.Parent = obj297
+
+obj297.Parent = obj268
+
+obj268.Parent = obj260
+
+obj260.Parent = obj224
+
+local obj302 = Instance.new("Frame")
+obj302.Visible = true
+obj302.BorderMode = Enum.BorderMode.Outline
+obj302.AnchorPoint = Vector2.new(0, 0)
+obj302.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj302.ZIndex = 1
+obj302.BorderSizePixel = 0
+obj302.Size = UDim2.new(0.8671087026596069, 0, 0.6056743860244751, 0)
+obj302.ClipsDescendants = false
+obj302.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj302.Rotation = 0
+obj302.Name = "ColorPickerCont"
+obj302.BackgroundTransparency = 0
+obj302.Position = UDim2.new(0.06644570827484131, 0, 0.33340805768966675, 0)
+obj302.LayoutOrder = 0
+obj302.Style = Enum.FrameStyle.Custom
+obj302.Active = false
+obj302.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+local obj303 = Instance.new("UICorner")
+obj303.Name = "UICorner"
+obj303.CornerRadius = UDim.new(0, 8)
+obj303.Parent = obj302
+
+local obj304 = Instance.new("UIStroke")
+obj304.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj304.LineJoinMode = Enum.LineJoinMode.Round
+obj304.Name = "UIStroke"
+obj304.Color = Color3.fromRGB(81, 78, 97)
+obj304.Transparency = 0.6000000238418579
+obj304.Thickness = 1
+obj304.Enabled = true
+obj304.Parent = obj302
+
+local obj305 = Instance.new("TextButton")
+obj305.LayoutOrder = 0
+obj305.TextWrapped = true
+obj305.LineHeight = 1
+obj305.Active = true
+obj305.TextStrokeTransparency = 1
+obj305.TextTruncate = Enum.TextTruncate.None
+obj305.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj305.ZIndex = 1
+obj305.BorderSizePixel = 1
+obj305.RichText = false
+obj305.Modal = false
+obj305.AutoButtonColor = false
+obj305.TextYAlignment = Enum.TextYAlignment.Center
+obj305.TextScaled = true
+obj305.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+obj305.BorderMode = Enum.BorderMode.Outline
+obj305.TextTransparency = 0
+obj305.AnchorPoint = Vector2.new(0.5, 0.5)
+obj305.Selected = false
+obj305.TextSize = 15
+obj305.Size = UDim2.new(0.5690000057220459, 0, 0.10000000149011612, 0)
+obj305.ClipsDescendants = false
+obj305.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj305.Text = "Color Picker"
+obj305.Name = "ToggleText"
+obj305.Visible = true
+obj305.Rotation = 0
+obj305.Font = Enum.Font.Gotham
+obj305.BackgroundTransparency = 1
+obj305.Position = UDim2.new(0.32499998807907104, 0, 0.10000000149011612, 0)
+obj305.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj305.MaxVisibleGraphemes = -1
+obj305.TextXAlignment = Enum.TextXAlignment.Left
+obj305.TextColor3 = Color3.fromRGB(157, 157, 157)
+local obj306 = Instance.new("UICorner")
+obj306.Name = "UICorner"
+obj306.CornerRadius = UDim.new(0, 6)
+obj306.Parent = obj305
+
+obj305.Parent = obj302
+
+local obj307 = Instance.new("ImageLabel")
+obj307.Visible = true
+obj307.BorderMode = Enum.BorderMode.Outline
+obj307.AnchorPoint = Vector2.new(0, 0)
+obj307.Image = "http://www.roblox.com/asset/?id=6034818372"
+obj307.TileSize = UDim2.new(1, 0, 1, 0)
+obj307.ImageRectSize = Vector2.new(0, 0)
+obj307.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj307.ZIndex = 1
+obj307.BorderSizePixel = 0
+obj307.Size = UDim2.new(0.09264720231294632, 0, 0.7473453283309937, 0)
+obj307.Name = "DropdownImage"
+obj307.ScaleType = Enum.ScaleType.Stretch
+obj307.ImageColor3 = Color3.fromRGB(194, 194, 194)
+obj307.ClipsDescendants = false
+obj307.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj307.SliceCenter = Rect.new(0, 0, 0, 0)
+obj307.ResampleMode = Enum.ResamplerMode.Default
+obj307.ImageTransparency = 0
+obj307.Rotation = 180
+obj307.ImageRectOffset = Vector2.new(0, 0)
+obj307.BackgroundTransparency = 1
+obj307.Position = UDim2.new(0.8742032051086426, 0, 0.01335479598492384, 0)
+obj307.SliceScale = 1
+obj307.LayoutOrder = 0
+obj307.Active = false
+obj307.BackgroundColor3 = Color3.fromRGB(163, 162, 165)
+local obj308 = Instance.new("UIAspectRatioConstraint")
+obj308.Name = "UIAspectRatioConstraint"
+obj308.AspectRatio = 1
+obj308.DominantAxis = Enum.DominantAxis.Width
+obj308.AspectType = Enum.AspectType.FitWithinMaxSize
+obj308.Parent = obj307
+
+local obj309 = Instance.new("TextButton")
+obj309.LayoutOrder = 0
+obj309.TextWrapped = false
+obj309.LineHeight = 1
+obj309.Active = true
+obj309.TextStrokeTransparency = 1
+obj309.TextTruncate = Enum.TextTruncate.None
+obj309.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj309.ZIndex = 1
+obj309.BorderSizePixel = 0
+obj309.RichText = false
+obj309.Modal = false
+obj309.AutoButtonColor = true
+obj309.TextYAlignment = Enum.TextYAlignment.Center
+obj309.TextScaled = false
+obj309.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj309.BorderMode = Enum.BorderMode.Outline
+obj309.TextTransparency = 0
+obj309.AnchorPoint = Vector2.new(0, 0)
+obj309.Selected = false
+obj309.TextSize = 14
+obj309.Size = UDim2.new(1, 0, 1, 0)
+obj309.ClipsDescendants = false
+obj309.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj309.Text = ""
+obj309.Name = "DropdownButton"
+obj309.Visible = true
+obj309.Rotation = 0
+obj309.Font = Enum.Font.SourceSans
+obj309.BackgroundTransparency = 1
+obj309.Position = UDim2.new(0, 0, 0, 0)
+obj309.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj309.MaxVisibleGraphemes = -1
+obj309.TextXAlignment = Enum.TextXAlignment.Center
+obj309.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj309.Parent = obj307
+
+obj307.Parent = obj302
+
+local obj310 = Instance.new("CanvasGroup")
+obj310.LayoutOrder = 0
+obj310.Name = "CanvasGroup"
+obj310.Active = false
+obj310.BorderMode = Enum.BorderMode.Outline
+obj310.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj310.Visible = true
+obj310.ClipsDescendants = true
+obj310.Size = UDim2.new(1, 0, 1, 0)
+obj310.AnchorPoint = Vector2.new(0, 0)
+obj310.Rotation = 0
+obj310.BackgroundTransparency = 1
+obj310.Position = UDim2.new(0, 0, 0, 0)
+obj310.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj310.ZIndex = 1
+obj310.BorderSizePixel = 0
+obj310.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj311 = Instance.new("ImageButton")
+obj311.Visible = true
+obj311.Name = "ImageButton"
+obj311.BorderMode = Enum.BorderMode.Outline
+obj311.ResampleMode = Enum.ResamplerMode.Default
+obj311.Modal = false
+obj311.SliceCenter = Rect.new(0, 0, 0, 0)
+obj311.ScaleType = Enum.ScaleType.Fit
+obj311.AnchorPoint = Vector2.new(0.5, 0.5)
+obj311.Image = "rbxassetid://97520092464471"
+obj311.TileSize = UDim2.new(1, 0, 1, 0)
+obj311.ImageRectSize = Vector2.new(0, 0)
+obj311.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj311.ZIndex = 1
+obj311.BorderSizePixel = 0
+obj311.Size = UDim2.new(0.35279417037963867, 0, 0.5453206896781921, 0)
+obj311.ImageTransparency = 0
+obj311.HoverImage = ""
+obj311.PressedImage = ""
+obj311.ClipsDescendants = false
+obj311.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj311.ImageColor3 = Color3.fromRGB(255, 255, 255)
+obj311.Selected = false
+obj311.AutoButtonColor = true
+obj311.Rotation = 0
+obj311.ImageRectOffset = Vector2.new(0, 0)
+obj311.BackgroundTransparency = 1
+obj311.Position = UDim2.new(0.2129080891609192, 0, 0.5087306499481201, 0)
+obj311.SliceScale = 1
+obj311.LayoutOrder = 0
+obj311.Active = true
+obj311.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj312 = Instance.new("UIAspectRatioConstraint")
+obj312.Name = "UIAspectRatioConstraint"
+obj312.AspectRatio = 1
+obj312.DominantAxis = Enum.DominantAxis.Width
+obj312.AspectType = Enum.AspectType.FitWithinMaxSize
+obj312.Parent = obj311
+
+local obj313 = Instance.new("UICorner")
+obj313.Name = "UICorner"
+obj313.CornerRadius = UDim.new(1, 0)
+obj313.Parent = obj311
+
+local obj314 = Instance.new("Frame")
+obj314.Visible = true
+obj314.BorderMode = Enum.BorderMode.Outline
+obj314.AnchorPoint = Vector2.new(0, 0)
+obj314.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj314.ZIndex = 1
+obj314.BorderSizePixel = 0
+obj314.Size = UDim2.new(0.10000000149011612, 0, 0.10000000149011612, 0)
+obj314.ClipsDescendants = false
+obj314.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj314.Rotation = 0
+obj314.Name = "Frame"
+obj314.BackgroundTransparency = 0.949999988079071
+obj314.Position = UDim2.new(0.07289458066225052, 0, 0.5168530941009521, 0)
+obj314.LayoutOrder = 0
+obj314.Style = Enum.FrameStyle.Custom
+obj314.Active = false
+obj314.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+local obj315 = Instance.new("UIAspectRatioConstraint")
+obj315.Name = "UIAspectRatioConstraint"
+obj315.AspectRatio = 1
+obj315.DominantAxis = Enum.DominantAxis.Width
+obj315.AspectType = Enum.AspectType.FitWithinMaxSize
+obj315.Parent = obj314
+
+local obj316 = Instance.new("UIStroke")
+obj316.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj316.LineJoinMode = Enum.LineJoinMode.Round
+obj316.Name = "UIStroke"
+obj316.Color = Color3.fromRGB(0, 0, 0)
+obj316.Transparency = 0.6000000238418579
+obj316.Thickness = 1
+obj316.Enabled = true
+obj316.Parent = obj314
+
+local obj317 = Instance.new("UICorner")
+obj317.Name = "UICorner"
+obj317.CornerRadius = UDim.new(1, 0)
+obj317.Parent = obj314
+
+obj314.Parent = obj311
+
+obj311.Parent = obj310
+
+local obj318 = Instance.new("Frame")
+obj318.Visible = true
+obj318.BorderMode = Enum.BorderMode.Outline
+obj318.AnchorPoint = Vector2.new(1, 0)
+obj318.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj318.ZIndex = 1
+obj318.BorderSizePixel = 0
+obj318.Size = UDim2.new(0.5, 0, 0.5378047823905945, 0)
+obj318.ClipsDescendants = false
+obj318.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj318.Rotation = 0
+obj318.Name = "RightCont"
+obj318.BackgroundTransparency = 1
+obj318.Position = UDim2.new(0.9613702893257141, 0, 0.2796165943145752, 0)
+obj318.LayoutOrder = 0
+obj318.Style = Enum.FrameStyle.Custom
+obj318.Active = false
+obj318.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj319 = Instance.new("UIPadding")
+obj319.PaddingTop = UDim.new(0, 0)
+obj319.Name = "UIPadding"
+obj319.PaddingBottom = UDim.new(0, 0)
+obj319.PaddingRight = UDim.new(0, 10)
+obj319.PaddingLeft = UDim.new(0, 0)
+obj319.Parent = obj318
+
+local obj320 = Instance.new("Frame")
+obj320.Visible = true
+obj320.BorderMode = Enum.BorderMode.Outline
+obj320.AnchorPoint = Vector2.new(0, 0)
+obj320.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj320.ZIndex = 1
+obj320.BorderSizePixel = 0
+obj320.Size = UDim2.new(1, 0, 0.20000000298023224, 0)
+obj320.ClipsDescendants = false
+obj320.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj320.Rotation = 0
+obj320.Name = "HexCode"
+obj320.BackgroundTransparency = 1
+obj320.Position = UDim2.new(0, 0, 0, 0)
+obj320.LayoutOrder = 0
+obj320.Style = Enum.FrameStyle.Custom
+obj320.Active = false
+obj320.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj321 = Instance.new("TextBox")
+obj321.LayoutOrder = 0
+obj321.TextWrapped = true
+obj321.LineHeight = 1
+obj321.Active = true
+obj321.TextStrokeTransparency = 1
+obj321.PlaceholderColor3 = Color3.fromRGB(140, 140, 140)
+obj321.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj321.ZIndex = 1
+obj321.BorderSizePixel = 0
+obj321.TextEditable = true
+obj321.RichText = false
+obj321.TextYAlignment = Enum.TextYAlignment.Center
+obj321.TextScaled = true
+obj321.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj321.BorderMode = Enum.BorderMode.Outline
+obj321.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj321.AnchorPoint = Vector2.new(1, 0)
+obj321.Name = "TextBox"
+obj321.PlaceholderText = ""
+obj321.TextSize = 14
+obj321.ShowNativeInput = true
+obj321.TextXAlignment = Enum.TextXAlignment.Center
+obj321.TextTruncate = Enum.TextTruncate.None
+obj321.Visible = true
+obj321.ClipsDescendants = false
+obj321.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj321.Text = "#7437f5"
+obj321.TextTransparency = 0
+obj321.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj321.Rotation = 0
+obj321.Font = Enum.Font.TitilliumWeb
+obj321.BackgroundTransparency = 0
+obj321.Position = UDim2.new(1.0000001192092896, 0, 0, 0)
+obj321.Size = UDim2.new(0.5, 0, 1, 0)
+obj321.ClearTextOnFocus = false
+obj321.MaxVisibleGraphemes = -1
+obj321.MultiLine = false
+local obj322 = Instance.new("UICorner")
+obj322.Name = "UICorner"
+obj322.CornerRadius = UDim.new(0, 8)
+obj322.Parent = obj321
+
+obj321.Parent = obj320
+
+local obj323 = Instance.new("TextLabel")
+obj323.Visible = true
+obj323.TextWrapped = true
+obj323.LineHeight = 1
+obj323.BorderMode = Enum.BorderMode.Outline
+obj323.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj323.Name = "TextLabel"
+obj323.TextStrokeTransparency = 1
+obj323.AnchorPoint = Vector2.new(0, 0)
+obj323.TextYAlignment = Enum.TextYAlignment.Center
+obj323.TextXAlignment = Enum.TextXAlignment.Center
+obj323.TextTruncate = Enum.TextTruncate.None
+obj323.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj323.ZIndex = 1
+obj323.BorderSizePixel = 0
+obj323.Size = UDim2.new(0.45717671513557434, 0, 0.9999998807907104, 0)
+obj323.TextTransparency = 0
+obj323.RichText = false
+obj323.TextSize = 14
+obj323.ClipsDescendants = false
+obj323.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj323.Text = "Hex Code"
+obj323.Active = false
+obj323.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj323.Rotation = 0
+obj323.Font = Enum.Font.SourceSans
+obj323.BackgroundTransparency = 1
+obj323.Position = UDim2.new(0, 0, 0, 0)
+obj323.LayoutOrder = 0
+obj323.MaxVisibleGraphemes = -1
+obj323.TextScaled = true
+obj323.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj323.Parent = obj320
+
+obj320.Parent = obj318
+
+local obj324 = Instance.new("UIListLayout")
+obj324.VerticalAlignment = Enum.VerticalAlignment.Center
+obj324.FillDirection = Enum.FillDirection.Vertical
+obj324.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj324.Padding = UDim.new(0.15000000596046448, 0)
+obj324.Name = "UIListLayout"
+obj324.SortOrder = Enum.SortOrder.LayoutOrder
+obj324.Parent = obj318
+
+local obj325 = Instance.new("Frame")
+obj325.Visible = true
+obj325.BorderMode = Enum.BorderMode.Outline
+obj325.AnchorPoint = Vector2.new(0, 0)
+obj325.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj325.ZIndex = 1
+obj325.BorderSizePixel = 0
+obj325.Size = UDim2.new(1, 0, 0.800000011920929, 0)
+obj325.ClipsDescendants = false
+obj325.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj325.Rotation = 0
+obj325.Name = "RGBandHSV"
+obj325.BackgroundTransparency = 1
+obj325.Position = UDim2.new(0, 0, 0, 0)
+obj325.LayoutOrder = 0
+obj325.Style = Enum.FrameStyle.Custom
+obj325.Active = false
+obj325.BackgroundColor3 = Color3.fromRGB(255, 20, 24)
+local obj326 = Instance.new("UIListLayout")
+obj326.VerticalAlignment = Enum.VerticalAlignment.Top
+obj326.FillDirection = Enum.FillDirection.Vertical
+obj326.HorizontalAlignment = Enum.HorizontalAlignment.Left
+obj326.Padding = UDim.new(0.10000000149011612, 0)
+obj326.Name = "UIListLayout"
+obj326.SortOrder = Enum.SortOrder.LayoutOrder
+obj326.Parent = obj325
+
+local obj327 = Instance.new("Frame")
+obj327.Visible = true
+obj327.BorderMode = Enum.BorderMode.Outline
+obj327.AnchorPoint = Vector2.new(0, 0)
+obj327.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj327.ZIndex = 1
+obj327.BorderSizePixel = 0
+obj327.Size = UDim2.new(1, 0, 0.5, 0)
+obj327.ClipsDescendants = false
+obj327.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj327.Rotation = 0
+obj327.Name = "RGB"
+obj327.BackgroundTransparency = 1
+obj327.Position = UDim2.new(0, 0, 0, 0)
+obj327.LayoutOrder = 0
+obj327.Style = Enum.FrameStyle.Custom
+obj327.Active = false
+obj327.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj328 = Instance.new("Frame")
+obj328.Visible = true
+obj328.BorderMode = Enum.BorderMode.Outline
+obj328.AnchorPoint = Vector2.new(0, 0)
+obj328.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj328.ZIndex = 1
+obj328.BorderSizePixel = 0
+obj328.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj328.ClipsDescendants = false
+obj328.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj328.Rotation = 0
+obj328.Name = "R"
+obj328.BackgroundTransparency = 1
+obj328.Position = UDim2.new(0, 0, 0, 0)
+obj328.LayoutOrder = 0
+obj328.Style = Enum.FrameStyle.Custom
+obj328.Active = false
+obj328.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj329 = Instance.new("TextLabel")
+obj329.Visible = true
+obj329.TextWrapped = true
+obj329.LineHeight = 1
+obj329.BorderMode = Enum.BorderMode.Outline
+obj329.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj329.Name = "RLabel"
+obj329.TextStrokeTransparency = 1
+obj329.AnchorPoint = Vector2.new(0, 0)
+obj329.TextYAlignment = Enum.TextYAlignment.Center
+obj329.TextXAlignment = Enum.TextXAlignment.Center
+obj329.TextTruncate = Enum.TextTruncate.None
+obj329.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj329.ZIndex = 1
+obj329.BorderSizePixel = 0
+obj329.Size = UDim2.new(1, 0, 0.5, 0)
+obj329.TextTransparency = 0
+obj329.RichText = false
+obj329.TextSize = 14
+obj329.ClipsDescendants = false
+obj329.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj329.Text = "R"
+obj329.Active = false
+obj329.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj329.Rotation = 0
+obj329.Font = Enum.Font.TitilliumWeb
+obj329.BackgroundTransparency = 1
+obj329.Position = UDim2.new(0, 0, 0.5, 0)
+obj329.LayoutOrder = 0
+obj329.MaxVisibleGraphemes = -1
+obj329.TextScaled = true
+obj329.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj329.Parent = obj328
+
+local obj330 = Instance.new("TextBox")
+obj330.LayoutOrder = 0
+obj330.TextWrapped = true
+obj330.LineHeight = 1
+obj330.Active = true
+obj330.TextStrokeTransparency = 1
+obj330.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj330.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj330.ZIndex = 1
+obj330.BorderSizePixel = 0
+obj330.TextEditable = true
+obj330.RichText = false
+obj330.TextYAlignment = Enum.TextYAlignment.Center
+obj330.TextScaled = true
+obj330.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj330.BorderMode = Enum.BorderMode.Outline
+obj330.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj330.AnchorPoint = Vector2.new(0, 0)
+obj330.Name = "RBox"
+obj330.PlaceholderText = ""
+obj330.TextSize = 14
+obj330.ShowNativeInput = true
+obj330.TextXAlignment = Enum.TextXAlignment.Center
+obj330.TextTruncate = Enum.TextTruncate.None
+obj330.Visible = true
+obj330.ClipsDescendants = false
+obj330.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj330.Text = "116"
+obj330.TextTransparency = 0
+obj330.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj330.Rotation = 0
+obj330.Font = Enum.Font.TitilliumWeb
+obj330.BackgroundTransparency = 0
+obj330.Position = UDim2.new(0, 0, 0, 0)
+obj330.Size = UDim2.new(1, 0, 0.5, 0)
+obj330.ClearTextOnFocus = false
+obj330.MaxVisibleGraphemes = -1
+obj330.MultiLine = false
+local obj331 = Instance.new("UICorner")
+obj331.Name = "UICorner"
+obj331.CornerRadius = UDim.new(0, 8)
+obj331.Parent = obj330
+
+obj330.Parent = obj328
+
+obj328.Parent = obj327
+
+local obj332 = Instance.new("Frame")
+obj332.Visible = true
+obj332.BorderMode = Enum.BorderMode.Outline
+obj332.AnchorPoint = Vector2.new(0, 0)
+obj332.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj332.ZIndex = 1
+obj332.BorderSizePixel = 0
+obj332.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj332.ClipsDescendants = false
+obj332.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj332.Rotation = 0
+obj332.Name = "G"
+obj332.BackgroundTransparency = 1
+obj332.Position = UDim2.new(0.3330000042915344, 0, 0, 0)
+obj332.LayoutOrder = 0
+obj332.Style = Enum.FrameStyle.Custom
+obj332.Active = false
+obj332.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj333 = Instance.new("TextLabel")
+obj333.Visible = true
+obj333.TextWrapped = true
+obj333.LineHeight = 1
+obj333.BorderMode = Enum.BorderMode.Outline
+obj333.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj333.Name = "GLabel"
+obj333.TextStrokeTransparency = 1
+obj333.AnchorPoint = Vector2.new(0, 0)
+obj333.TextYAlignment = Enum.TextYAlignment.Center
+obj333.TextXAlignment = Enum.TextXAlignment.Center
+obj333.TextTruncate = Enum.TextTruncate.None
+obj333.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj333.ZIndex = 1
+obj333.BorderSizePixel = 0
+obj333.Size = UDim2.new(1, 0, 0.5, 0)
+obj333.TextTransparency = 0
+obj333.RichText = false
+obj333.TextSize = 14
+obj333.ClipsDescendants = false
+obj333.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj333.Text = "G"
+obj333.Active = false
+obj333.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj333.Rotation = 0
+obj333.Font = Enum.Font.TitilliumWeb
+obj333.BackgroundTransparency = 1
+obj333.Position = UDim2.new(0, 0, 0.5, 0)
+obj333.LayoutOrder = 0
+obj333.MaxVisibleGraphemes = -1
+obj333.TextScaled = true
+obj333.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj333.Parent = obj332
+
+local obj334 = Instance.new("TextBox")
+obj334.LayoutOrder = 0
+obj334.TextWrapped = true
+obj334.LineHeight = 1
+obj334.Active = true
+obj334.TextStrokeTransparency = 1
+obj334.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj334.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj334.ZIndex = 1
+obj334.BorderSizePixel = 0
+obj334.TextEditable = true
+obj334.RichText = false
+obj334.TextYAlignment = Enum.TextYAlignment.Center
+obj334.TextScaled = true
+obj334.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj334.BorderMode = Enum.BorderMode.Outline
+obj334.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj334.AnchorPoint = Vector2.new(0, 0)
+obj334.Name = "GBox"
+obj334.PlaceholderText = ""
+obj334.TextSize = 14
+obj334.ShowNativeInput = true
+obj334.TextXAlignment = Enum.TextXAlignment.Center
+obj334.TextTruncate = Enum.TextTruncate.None
+obj334.Visible = true
+obj334.ClipsDescendants = false
+obj334.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj334.Text = "55"
+obj334.TextTransparency = 0
+obj334.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj334.Rotation = 0
+obj334.Font = Enum.Font.TitilliumWeb
+obj334.BackgroundTransparency = 0
+obj334.Position = UDim2.new(0, 0, 0, 0)
+obj334.Size = UDim2.new(1, 0, 0.5, 0)
+obj334.ClearTextOnFocus = false
+obj334.MaxVisibleGraphemes = -1
+obj334.MultiLine = false
+local obj335 = Instance.new("UICorner")
+obj335.Name = "UICorner"
+obj335.CornerRadius = UDim.new(0, 8)
+obj335.Parent = obj334
+
+obj334.Parent = obj332
+
+obj332.Parent = obj327
+
+local obj336 = Instance.new("Frame")
+obj336.Visible = true
+obj336.BorderMode = Enum.BorderMode.Outline
+obj336.AnchorPoint = Vector2.new(0, 0)
+obj336.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj336.ZIndex = 1
+obj336.BorderSizePixel = 0
+obj336.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj336.ClipsDescendants = false
+obj336.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj336.Rotation = 0
+obj336.Name = "B"
+obj336.BackgroundTransparency = 1
+obj336.Position = UDim2.new(0.6669999957084656, 0, 0, 0)
+obj336.LayoutOrder = 0
+obj336.Style = Enum.FrameStyle.Custom
+obj336.Active = false
+obj336.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj337 = Instance.new("TextBox")
+obj337.LayoutOrder = 0
+obj337.TextWrapped = true
+obj337.LineHeight = 1
+obj337.Active = true
+obj337.TextStrokeTransparency = 1
+obj337.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj337.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj337.ZIndex = 1
+obj337.BorderSizePixel = 0
+obj337.TextEditable = true
+obj337.RichText = false
+obj337.TextYAlignment = Enum.TextYAlignment.Center
+obj337.TextScaled = true
+obj337.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj337.BorderMode = Enum.BorderMode.Outline
+obj337.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj337.AnchorPoint = Vector2.new(0, 0)
+obj337.Name = "BBox"
+obj337.PlaceholderText = ""
+obj337.TextSize = 14
+obj337.ShowNativeInput = true
+obj337.TextXAlignment = Enum.TextXAlignment.Center
+obj337.TextTruncate = Enum.TextTruncate.None
+obj337.Visible = true
+obj337.ClipsDescendants = false
+obj337.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj337.Text = "245"
+obj337.TextTransparency = 0
+obj337.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj337.Rotation = 0
+obj337.Font = Enum.Font.TitilliumWeb
+obj337.BackgroundTransparency = 0
+obj337.Position = UDim2.new(0, 0, 0, 0)
+obj337.Size = UDim2.new(1, 0, 0.5, 0)
+obj337.ClearTextOnFocus = false
+obj337.MaxVisibleGraphemes = -1
+obj337.MultiLine = false
+local obj338 = Instance.new("UICorner")
+obj338.Name = "UICorner"
+obj338.CornerRadius = UDim.new(0, 8)
+obj338.Parent = obj337
+
+obj337.Parent = obj336
+
+local obj339 = Instance.new("TextLabel")
+obj339.Visible = true
+obj339.TextWrapped = true
+obj339.LineHeight = 1
+obj339.BorderMode = Enum.BorderMode.Outline
+obj339.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj339.Name = "BLabel"
+obj339.TextStrokeTransparency = 1
+obj339.AnchorPoint = Vector2.new(0, 0)
+obj339.TextYAlignment = Enum.TextYAlignment.Center
+obj339.TextXAlignment = Enum.TextXAlignment.Center
+obj339.TextTruncate = Enum.TextTruncate.None
+obj339.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj339.ZIndex = 1
+obj339.BorderSizePixel = 0
+obj339.Size = UDim2.new(1, 0, 0.5, 0)
+obj339.TextTransparency = 0
+obj339.RichText = false
+obj339.TextSize = 14
+obj339.ClipsDescendants = false
+obj339.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj339.Text = "B"
+obj339.Active = false
+obj339.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj339.Rotation = 0
+obj339.Font = Enum.Font.TitilliumWeb
+obj339.BackgroundTransparency = 1
+obj339.Position = UDim2.new(0, 0, 0.5, 0)
+obj339.LayoutOrder = 0
+obj339.MaxVisibleGraphemes = -1
+obj339.TextScaled = true
+obj339.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj339.Parent = obj336
+
+obj336.Parent = obj327
+
+local obj340 = Instance.new("UIListLayout")
+obj340.VerticalAlignment = Enum.VerticalAlignment.Top
+obj340.FillDirection = Enum.FillDirection.Horizontal
+obj340.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj340.Padding = UDim.new(0, 3)
+obj340.Name = "UIListLayout"
+obj340.SortOrder = Enum.SortOrder.LayoutOrder
+obj340.Parent = obj327
+
+obj327.Parent = obj325
+
+local obj341 = Instance.new("Frame")
+obj341.Visible = true
+obj341.BorderMode = Enum.BorderMode.Outline
+obj341.AnchorPoint = Vector2.new(0, 0)
+obj341.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj341.ZIndex = 1
+obj341.BorderSizePixel = 0
+obj341.Size = UDim2.new(1, 0, 0.5, 0)
+obj341.ClipsDescendants = false
+obj341.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj341.Rotation = 0
+obj341.Name = "HSV"
+obj341.BackgroundTransparency = 1
+obj341.Position = UDim2.new(0, 0, 0, 0)
+obj341.LayoutOrder = 0
+obj341.Style = Enum.FrameStyle.Custom
+obj341.Active = false
+obj341.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj342 = Instance.new("Frame")
+obj342.Visible = true
+obj342.BorderMode = Enum.BorderMode.Outline
+obj342.AnchorPoint = Vector2.new(0, 0)
+obj342.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj342.ZIndex = 1
+obj342.BorderSizePixel = 0
+obj342.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj342.ClipsDescendants = false
+obj342.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj342.Rotation = 0
+obj342.Name = "Value"
+obj342.BackgroundTransparency = 1
+obj342.Position = UDim2.new(0.6669999957084656, 0, 0, 0)
+obj342.LayoutOrder = 2
+obj342.Style = Enum.FrameStyle.Custom
+obj342.Active = false
+obj342.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj343 = Instance.new("TextBox")
+obj343.LayoutOrder = 0
+obj343.TextWrapped = true
+obj343.LineHeight = 1
+obj343.Active = true
+obj343.TextStrokeTransparency = 1
+obj343.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj343.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj343.ZIndex = 1
+obj343.BorderSizePixel = 0
+obj343.TextEditable = true
+obj343.RichText = false
+obj343.TextYAlignment = Enum.TextYAlignment.Center
+obj343.TextScaled = true
+obj343.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj343.BorderMode = Enum.BorderMode.Outline
+obj343.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj343.AnchorPoint = Vector2.new(0, 0)
+obj343.Name = "VBox"
+obj343.PlaceholderText = ""
+obj343.TextSize = 14
+obj343.ShowNativeInput = true
+obj343.TextXAlignment = Enum.TextXAlignment.Center
+obj343.TextTruncate = Enum.TextTruncate.None
+obj343.Visible = true
+obj343.ClipsDescendants = false
+obj343.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj343.Text = "245"
+obj343.TextTransparency = 0
+obj343.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj343.Rotation = 0
+obj343.Font = Enum.Font.TitilliumWeb
+obj343.BackgroundTransparency = 0
+obj343.Position = UDim2.new(0, 0, 0, 0)
+obj343.Size = UDim2.new(1, 0, 0.5, 0)
+obj343.ClearTextOnFocus = false
+obj343.MaxVisibleGraphemes = -1
+obj343.MultiLine = false
+local obj344 = Instance.new("UICorner")
+obj344.Name = "UICorner"
+obj344.CornerRadius = UDim.new(0, 8)
+obj344.Parent = obj343
+
+obj343.Parent = obj342
+
+local obj345 = Instance.new("TextLabel")
+obj345.Visible = true
+obj345.TextWrapped = true
+obj345.LineHeight = 1
+obj345.BorderMode = Enum.BorderMode.Outline
+obj345.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj345.Name = "VLabel"
+obj345.TextStrokeTransparency = 1
+obj345.AnchorPoint = Vector2.new(0, 0)
+obj345.TextYAlignment = Enum.TextYAlignment.Center
+obj345.TextXAlignment = Enum.TextXAlignment.Center
+obj345.TextTruncate = Enum.TextTruncate.None
+obj345.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj345.ZIndex = 1
+obj345.BorderSizePixel = 0
+obj345.Size = UDim2.new(1, 0, 0.5, 0)
+obj345.TextTransparency = 0
+obj345.RichText = false
+obj345.TextSize = 14
+obj345.ClipsDescendants = false
+obj345.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj345.Text = "V"
+obj345.Active = false
+obj345.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj345.Rotation = 0
+obj345.Font = Enum.Font.TitilliumWeb
+obj345.BackgroundTransparency = 1
+obj345.Position = UDim2.new(0, 0, 0.5, 0)
+obj345.LayoutOrder = 0
+obj345.MaxVisibleGraphemes = -1
+obj345.TextScaled = true
+obj345.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj345.Parent = obj342
+
+obj342.Parent = obj341
+
+local obj346 = Instance.new("Frame")
+obj346.Visible = true
+obj346.BorderMode = Enum.BorderMode.Outline
+obj346.AnchorPoint = Vector2.new(0, 0)
+obj346.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj346.ZIndex = 1
+obj346.BorderSizePixel = 0
+obj346.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj346.ClipsDescendants = false
+obj346.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj346.Rotation = 0
+obj346.Name = "Saturation"
+obj346.BackgroundTransparency = 1
+obj346.Position = UDim2.new(0.3330000042915344, 0, 0, 0)
+obj346.LayoutOrder = 1
+obj346.Style = Enum.FrameStyle.Custom
+obj346.Active = false
+obj346.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj347 = Instance.new("TextBox")
+obj347.LayoutOrder = 0
+obj347.TextWrapped = true
+obj347.LineHeight = 1
+obj347.Active = true
+obj347.TextStrokeTransparency = 1
+obj347.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj347.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj347.ZIndex = 1
+obj347.BorderSizePixel = 0
+obj347.TextEditable = true
+obj347.RichText = false
+obj347.TextYAlignment = Enum.TextYAlignment.Center
+obj347.TextScaled = true
+obj347.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj347.BorderMode = Enum.BorderMode.Outline
+obj347.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj347.AnchorPoint = Vector2.new(0, 0)
+obj347.Name = "SBox"
+obj347.PlaceholderText = ""
+obj347.TextSize = 14
+obj347.ShowNativeInput = true
+obj347.TextXAlignment = Enum.TextXAlignment.Center
+obj347.TextTruncate = Enum.TextTruncate.None
+obj347.Visible = true
+obj347.ClipsDescendants = false
+obj347.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj347.Text = "198"
+obj347.TextTransparency = 0
+obj347.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj347.Rotation = 0
+obj347.Font = Enum.Font.TitilliumWeb
+obj347.BackgroundTransparency = 0
+obj347.Position = UDim2.new(0, 0, 0, 0)
+obj347.Size = UDim2.new(1, 0, 0.5, 0)
+obj347.ClearTextOnFocus = false
+obj347.MaxVisibleGraphemes = -1
+obj347.MultiLine = false
+local obj348 = Instance.new("UICorner")
+obj348.Name = "UICorner"
+obj348.CornerRadius = UDim.new(0, 8)
+obj348.Parent = obj347
+
+obj347.Parent = obj346
+
+local obj349 = Instance.new("TextLabel")
+obj349.Visible = true
+obj349.TextWrapped = true
+obj349.LineHeight = 1
+obj349.BorderMode = Enum.BorderMode.Outline
+obj349.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj349.Name = "SLabel"
+obj349.TextStrokeTransparency = 1
+obj349.AnchorPoint = Vector2.new(0, 0)
+obj349.TextYAlignment = Enum.TextYAlignment.Center
+obj349.TextXAlignment = Enum.TextXAlignment.Center
+obj349.TextTruncate = Enum.TextTruncate.None
+obj349.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj349.ZIndex = 1
+obj349.BorderSizePixel = 0
+obj349.Size = UDim2.new(1, 0, 0.5, 0)
+obj349.TextTransparency = 0
+obj349.RichText = false
+obj349.TextSize = 14
+obj349.ClipsDescendants = false
+obj349.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj349.Text = "S"
+obj349.Active = false
+obj349.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj349.Rotation = 0
+obj349.Font = Enum.Font.TitilliumWeb
+obj349.BackgroundTransparency = 1
+obj349.Position = UDim2.new(0, 0, 0.5, 0)
+obj349.LayoutOrder = 0
+obj349.MaxVisibleGraphemes = -1
+obj349.TextScaled = true
+obj349.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj349.Parent = obj346
+
+obj346.Parent = obj341
+
+local obj350 = Instance.new("Frame")
+obj350.Visible = true
+obj350.BorderMode = Enum.BorderMode.Outline
+obj350.AnchorPoint = Vector2.new(0, 0)
+obj350.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj350.ZIndex = 1
+obj350.BorderSizePixel = 0
+obj350.Size = UDim2.new(0.3330000042915344, -3, 1, 0)
+obj350.ClipsDescendants = false
+obj350.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj350.Rotation = 0
+obj350.Name = "Hue"
+obj350.BackgroundTransparency = 1
+obj350.Position = UDim2.new(0, 0, 0, 0)
+obj350.LayoutOrder = 0
+obj350.Style = Enum.FrameStyle.Custom
+obj350.Active = false
+obj350.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+local obj351 = Instance.new("TextBox")
+obj351.LayoutOrder = 0
+obj351.TextWrapped = true
+obj351.LineHeight = 1
+obj351.Active = true
+obj351.TextStrokeTransparency = 1
+obj351.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+obj351.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj351.ZIndex = 1
+obj351.BorderSizePixel = 0
+obj351.TextEditable = true
+obj351.RichText = false
+obj351.TextYAlignment = Enum.TextYAlignment.Center
+obj351.TextScaled = true
+obj351.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+obj351.BorderMode = Enum.BorderMode.Outline
+obj351.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj351.AnchorPoint = Vector2.new(0, 0)
+obj351.Name = "HBox"
+obj351.PlaceholderText = ""
+obj351.TextSize = 14
+obj351.ShowNativeInput = true
+obj351.TextXAlignment = Enum.TextXAlignment.Center
+obj351.TextTruncate = Enum.TextTruncate.None
+obj351.Visible = true
+obj351.ClipsDescendants = false
+obj351.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj351.Text = "259"
+obj351.TextTransparency = 0
+obj351.TextColor3 = Color3.fromRGB(203, 203, 203)
+obj351.Rotation = 0
+obj351.Font = Enum.Font.TitilliumWeb
+obj351.BackgroundTransparency = 0
+obj351.Position = UDim2.new(0, 0, 0, 0)
+obj351.Size = UDim2.new(1, 0, 0.5, 0)
+obj351.ClearTextOnFocus = false
+obj351.MaxVisibleGraphemes = -1
+obj351.MultiLine = false
+local obj352 = Instance.new("UICorner")
+obj352.Name = "UICorner"
+obj352.CornerRadius = UDim.new(0, 8)
+obj352.Parent = obj351
+
+obj351.Parent = obj350
+
+local obj353 = Instance.new("TextLabel")
+obj353.Visible = true
+obj353.TextWrapped = true
+obj353.LineHeight = 1
+obj353.BorderMode = Enum.BorderMode.Outline
+obj353.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj353.Name = "HLabel"
+obj353.TextStrokeTransparency = 1
+obj353.AnchorPoint = Vector2.new(0, 0)
+obj353.TextYAlignment = Enum.TextYAlignment.Center
+obj353.TextXAlignment = Enum.TextXAlignment.Center
+obj353.TextTruncate = Enum.TextTruncate.None
+obj353.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj353.ZIndex = 1
+obj353.BorderSizePixel = 0
+obj353.Size = UDim2.new(1, 0, 0.5, 0)
+obj353.TextTransparency = 0
+obj353.RichText = false
+obj353.TextSize = 14
+obj353.ClipsDescendants = false
+obj353.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj353.Text = "H"
+obj353.Active = false
+obj353.TextColor3 = Color3.fromRGB(157, 157, 157)
+obj353.Rotation = 0
+obj353.Font = Enum.Font.TitilliumWeb
+obj353.BackgroundTransparency = 1
+obj353.Position = UDim2.new(0, 0, 0.5, 0)
+obj353.LayoutOrder = 0
+obj353.MaxVisibleGraphemes = -1
+obj353.TextScaled = true
+obj353.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj353.Parent = obj350
+
+obj350.Parent = obj341
+
+local obj354 = Instance.new("UIListLayout")
+obj354.VerticalAlignment = Enum.VerticalAlignment.Top
+obj354.FillDirection = Enum.FillDirection.Horizontal
+obj354.HorizontalAlignment = Enum.HorizontalAlignment.Center
+obj354.Padding = UDim.new(0, 3)
+obj354.Name = "UIListLayout"
+obj354.SortOrder = Enum.SortOrder.LayoutOrder
+obj354.Parent = obj341
+
+obj341.Parent = obj325
+
+obj325.Parent = obj318
+
+obj318.Parent = obj310
+
+local obj355 = Instance.new("Frame")
+obj355.Visible = true
+obj355.BorderMode = Enum.BorderMode.Outline
+obj355.AnchorPoint = Vector2.new(0.5, 1)
+obj355.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj355.ZIndex = 1
+obj355.BorderSizePixel = 0
+obj355.Size = UDim2.new(0.35279393196105957, 0, 0.09639519453048706, 0)
+obj355.ClipsDescendants = false
+obj355.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj355.Rotation = 0
+obj355.Name = "BrightnessSlider"
+obj355.BackgroundTransparency = 0
+obj355.Position = UDim2.new(0.21290840208530426, 0, 0.9471487402915955, 0)
+obj355.LayoutOrder = 0
+obj355.Style = Enum.FrameStyle.Custom
+obj355.Active = false
+obj355.BackgroundColor3 = Color3.fromRGB(116, 55, 245)
+local obj356 = Instance.new("UICorner")
+obj356.Name = "UICorner"
+obj356.CornerRadius = UDim.new(1, 0)
+obj356.Parent = obj355
+
+local obj357 = Instance.new("UIGradient")
+obj357.Offset = Vector2.new(0, 0)
+obj357.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 0)})
+obj357.Name = "UIGradient"
+obj357.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))})
+obj357.Enabled = true
+obj357.Rotation = 180
+obj357.Parent = obj355
+
+local obj358 = Instance.new("UIStroke")
+obj358.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj358.LineJoinMode = Enum.LineJoinMode.Round
+obj358.Name = "UIStroke"
+obj358.Color = Color3.fromRGB(81, 78, 97)
+obj358.Transparency = 0.6000000238418579
+obj358.Thickness = 1
+obj358.Enabled = true
+obj358.Parent = obj355
+
+local obj359 = Instance.new("TextButton")
+obj359.LayoutOrder = 0
+obj359.TextWrapped = false
+obj359.LineHeight = 1
+obj359.Active = true
+obj359.TextStrokeTransparency = 1
+obj359.TextTruncate = Enum.TextTruncate.None
+obj359.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj359.ZIndex = 1
+obj359.BorderSizePixel = 0
+obj359.RichText = false
+obj359.Modal = false
+obj359.AutoButtonColor = true
+obj359.TextYAlignment = Enum.TextYAlignment.Center
+obj359.TextScaled = false
+obj359.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj359.BorderMode = Enum.BorderMode.Outline
+obj359.TextTransparency = 0
+obj359.AnchorPoint = Vector2.new(0, 0)
+obj359.Selected = false
+obj359.TextSize = 14
+obj359.Size = UDim2.new(1, 0, 1, 0)
+obj359.ClipsDescendants = false
+obj359.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj359.Text = ""
+obj359.Name = "BrightnessSliderButton"
+obj359.Visible = true
+obj359.Rotation = 0
+obj359.Font = Enum.Font.SourceSans
+obj359.BackgroundTransparency = 1
+obj359.Position = UDim2.new(0, 0, 0, 0)
+obj359.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj359.MaxVisibleGraphemes = -1
+obj359.TextXAlignment = Enum.TextXAlignment.Center
+obj359.TextColor3 = Color3.fromRGB(0, 0, 0)
+obj359.Parent = obj355
+
+obj355.Parent = obj310
+
+obj310.Parent = obj302
+
+obj302.Parent = obj224
+
+obj224.Parent = obj222
+
+local obj360 = Instance.new("UIStroke")
+obj360.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual
+obj360.LineJoinMode = Enum.LineJoinMode.Round
+obj360.Name = "UIStroke"
+obj360.Color = Color3.fromRGB(81, 78, 97)
+obj360.Transparency = 0.6000000238418579
+obj360.Thickness = 1
+obj360.Enabled = true
+obj360.Parent = obj222
+
+local obj361 = Instance.new("UIAspectRatioConstraint")
+obj361.Name = "UIAspectRatioConstraint"
+obj361.AspectRatio = 1
+obj361.DominantAxis = Enum.DominantAxis.Width
+obj361.AspectType = Enum.AspectType.FitWithinMaxSize
+obj361.Parent = obj222
+
+local obj362 = Instance.new("TextLabel")
+obj362.Visible = true
+obj362.TextWrapped = true
+obj362.LineHeight = 1
+obj362.BorderMode = Enum.BorderMode.Outline
+obj362.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj362.Name = "Title"
+obj362.TextStrokeTransparency = 1
+obj362.AnchorPoint = Vector2.new(0, 0)
+obj362.TextYAlignment = Enum.TextYAlignment.Center
+obj362.TextXAlignment = Enum.TextXAlignment.Center
+obj362.TextTruncate = Enum.TextTruncate.None
+obj362.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj362.ZIndex = 1
+obj362.BorderSizePixel = 1
+obj362.Size = UDim2.new(0.5001263618469238, 0, 0.09071909636259079, 0)
+obj362.TextTransparency = 0
+obj362.RichText = false
+obj362.TextSize = 8
+obj362.ClipsDescendants = false
+obj362.BorderColor3 = Color3.fromRGB(27, 42, 53)
+obj362.Text = "Example"
+obj362.Active = false
+obj362.TextColor3 = Color3.fromRGB(173, 173, 173)
+obj362.Rotation = 0
+obj362.Font = Enum.Font.Gotham
+obj362.BackgroundTransparency = 1
+obj362.Position = UDim2.new(0.24614939093589783, 0, 0.04349999502301216, 0)
+obj362.LayoutOrder = 0
+obj362.MaxVisibleGraphemes = -1
+obj362.TextScaled = true
+obj362.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+local obj363 = Instance.new("UICorner")
+obj363.Name = "UICorner"
+obj363.CornerRadius = UDim.new(0, 6)
+obj363.Parent = obj362
+
+obj362.Parent = obj222
+
+local obj364 = Instance.new("TextButton")
+obj364.LayoutOrder = 0
+obj364.TextWrapped = false
+obj364.LineHeight = 1
+obj364.Active = true
+obj364.TextStrokeTransparency = 1
+obj364.TextTruncate = Enum.TextTruncate.None
+obj364.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj364.ZIndex = 1
+obj364.BorderSizePixel = 0
+obj364.RichText = false
+obj364.Modal = false
+obj364.AutoButtonColor = false
+obj364.TextYAlignment = Enum.TextYAlignment.Center
+obj364.TextScaled = false
+obj364.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+obj364.BorderMode = Enum.BorderMode.Outline
+obj364.TextTransparency = 0
+obj364.AnchorPoint = Vector2.new(0, 0)
+obj364.Selected = false
+obj364.TextSize = 14
+obj364.Size = UDim2.new(0.5635181665420532, 0, 0.08887366950511932, 0)
+obj364.ClipsDescendants = false
+obj364.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj364.Text = ""
+obj364.Name = "MainButton"
+obj364.Visible = true
+obj364.Rotation = 0
+obj364.Font = Enum.Font.SourceSans
+obj364.BackgroundTransparency = 0
+obj364.Position = UDim2.new(0.05885609611868858, 0, 0.8530805110931396, 0)
+obj364.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj364.MaxVisibleGraphemes = -1
+obj364.TextXAlignment = Enum.TextXAlignment.Center
+obj364.TextColor3 = Color3.fromRGB(200, 200, 200)
+local obj365 = Instance.new("UICorner")
+obj365.Name = "UICorner"
+obj365.CornerRadius = UDim.new(0, 8)
+obj365.Parent = obj364
+
+local obj366 = Instance.new("TextLabel")
+obj366.Visible = true
+obj366.TextWrapped = true
+obj366.LineHeight = 1
+obj366.BorderMode = Enum.BorderMode.Outline
+obj366.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj366.Name = "TextLabel"
+obj366.TextStrokeTransparency = 1
+obj366.AnchorPoint = Vector2.new(0.5, 0.5)
+obj366.TextYAlignment = Enum.TextYAlignment.Center
+obj366.TextXAlignment = Enum.TextXAlignment.Center
+obj366.TextTruncate = Enum.TextTruncate.None
+obj366.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj366.ZIndex = 1
+obj366.BorderSizePixel = 0
+obj366.Size = UDim2.new(0.5, 0, 0.44999998807907104, 0)
+obj366.TextTransparency = 0
+obj366.RichText = false
+obj366.TextSize = 14
+obj366.ClipsDescendants = false
+obj366.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj366.Text = "Execute"
+obj366.Active = false
+obj366.TextColor3 = Color3.fromRGB(173, 173, 173)
+obj366.Rotation = 0
+obj366.Font = Enum.Font.Gotham
+obj366.BackgroundTransparency = 1
+obj366.Position = UDim2.new(0.5, 0, 0.5, 0)
+obj366.LayoutOrder = 0
+obj366.MaxVisibleGraphemes = -1
+obj366.TextScaled = true
+obj366.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj366.Parent = obj364
+
+local obj367 = Instance.new("UIStroke")
+obj367.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj367.LineJoinMode = Enum.LineJoinMode.Round
+obj367.Name = "UIStroke"
+obj367.Color = Color3.fromRGB(81, 78, 97)
+obj367.Transparency = 0.6000000238418579
+obj367.Thickness = 1
+obj367.Enabled = true
+obj367.Parent = obj364
+
+obj364.Parent = obj222
+
+local obj368 = Instance.new("TextButton")
+obj368.LayoutOrder = 0
+obj368.TextWrapped = false
+obj368.LineHeight = 1
+obj368.Active = true
+obj368.TextStrokeTransparency = 1
+obj368.TextTruncate = Enum.TextTruncate.None
+obj368.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj368.ZIndex = 1
+obj368.BorderSizePixel = 0
+obj368.RichText = false
+obj368.Modal = false
+obj368.AutoButtonColor = false
+obj368.TextYAlignment = Enum.TextYAlignment.Center
+obj368.TextScaled = false
+obj368.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+obj368.BorderMode = Enum.BorderMode.Outline
+obj368.TextTransparency = 0
+obj368.AnchorPoint = Vector2.new(0, 0)
+obj368.Selected = false
+obj368.TextSize = 14
+obj368.Size = UDim2.new(0.27654993534088135, 0, 0.08887366950511932, 0)
+obj368.ClipsDescendants = false
+obj368.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj368.Text = ""
+obj368.Name = "KeybindButton"
+obj368.Visible = true
+obj368.Rotation = 0
+obj368.Font = Enum.Font.SourceSans
+obj368.BackgroundTransparency = 0
+obj368.Position = UDim2.new(0.6483945846557617, 0, 0.8530805110931396, 0)
+obj368.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj368.MaxVisibleGraphemes = -1
+obj368.TextXAlignment = Enum.TextXAlignment.Center
+obj368.TextColor3 = Color3.fromRGB(200, 200, 200)
+local obj369 = Instance.new("UICorner")
+obj369.Name = "UICorner"
+obj369.CornerRadius = UDim.new(0, 8)
+obj369.Parent = obj368
+
+local obj370 = Instance.new("TextLabel")
+obj370.Visible = true
+obj370.TextWrapped = true
+obj370.LineHeight = 1
+obj370.BorderMode = Enum.BorderMode.Outline
+obj370.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+obj370.Name = "TextLabel"
+obj370.TextStrokeTransparency = 1
+obj370.AnchorPoint = Vector2.new(0.5, 0.5)
+obj370.TextYAlignment = Enum.TextYAlignment.Center
+obj370.TextXAlignment = Enum.TextXAlignment.Center
+obj370.TextTruncate = Enum.TextTruncate.None
+obj370.SizeConstraint = Enum.SizeConstraint.RelativeXY
+obj370.ZIndex = 1
+obj370.BorderSizePixel = 0
+obj370.Size = UDim2.new(1, 0, 0.44999998807907104, 0)
+obj370.TextTransparency = 0
+obj370.RichText = false
+obj370.TextSize = 14
+obj370.ClipsDescendants = false
+obj370.BorderColor3 = Color3.fromRGB(0, 0, 0)
+obj370.Text = "Set Bind"
+obj370.Active = false
+obj370.TextColor3 = Color3.fromRGB(173, 173, 173)
+obj370.Rotation = 0
+obj370.Font = Enum.Font.Gotham
+obj370.BackgroundTransparency = 1
+obj370.Position = UDim2.new(0.5, 0, 0.49999967217445374, 0)
+obj370.LayoutOrder = 0
+obj370.MaxVisibleGraphemes = -1
+obj370.TextScaled = true
+obj370.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+obj370.Parent = obj368
+
+local obj371 = Instance.new("UIStroke")
+obj371.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+obj371.LineJoinMode = Enum.LineJoinMode.Round
+obj371.Name = "UIStroke"
+obj371.Color = Color3.fromRGB(81, 78, 97)
+obj371.Transparency = 0.6000000238418579
+obj371.Thickness = 1
+obj371.Enabled = true
+obj371.Parent = obj368
+
+obj368.Parent = obj222
+
+obj222.Parent = obj1
 
 
-local Players = game:GetService("Players")
-local UserInputService = game:GetService("UserInputService")
-local RunService = game:GetService("RunService")
-local TweenService = game:GetService("TweenService")
+obj1.Parent = CoreGui
 
-local player = Players.LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-local mouse = player:GetMouse()
-
--- System variables
-local selectedRig = nil
-local selectedPart = nil
-local savedPositions = {}
-local bodyPartPositions = {}
-local currentKeyframe = 0
-local isPlaying = false
-local isLooping = false
-local loopConnection = nil
-local startFromKeyframe = 1
-local highlight = nil
-local previewConnections = {}
-local rigCheckConnection = nil
-local keyframeDuration = 0.5
-local editingKeyframe = nil
-
--- Theme colors
-local THEME = {
-    ORANGE = Color3.fromRGB(255, 140, 0),
-    BLACK = Color3.fromRGB(0, 0, 0),
-    WHITE = Color3.fromRGB(255, 255, 255),
-    GRAY = Color3.fromRGB(128, 128, 128),
-    DARK_GRAY = Color3.fromRGB(64, 64, 64),
-    LIGHT_GRAY = Color3.fromRGB(192, 192, 192)
-}
-
--- Detect rig type
-local function detectRigType(rig)
-    if not rig or not rig:FindFirstChild("Humanoid") then 
-        return nil 
-    end
-    
-    if rig:FindFirstChild("UpperTorso") and rig:FindFirstChild("LowerTorso") then
-        return "R15"
-    elseif rig:FindFirstChild("Torso") then
-        return "R6"
-    end
-    
-    return nil
-end
-
--- Find rig from part
-local function findRigFromPart(part)
-    local current = part
-    
-    if current:FindFirstChild("Humanoid") then
-        return current
-    end
-    
-    while current.Parent do
-        current = current.Parent
-        
-        if current:FindFirstChild("Humanoid") then
-            return current
-        end
-        
-        if current == workspace then
-            break
-        end
-    end
-    
-    return nil
-end
-
--- Create highlight
-local function createHighlight(part)
-    if highlight then
-        highlight:Destroy()
-    end
-    
-    highlight = Instance.new("Highlight")
-    highlight.Parent = part
-    highlight.FillColor = THEME.ORANGE
-    highlight.OutlineColor = THEME.WHITE
-    highlight.FillTransparency = 1
-    highlight.OutlineTransparency = 0
-end
-
--- Remove highlight
-local function removeHighlight()
-    if highlight then
-        highlight:Destroy()
-        highlight = nil
-    end
-end
-
--- Clear preview
-local function clearKeyframePreview()
-    for _, connection in pairs(previewConnections) do
-        if connection.part then
-            connection.part:Destroy()
-        end
-        if connection.highlight then
-            connection.highlight:Destroy()
-        end
-    end
-    previewConnections = {}
-end
-
--- Get part display name
-local function getPartType(partName)
-    local partTypes = {
-        ["Head"] = "Head",
-        ["Torso"] = "Torso", 
-        ["HumanoidRootPart"] = "Root",
-        ["Left Arm"] = "L.Arm",
-        ["Right Arm"] = "R.Arm", 
-        ["Left Leg"] = "L.Leg",
-        ["Right Leg"] = "R.Leg",
-        ["LeftUpperArm"] = "L.U.Arm",
-        ["RightUpperArm"] = "R.U.Arm",
-        ["LeftLowerArm"] = "L.L.Arm", 
-        ["RightLowerArm"] = "R.L.Arm",
-        ["LeftUpperLeg"] = "L.U.Leg",
-        ["RightUpperLeg"] = "R.U.Leg",
-        ["LeftLowerLeg"] = "L.L.Leg",
-        ["RightLowerLeg"] = "R.L.Leg",
-        ["LeftHand"] = "L.Hand",
-        ["RightHand"] = "R.Hand",
-        ["LeftFoot"] = "L.Foot",
-        ["RightFoot"] = "R.Foot",
-        ["UpperTorso"] = "U.Torso",
-        ["LowerTorso"] = "L.Torso"
-    }
-    
-    return partTypes[partName] or string.sub(partName, 1, 6)
-end
-
--- Update body parts list
-local function updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-    for _, child in pairs(bodyPartsList:GetChildren()) do
-        if child ~= bodyPartsLayout then
-            child:Destroy()
-        end
-    end
-    
-    for i, savedData in ipairs(savedPositions) do
-        local keyframeButton = Instance.new("TextButton")
-        keyframeButton.Size = UDim2.new(0, 50, 1, 0)
-        local isSelected = (editingKeyframe and editingKeyframe.type == "fullbody" and editingKeyframe.index == i)
-        keyframeButton.BackgroundColor3 = isSelected and THEME.WHITE or THEME.ORANGE
-        keyframeButton.TextColor3 = isSelected and THEME.BLACK or THEME.WHITE
-        keyframeButton.Text = "F" .. tostring(i)
-        keyframeButton.TextScaled = true
-        keyframeButton.Font = Enum.Font.GothamBold
-        keyframeButton.BorderSizePixel = 0
-        keyframeButton.Parent = bodyPartsList
-        
-        keyframeButton.MouseButton1Click:Connect(function()
-            editingKeyframe = {type = "fullbody", index = i}
-            updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-        end)
-    end
-    
-    for partName, positions in pairs(bodyPartPositions) do
-        for i, data in ipairs(positions) do
-            local keyframeButton = Instance.new("TextButton")
-            keyframeButton.Size = UDim2.new(0, 60, 1, 0)
-            local isSelected = (editingKeyframe and editingKeyframe.type == "part" and editingKeyframe.partName == partName and editingKeyframe.index == i)
-            keyframeButton.BackgroundColor3 = isSelected and THEME.WHITE or THEME.GRAY
-            keyframeButton.TextColor3 = isSelected and THEME.BLACK or THEME.WHITE
-            keyframeButton.Text = getPartType(partName) .. tostring(i)
-            keyframeButton.TextScaled = true
-            keyframeButton.Font = Enum.Font.Gotham
-            keyframeButton.BorderSizePixel = 0
-            keyframeButton.Parent = bodyPartsList
-            
-            keyframeButton.MouseButton1Click:Connect(function()
-                editingKeyframe = {type = "part", partName = partName, index = i}
-                updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-            end)
-        end
-    end
-    
-    bodyPartsLayout:GetPropertyChangedSignal("AbsoluteContentSize"):Connect(function()
-        bodyPartsList.CanvasSize = UDim2.new(0, bodyPartsLayout.AbsoluteContentSize.X, 0, 0)
-    end)
-    bodyPartsList.CanvasSize = UDim2.new(0, bodyPartsLayout.AbsoluteContentSize.X, 0, 0)
-end
-
--- Save position
-local function savePosition(rig, specificPart, updateExisting)
-    if not rig or not rig:FindFirstChild("Humanoid") then 
-        return 
-    end
-    
-    if specificPart then
-        if not bodyPartPositions[specificPart.Name] then
-            bodyPartPositions[specificPart.Name] = {}
-        end
-        
-        local newData = {
-            CFrame = specificPart.CFrame,
-            Size = specificPart.Size,
-            duration = keyframeDuration,
-            timestamp = tick(),
-            position = specificPart.Position
-        }
-        
-        if updateExisting and editingKeyframe and editingKeyframe.type == "part" and editingKeyframe.partName == specificPart.Name then
-            bodyPartPositions[specificPart.Name][editingKeyframe.index] = newData
-            local index = editingKeyframe.index
-            editingKeyframe = nil
-            return index, specificPart.Name, true
-        else
-            table.insert(bodyPartPositions[specificPart.Name], newData)
-            return #bodyPartPositions[specificPart.Name], specificPart.Name, false
-        end
-    else
-        local savedData = {
-            rigName = rig.Name,
-            duration = keyframeDuration,
-            parts = {},
-            timestamp = tick()
-        }
-        
-        for _, part in pairs(rig:GetChildren()) do
-            if part:IsA("BasePart") then
-                savedData.parts[part.Name] = {
-                    CFrame = part.CFrame,
-                    Size = part.Size,
-                    position = part.Position
-                }
-            end
-        end
-        
-        local function savePartsRecursively(parent)
-            for _, child in pairs(parent:GetChildren()) do
-                if child:IsA("BasePart") and not savedData.parts[child.Name] then
-                    savedData.parts[child.Name] = {
-                        CFrame = child.CFrame,
-                        Size = child.Size,
-                        position = child.Position
-                    }
-                elseif child:IsA("Model") then
-                    savePartsRecursively(child)
-                end
-            end
-        end
-        
-        savePartsRecursively(rig)
-        
-        if updateExisting and editingKeyframe and editingKeyframe.type == "fullbody" then
-            savedPositions[editingKeyframe.index] = savedData
-            local index = editingKeyframe.index
-            editingKeyframe = nil
-            return index, "Full Body", true
-        else
-            table.insert(savedPositions, savedData)
-            currentKeyframe = #savedPositions
-            return currentKeyframe, "Full Body", false
-        end
-    end
-end
-
--- Check if rig exists
-local function checkRigExists(rig, rigInfoLabel, bodyPartsList, bodyPartsLayout)
-    if not rig or not rig.Parent or not rig:FindFirstChild("Humanoid") then
-        selectedRig = nil
-        selectedPart = nil
-        editingKeyframe = nil
-        rigInfoLabel.Text = "Rig no longer exists - data cleared"
-        removeHighlight()
-        clearKeyframePreview()
-        
-        if isLooping and loopConnection then
-            isLooping = false
-            isPlaying = false
-            loopConnection:Disconnect()
-            loopConnection = nil
-        end
-        
-        savedPositions = {}
-        bodyPartPositions = {}
-        currentKeyframe = 0
-        updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-        
-        if rigCheckConnection then
-            rigCheckConnection:Disconnect()
-            rigCheckConnection = nil
-        end
-        
-        spawn(function()
-            wait(2)
-            if not selectedRig then
-                rigInfoLabel.Text = "No rig selected - Click on a character"
-            end
-        end)
-        
-        return false
-    end
-    return true
-end
-
--- Delete keyframe
-local function deleteSpecificKeyframe()
-    if not editingKeyframe then 
-        return false 
-    end
-    
-    if editingKeyframe.type == "fullbody" then
-        table.remove(savedPositions, editingKeyframe.index)
-        if currentKeyframe > editingKeyframe.index then
-            currentKeyframe = currentKeyframe - 1
-        elseif currentKeyframe == editingKeyframe.index and currentKeyframe > #savedPositions then
-            currentKeyframe = #savedPositions
-        end
-    elseif editingKeyframe.type == "part" then
-        if bodyPartPositions[editingKeyframe.partName] then
-            table.remove(bodyPartPositions[editingKeyframe.partName], editingKeyframe.index)
-            if #bodyPartPositions[editingKeyframe.partName] == 0 then
-                bodyPartPositions[editingKeyframe.partName] = nil
-            end
-        end
-    end
-    
-    editingKeyframe = nil
-    return true
-end
-
--- Reset to initial
-local function resetToInitial(rig)
-    if not rig or #savedPositions == 0 then 
-        return 
-    end
-    
-    local initialData = savedPositions[1]
-    if not initialData then 
-        return 
-    end
-    
-    for partName, data in pairs(initialData.parts) do
-        local part = rig:FindFirstChild(partName)
-        if part and part:IsA("BasePart") then
-            part.CFrame = data.CFrame
-            part.Size = data.Size
-        end
-    end
-end
-
--- Show preview
-local function showKeyframePreview(rig)
-    clearKeyframePreview()
-    
-    if not rig or (#savedPositions == 0 and not next(bodyPartPositions)) then 
-        return 
-    end
-    
-    local colors = {THEME.ORANGE, THEME.GRAY, THEME.LIGHT_GRAY}
-    
-    for i, savedData in ipairs(savedPositions) do
-        local color = colors[((i-1) % #colors) + 1]
-        
-        for partName, data in pairs(savedData.parts) do
-            local originalPart = rig:FindFirstChild(partName)
-            
-            if originalPart and originalPart:IsA("BasePart") then
-                local ghostPart = originalPart:Clone()
-                ghostPart.Name = "GhostPart_Full_" .. tostring(i) .. "_" .. partName
-                ghostPart.Parent = workspace
-                ghostPart.CFrame = data.CFrame
-                ghostPart.Size = data.Size
-                ghostPart.Transparency = 0.9
-                ghostPart.CanCollide = false
-                ghostPart.Anchored = true
-                
-                for _, child in pairs(ghostPart:GetChildren()) do
-                    if not child:IsA("SpecialMesh") and not child:IsA("Decal") then
-                        child:Destroy()
-                    end
-                end
-                
-                local previewHighlight = Instance.new("Highlight")
-                previewHighlight.Parent = ghostPart
-                previewHighlight.FillColor = color
-                previewHighlight.OutlineColor = THEME.WHITE
-                previewHighlight.FillTransparency = 0.7
-                previewHighlight.OutlineTransparency = 0.2
-                
-                table.insert(previewConnections, {
-                    part = ghostPart,
-                    highlight = previewHighlight
-                })
-            end
-        end
-    end
-    
-    for partName, positions in pairs(bodyPartPositions) do
-        local originalPart = rig:FindFirstChild(partName)
-        
-        if originalPart then
-            for i, data in ipairs(positions) do
-                local ghostPart = originalPart:Clone()
-                ghostPart.Name = "GhostPart_Part_" .. partName .. "_" .. tostring(i)
-                ghostPart.Parent = workspace
-                ghostPart.CFrame = data.CFrame
-                ghostPart.Size = data.Size
-                ghostPart.Transparency = 0.8
-                ghostPart.CanCollide = false
-                ghostPart.Anchored = true
-                
-                for _, child in pairs(ghostPart:GetChildren()) do
-                    if not child:IsA("SpecialMesh") and not child:IsA("Decal") then
-                        child:Destroy()
-                    end
-                end
-                
-                local previewHighlight = Instance.new("Highlight")
-                previewHighlight.Parent = ghostPart
-                previewHighlight.FillColor = THEME.ORANGE
-                previewHighlight.OutlineColor = THEME.WHITE
-                previewHighlight.FillTransparency = 0.6
-                previewHighlight.OutlineTransparency = 0.2
-                
-                table.insert(previewConnections, {
-                    part = ghostPart,
-                    highlight = previewHighlight
-                })
-            end
-        end
-    end
-end
-
--- Export script
-local function exportAnimationScript()
-    if #savedPositions == 0 and not next(bodyPartPositions) then
-        return "-- No animation data to export"
-    end
-    
-    local code = "-- Exported animation from Moon Animator X\nlocal TweenService = game:GetService('TweenService')\nlocal rig = -- Set your rig here\n\nlocal function playAnimation()\n"
-    
-    for i, savedData in ipairs(savedPositions) do
-        code = code .. "    -- Keyframe " .. tostring(i) .. "\n"
-        code = code .. "    local tweenInfo" .. tostring(i) .. " = TweenInfo.new(" .. tostring(savedData.duration or keyframeDuration) .. ", Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)\n"
-        code = code .. "    local tweens" .. tostring(i) .. " = {}\n"
-        
-        for partName, data in pairs(savedData.parts) do
-            local x, y, z = data.CFrame.Position.X, data.CFrame.Position.Y, data.CFrame.Position.Z
-            local rx, ry, rz = data.CFrame:toEulerAnglesXYZ()
-            code = code .. string.format("    local tween_%s_%d = TweenService:Create(rig:FindFirstChild(\"%s\"), tweenInfo%d, {CFrame = CFrame.new(%.3f, %.3f, %.3f) * CFrame.Angles(%.3f, %.3f, %.3f), Size = Vector3.new(%.3f, %.3f, %.3f)})\n",
-                partName, i, partName, i, x, y, z, rx, ry, rz, data.Size.X, data.Size.Y, data.Size.Z)
-            code = code .. "    table.insert(tweens" .. tostring(i) .. ", tween_" .. partName .. "_" .. tostring(i) .. ")\n"
-        end
-        
-        code = code .. "    for _, tween in pairs(tweens" .. tostring(i) .. ") do tween:Play() end\n"
-        code = code .. "    if #tweens" .. tostring(i) .. " > 0 then tweens" .. tostring(i) .. "[1].Completed:Wait() end\n\n"
-    end
-    
-    code = code .. "end\n\nplayAnimation()"
-    
-    return code
-end
-
--- Play single animation
-local function playAnimation(rig)
-    if (#savedPositions == 0 and not next(bodyPartPositions)) or not rig then 
-        return 
-    end
-    
-    isPlaying = true
-    clearKeyframePreview()
-    
-    for i = 1, #savedPositions do
-        if not isPlaying then break end
-        
-        local savedData = savedPositions[i]
-        local duration = savedData.duration or keyframeDuration
-        
-        local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
-        local tweens = {}
-        
-        for partName, data in pairs(savedData.parts) do
-            local part = rig:FindFirstChild(partName)
-            
-            if part and part:IsA("BasePart") then
-                local tween = TweenService:Create(part, tweenInfo, {
-                    CFrame = data.CFrame,
-                    Size = data.Size
-                })
-                table.insert(tweens, tween)
-                tween:Play()
-            end
-        end
-        
-        if #tweens > 0 then
-            tweens[1].Completed:Wait()
-        end
-        
-        if i < #savedPositions then
-            wait(0.05)
-        end
-    end
-    
-    for partName, positions in pairs(bodyPartPositions) do
-        if not isPlaying then break end
-        
-        local part = rig:FindFirstChild(partName)
-        
-        if part then
-            for i, data in ipairs(positions) do
-                if not isPlaying then break end
-                
-                local tweenInfo = TweenInfo.new(data.duration, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
-                local tween = TweenService:Create(part, tweenInfo, {
-                    CFrame = data.CFrame,
-                    Size = data.Size
-                })
-                
-                tween:Play()
-                tween.Completed:Wait()
-                
-                if i < #positions then
-                    wait(0.05)
-                end
-            end
-        end
-    end
-    
-    isPlaying = false
-end
-
--- Play loop animation
-local function playAnimationLoop(rig)
-    if (#savedPositions == 0 and not next(bodyPartPositions)) or not rig then 
-        return 
-    end
-    
-    isPlaying = true
-    isLooping = true
-    clearKeyframePreview()
-    
-    local function playOnce()
-        local startIndex = math.max(1, math.min(startFromKeyframe, #savedPositions))
-        
-        for i = startIndex, #savedPositions do
-            if not isLooping or not isPlaying then break end
-            
-            local savedData = savedPositions[i]
-            local duration = savedData.duration or keyframeDuration
-            
-            local tweenInfo = TweenInfo.new(duration, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
-            local tweens = {}
-            
-            for partName, data in pairs(savedData.parts) do
-                local part = rig:FindFirstChild(partName)
-                
-                if part and part:IsA("BasePart") then
-                    local tween = TweenService:Create(part, tweenInfo, {
-                        CFrame = data.CFrame,
-                        Size = data.Size
-                    })
-                    table.insert(tweens, tween)
-                    tween:Play()
-                end
-            end
-            
-            if #tweens > 0 then
-                tweens[1].Completed:Wait()
-            end
-            
-            if i < #savedPositions then
-                wait(0.1)
-            end
-        end
-        
-        for partName, positions in pairs(bodyPartPositions) do
-            if not isLooping or not isPlaying then break end
-            
-            local part = rig:FindFirstChild(partName)
-            
-            if part then
-                for i, data in ipairs(positions) do
-                    if not isLooping or not isPlaying then break end
-                    
-                    local tweenInfo = TweenInfo.new(data.duration, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
-                    local tween = TweenService:Create(part, tweenInfo, {
-                        CFrame = data.CFrame,
-                        Size = data.Size
-                    })
-                    
-                    tween:Play()
-                    tween.Completed:Wait()
-                    
-                    if i < #positions then
-                        wait(0.1)
-                    end
-                end
-            end
-        end
-        
-        wait(0.5)
-    end
-    
-    loopConnection = spawn(function()
-        while isLooping and isPlaying do
-            playOnce()
-            if isLooping and isPlaying then
-                wait(0.2)
-            end
-        end
-    end)
-end
-
--- Create GUI
-local function createMainGui()
-    local screenGui = Instance.new("ScreenGui")
-    screenGui.Name = "MoonAnimatorX"
-    screenGui.Parent = playerGui
-    
-    local mainFrame = Instance.new("Frame")
-    mainFrame.Size = UDim2.new(0, 900, 0, 200)
-    mainFrame.Position = UDim2.new(0.5, -450, 0, 10)
-    mainFrame.BackgroundColor3 = THEME.BLACK
-    mainFrame.BorderSizePixel = 2
-    mainFrame.BorderColor3 = THEME.ORANGE
-    mainFrame.Active = true
-    mainFrame.Draggable = true
-    mainFrame.Parent = screenGui
-    
-    local titleBar = Instance.new("Frame")
-    titleBar.Size = UDim2.new(1, 0, 0, 25)
-    titleBar.BackgroundColor3 = THEME.ORANGE
-    titleBar.BorderSizePixel = 0
-    titleBar.Parent = mainFrame
-    
-    local titleLabel = Instance.new("TextLabel")
-    titleLabel.Size = UDim2.new(1, -30, 1, 0)
-    titleLabel.Position = UDim2.new(0, 5, 0, 0)
-    titleLabel.BackgroundTransparency = 1
-    titleLabel.Text = "Moon Animator X - Auto Loop"
-    titleLabel.TextColor3 = THEME.WHITE
-    titleLabel.TextScaled = true
-    titleLabel.Font = Enum.Font.GothamBold
-    titleLabel.TextXAlignment = Enum.TextXAlignment.Left
-    titleLabel.Parent = titleBar
-    
-    local closeButton = Instance.new("TextButton")
-    closeButton.Size = UDim2.new(0, 25, 0, 25)
-    closeButton.Position = UDim2.new(1, -25, 0, 0)
-    closeButton.BackgroundColor3 = THEME.GRAY
-    closeButton.Text = "X"
-    closeButton.TextColor3 = THEME.WHITE
-    closeButton.TextScaled = true
-    closeButton.Font = Enum.Font.GothamBold
-    closeButton.BorderSizePixel = 0
-    closeButton.Parent = titleBar
-    
-    local mainButtonsFrame = Instance.new("Frame")
-    mainButtonsFrame.Size = UDim2.new(1, -10, 0, 40)
-    mainButtonsFrame.Position = UDim2.new(0, 5, 0, 30)
-    mainButtonsFrame.BackgroundColor3 = THEME.DARK_GRAY
-    mainButtonsFrame.BorderSizePixel = 1
-    mainButtonsFrame.BorderColor3 = THEME.GRAY
-    mainButtonsFrame.Parent = mainFrame
-    
-    local playButton = Instance.new("TextButton")
-    playButton.Size = UDim2.new(0, 60, 0, 30)
-    playButton.Position = UDim2.new(0, 5, 0, 5)
-    playButton.BackgroundColor3 = THEME.ORANGE
-    playButton.Text = "▶ Play"
-    playButton.TextColor3 = THEME.WHITE
-    playButton.TextScaled = true
-    playButton.Font = Enum.Font.GothamBold
-    playButton.BorderSizePixel = 0
-    playButton.Parent = mainButtonsFrame
-    
-    local loopButton = Instance.new("TextButton")
-    loopButton.Size = UDim2.new(0, 60, 0, 30)
-    loopButton.Position = UDim2.new(0, 70, 0, 5)
-    loopButton.BackgroundColor3 = THEME.ORANGE
-    loopButton.Text = "🔄 Loop"
-    loopButton.TextColor3 = THEME.WHITE
-    loopButton.TextScaled = true
-    loopButton.Font = Enum.Font.GothamBold
-    loopButton.BorderSizePixel = 0
-    loopButton.Parent = mainButtonsFrame
-    
-    local stopButton = Instance.new("TextButton")
-    stopButton.Size = UDim2.new(0, 60, 0, 30)
-    stopButton.Position = UDim2.new(0, 135, 0, 5)
-    stopButton.BackgroundColor3 = THEME.ORANGE
-    stopButton.Text = "⏸ Stop"
-    stopButton.TextColor3 = THEME.WHITE
-    stopButton.TextScaled = true
-    stopButton.Font = Enum.Font.GothamBold
-    stopButton.BorderSizePixel = 0
-    stopButton.Parent = mainButtonsFrame
-    
-    local resetButton = Instance.new("TextButton")
-    resetButton.Size = UDim2.new(0, 60, 0, 30)
-    resetButton.Position = UDim2.new(0, 200, 0, 5)
-    resetButton.BackgroundColor3 = THEME.ORANGE
-    resetButton.Text = "🏠 Reset"
-    resetButton.TextColor3 = THEME.WHITE
-    resetButton.TextScaled = true
-    resetButton.Font = Enum.Font.GothamBold
-    resetButton.BorderSizePixel = 0
-    resetButton.Parent = mainButtonsFrame
-    
-    local previewButton = Instance.new("TextButton")
-    previewButton.Size = UDim2.new(0, 70, 0, 30)
-    previewButton.Position = UDim2.new(0, 265, 0, 5)
-    previewButton.BackgroundColor3 = THEME.ORANGE
-    previewButton.Text = "👁 Preview"
-    previewButton.TextColor3 = THEME.WHITE
-    previewButton.TextScaled = true
-    previewButton.Font = Enum.Font.GothamBold
-    previewButton.BorderSizePixel = 0
-    previewButton.Parent = mainButtonsFrame
-    
-    local savePositionButton = Instance.new("TextButton")
-    savePositionButton.Size = UDim2.new(0, 80, 0, 30)
-    savePositionButton.Position = UDim2.new(0, 340, 0, 5)
-    savePositionButton.BackgroundColor3 = THEME.ORANGE
-    savePositionButton.Text = "💾 Save"
-    savePositionButton.TextColor3 = THEME.WHITE
-    savePositionButton.TextScaled = true
-    savePositionButton.Font = Enum.Font.GothamBold
-    savePositionButton.BorderSizePixel = 0
-    savePositionButton.Parent = mainButtonsFrame
-    
-    local exportButton = Instance.new("TextButton")
-    exportButton.Size = UDim2.new(0, 70, 0, 30)
-    exportButton.Position = UDim2.new(0, 425, 0, 5)
-    exportButton.BackgroundColor3 = THEME.ORANGE
-    exportButton.Text = "📋 Export"
-    exportButton.TextColor3 = THEME.WHITE
-    exportButton.TextScaled = true
-    exportButton.Font = Enum.Font.GothamBold
-    exportButton.BorderSizePixel = 0
-    exportButton.Parent = mainButtonsFrame
-    
-    local durationLabel = Instance.new("TextLabel")
-    durationLabel.Size = UDim2.new(0, 60, 0, 15)
-    durationLabel.Position = UDim2.new(0, 500, 0, 5)
-    durationLabel.BackgroundTransparency = 1
-    durationLabel.Text = "Duration:"
-    durationLabel.TextColor3 = THEME.WHITE
-    durationLabel.TextScaled = true
-    durationLabel.Font = Enum.Font.Gotham
-    durationLabel.Parent = mainButtonsFrame
-    
-    local durationInput = Instance.new("TextBox")
-    durationInput.Size = UDim2.new(0, 50, 0, 20)
-    durationInput.Position = UDim2.new(0, 500, 0, 15)
-    durationInput.BackgroundColor3 = THEME.WHITE
-    durationInput.Text = "0.5"
-    durationInput.TextColor3 = THEME.BLACK
-    durationInput.TextScaled = true
-    durationInput.Font = Enum.Font.Gotham
-    durationInput.BorderSizePixel = 1
-    durationInput.BorderColor3 = THEME.GRAY
-    durationInput.Parent = mainButtonsFrame
-    
-    local startFromLabel = Instance.new("TextLabel")
-    startFromLabel.Size = UDim2.new(0, 60, 0, 15)
-    startFromLabel.Position = UDim2.new(0, 560, 0, 5)
-    startFromLabel.BackgroundTransparency = 1
-    startFromLabel.Text = "Start From:"
-    startFromLabel.TextColor3 = THEME.WHITE
-    startFromLabel.TextScaled = true
-    startFromLabel.Font = Enum.Font.Gotham
-    startFromLabel.Parent = mainButtonsFrame
-    
-    local startFromInput = Instance.new("TextBox")
-    startFromInput.Size = UDim2.new(0, 50, 0, 20)
-    startFromInput.Position = UDim2.new(0, 560, 0, 15)
-    startFromInput.BackgroundColor3 = THEME.WHITE
-    startFromInput.Text = "1"
-    startFromInput.TextColor3 = THEME.BLACK
-    startFromInput.TextScaled = true
-    startFromInput.Font = Enum.Font.Gotham
-    startFromInput.BorderSizePixel = 1
-    startFromInput.BorderColor3 = THEME.GRAY
-    startFromInput.Parent = mainButtonsFrame
-    
-    local bottomFrame = Instance.new("Frame")
-    bottomFrame.Size = UDim2.new(1, -10, 1, -80)
-    bottomFrame.Position = UDim2.new(0, 5, 0, 75)
-    bottomFrame.BackgroundTransparency = 1
-    bottomFrame.Parent = mainFrame
-    
-    local dangerFrame = Instance.new("Frame")
-    dangerFrame.Size = UDim2.new(0.25, -5, 1, 0)
-    dangerFrame.Position = UDim2.new(0, 0, 0, 0)
-    dangerFrame.BackgroundColor3 = THEME.DARK_GRAY
-    dangerFrame.BorderSizePixel = 1
-    dangerFrame.BorderColor3 = THEME.GRAY
-    dangerFrame.Parent = bottomFrame
-    
-    local dangerTitle = Instance.new("TextLabel")
-    dangerTitle.Size = UDim2.new(1, 0, 0, 20)
-    dangerTitle.BackgroundColor3 = THEME.GRAY
-    dangerTitle.Text = "KEYFRAME CONTROLS"
-    dangerTitle.TextColor3 = THEME.WHITE
-    dangerTitle.TextScaled = true
-    dangerTitle.Font = Enum.Font.GothamBold
-    dangerTitle.BorderSizePixel = 0
-    dangerTitle.Parent = dangerFrame
-    
-    local clearAllButton = Instance.new("TextButton")
-    clearAllButton.Size = UDim2.new(1, -10, 0, 25)
-    clearAllButton.Position = UDim2.new(0, 5, 0, 25)
-    clearAllButton.BackgroundColor3 = THEME.GRAY
-    clearAllButton.Text = "Clear All"
-    clearAllButton.TextColor3 = THEME.WHITE
-    clearAllButton.TextScaled = true
-    clearAllButton.Font = Enum.Font.GothamBold
-    clearAllButton.BorderSizePixel = 0
-    clearAllButton.Parent = dangerFrame
-    
-    local deleteSelectedButton = Instance.new("TextButton")
-    deleteSelectedButton.Size = UDim2.new(1, -10, 0, 25)
-    deleteSelectedButton.Position = UDim2.new(0, 5, 0, 55)
-    deleteSelectedButton.BackgroundColor3 = THEME.GRAY
-    deleteSelectedButton.Text = "Delete Selected"
-    deleteSelectedButton.TextColor3 = THEME.WHITE
-    deleteSelectedButton.TextScaled = true
-    deleteSelectedButton.Font = Enum.Font.GothamBold
-    deleteSelectedButton.BorderSizePixel = 0
-    deleteSelectedButton.Parent = dangerFrame
-    
-    local infoFrame = Instance.new("Frame")
-    infoFrame.Size = UDim2.new(0.75, -5, 1, 0)
-    infoFrame.Position = UDim2.new(0.25, 5, 0, 0)
-    infoFrame.BackgroundColor3 = THEME.DARK_GRAY
-    infoFrame.BorderSizePixel = 1
-    infoFrame.BorderColor3 = THEME.GRAY
-    infoFrame.Parent = bottomFrame
-    
-    local infoTitle = Instance.new("TextLabel")
-    infoTitle.Size = UDim2.new(1, 0, 0, 20)
-    infoTitle.BackgroundColor3 = THEME.GRAY
-    infoTitle.Text = "ANIMATION INFO"
-    infoTitle.TextColor3 = THEME.WHITE
-    infoTitle.TextScaled = true
-    infoTitle.Font = Enum.Font.GothamBold
-    infoTitle.BorderSizePixel = 0
-    infoTitle.Parent = infoFrame
-    
-    local rigInfoLabel = Instance.new("TextLabel")
-    rigInfoLabel.Size = UDim2.new(1, -10, 0, 15)
-    rigInfoLabel.Position = UDim2.new(0, 5, 0, 25)
-    rigInfoLabel.BackgroundTransparency = 1
-    rigInfoLabel.Text = "No rig selected - Click on a character"
-    rigInfoLabel.TextColor3 = THEME.WHITE
-    rigInfoLabel.TextScaled = true
-    rigInfoLabel.Font = Enum.Font.Gotham
-    rigInfoLabel.TextXAlignment = Enum.TextXAlignment.Left
-    rigInfoLabel.Parent = infoFrame
-    
-    local partInfoLabel = Instance.new("TextLabel")
-    partInfoLabel.Size = UDim2.new(1, -10, 0, 15)
-    partInfoLabel.Position = UDim2.new(0, 5, 0, 45)
-    partInfoLabel.BackgroundTransparency = 1
-    partInfoLabel.Text = "No part selected - Right click on body part"
-    partInfoLabel.TextColor3 = THEME.LIGHT_GRAY
-    partInfoLabel.TextScaled = true
-    partInfoLabel.Font = Enum.Font.Gotham
-    partInfoLabel.TextXAlignment = Enum.TextXAlignment.Left
-    partInfoLabel.Parent = infoFrame
-    
-    local bodyPartsFrame = Instance.new("Frame")
-    bodyPartsFrame.Size = UDim2.new(1, -10, 0, 35)
-    bodyPartsFrame.Position = UDim2.new(0, 5, 1, -40)
-    bodyPartsFrame.BackgroundColor3 = THEME.GRAY
-    bodyPartsFrame.BorderSizePixel = 1
-    bodyPartsFrame.BorderColor3 = THEME.ORANGE
-    bodyPartsFrame.Parent = infoFrame
-    
-    local bodyPartsTitle = Instance.new("TextLabel")
-    bodyPartsTitle.Size = UDim2.new(0, 80, 1, 0)
-    bodyPartsTitle.BackgroundColor3 = THEME.ORANGE
-    bodyPartsTitle.Text = "KEYFRAMES"
-    bodyPartsTitle.TextColor3 = THEME.WHITE
-    bodyPartsTitle.TextScaled = true
-    bodyPartsTitle.Font = Enum.Font.GothamBold
-    bodyPartsTitle.BorderSizePixel = 0
-    bodyPartsTitle.Parent = bodyPartsFrame
-    
-    local bodyPartsList = Instance.new("ScrollingFrame")
-    bodyPartsList.Size = UDim2.new(1, -80, 1, 0)
-    bodyPartsList.Position = UDim2.new(0, 80, 0, 0)
-    bodyPartsList.BackgroundTransparency = 1
-    bodyPartsList.ScrollBarThickness = 8
-    bodyPartsList.ScrollBarImageColor3 = THEME.ORANGE
-    bodyPartsList.ScrollingDirection = Enum.ScrollingDirection.X
-    bodyPartsList.CanvasSize = UDim2.new(0, 0, 0, 0)
-    bodyPartsList.BorderSizePixel = 0
-    bodyPartsList.ElasticBehavior = Enum.ElasticBehavior.Never
-    bodyPartsList.Parent = bodyPartsFrame
-    
-    local bodyPartsLayout = Instance.new("UIListLayout")
-    bodyPartsLayout.FillDirection = Enum.FillDirection.Horizontal
-    bodyPartsLayout.Padding = UDim.new(0, 2)
-    bodyPartsLayout.Parent = bodyPartsList
-    
-    return screenGui, rigInfoLabel, partInfoLabel, playButton, loopButton, stopButton, resetButton, previewButton, savePositionButton, exportButton, clearAllButton, deleteSelectedButton, closeButton, mainFrame, durationInput, startFromInput, bodyPartsList, bodyPartsLayout
-end
-
--- Main setup function
-local function setupSystem()
-    local gui, rigInfoLabel, partInfoLabel, playButton, loopButton, stopButton, resetButton, previewButton, savePositionButton, exportButton, clearAllButton, deleteSelectedButton, closeButton, mainFrame, durationInput, startFromInput, bodyPartsList, bodyPartsLayout = createMainGui()
-    
-    -- Update duration when input changes
-    durationInput.FocusLost:Connect(function()
-        local newDuration = tonumber(durationInput.Text)
-        if newDuration and newDuration > 0 then
-            keyframeDuration = newDuration
-        else
-            durationInput.Text = tostring(keyframeDuration)
-        end
-    end)
-    
-    -- Update start keyframe when input changes
-    startFromInput.FocusLost:Connect(function()
-        local newStart = tonumber(startFromInput.Text)
-        if newStart and newStart > 0 then
-            startFromKeyframe = math.ceil(newStart)
-        else
-            startFromInput.Text = tostring(startFromKeyframe)
-        end
-    end)
-    
-    -- Mouse click detection for rig selection
-    mouse.Button1Down:Connect(function()
-        local target = mouse.Target
-        if target and target:IsA("BasePart") then
-            local rig = findRigFromPart(target)
-            
-            if rig and detectRigType(rig) then
-                selectedRig = rig
-                selectedPart = nil
-                editingKeyframe = nil
-                rigInfoLabel.Text = "Selected: " .. rig.Name .. " (" .. detectRigType(rig) .. ")"
-                partInfoLabel.Text = "No part selected - Right click on body part"
-                removeHighlight()
-                
-                -- Start rig monitoring
-                if rigCheckConnection then
-                    rigCheckConnection:Disconnect()
-                end
-                
-                rigCheckConnection = spawn(function()
-                    while selectedRig do
-                        wait(1)
-                        if not checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) then
-                            break
-                        end
-                    end
-                end)
-            end
-        end
-    end)
-    
-    -- Right click for part selection
-    UserInputService.InputBegan:Connect(function(input, gameProcessed)
-        if gameProcessed then return end
-        
-        if input.UserInputType == Enum.UserInputType.MouseButton2 then
-            local target = mouse.Target
-            if target and target:IsA("BasePart") and selectedRig then
-                local rig = findRigFromPart(target)
-                
-                if rig == selectedRig then
-                    selectedPart = target
-                    partInfoLabel.Text = "Selected part: " .. target.Name
-                    createHighlight(target)
-                end
-            end
-        end
-    end)
-    
-    local previewActive = false
-    
-    -- Save Position button
-    savePositionButton.MouseButton1Click:Connect(function()
-        if selectedRig and checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) then
-            local index, targetName, wasUpdated = savePosition(selectedRig, selectedPart, true)
-            
-            if wasUpdated then
-                rigInfoLabel.Text = "Updated " .. targetName .. " keyframe #" .. tostring(index)
-            else
-                rigInfoLabel.Text = "Saved " .. targetName .. " keyframe #" .. tostring(index)
-            end
-            
-            updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-            
-            savePositionButton.BackgroundColor3 = THEME.WHITE
-            savePositionButton.TextColor3 = THEME.BLACK
-            spawn(function()
-                wait(0.3)
-                savePositionButton.BackgroundColor3 = THEME.ORANGE
-                savePositionButton.TextColor3 = THEME.WHITE
-            end)
-        else
-            rigInfoLabel.Text = "Select a rig first!"
-            savePositionButton.BackgroundColor3 = THEME.GRAY
-            spawn(function()
-                wait(0.5)
-                savePositionButton.BackgroundColor3 = THEME.ORANGE
-                wait(1.5)
-                if selectedRig then
-                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-                else
-                    rigInfoLabel.Text = "No rig selected - Click on a character"
-                end
-            end)
-        end
-    end)
-    
-    -- Export button
-    exportButton.MouseButton1Click:Connect(function()
-        if #savedPositions > 0 or next(bodyPartPositions) then
-            local code = exportAnimationScript()
-            
-            if setclipboard then
-                setclipboard(code)
-                rigInfoLabel.Text = "Animation script copied to clipboard!"
-            else
-                print("-- EXPORTED ANIMATION SCRIPT --")
-                print(code)
-                rigInfoLabel.Text = "Animation script printed to console!"
-            end
-            
-            exportButton.BackgroundColor3 = THEME.WHITE
-            exportButton.TextColor3 = THEME.BLACK
-            spawn(function()
-                wait(0.3)
-                exportButton.BackgroundColor3 = THEME.ORANGE
-                exportButton.TextColor3 = THEME.WHITE
-                wait(2)
-                if selectedRig then
-                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-                else
-                    rigInfoLabel.Text = "No rig selected - Click on a character"
-                end
-            end)
-        else
-            rigInfoLabel.Text = "No animation data to export!"
-        end
-    end)
-    
-    -- Preview button
-    previewButton.MouseButton1Click:Connect(function()
-        if selectedRig and checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) and (#savedPositions > 0 or next(bodyPartPositions)) then
-            if previewActive then
-                clearKeyframePreview()
-                previewButton.Text = "Preview"
-                previewButton.BackgroundColor3 = THEME.ORANGE
-                previewActive = false
-            else
-                showKeyframePreview(selectedRig)
-                previewButton.Text = "Hide"
-                previewButton.BackgroundColor3 = THEME.GRAY
-                previewActive = true
-            end
-        else
-            rigInfoLabel.Text = "Select rig and save positions!"
-            previewButton.BackgroundColor3 = THEME.GRAY
-            spawn(function()
-                wait(0.5)
-                previewButton.BackgroundColor3 = THEME.ORANGE
-                wait(1.5)
-                if selectedRig then
-                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-                else
-                    rigInfoLabel.Text = "No rig selected - Click on a character"
-                end
-            end)
-        end
-    end)
-    
-    -- Play button
-    playButton.MouseButton1Click:Connect(function()
-        if selectedRig and checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) and (#savedPositions > 0 or next(bodyPartPositions)) and not isPlaying then
-            playButton.Text = "Playing"
-            playButton.BackgroundColor3 = THEME.GRAY
-            rigInfoLabel.Text = "Playing animation once..."
-            
-            spawn(function()
-                playAnimation(selectedRig)
-                playButton.Text = "Play"
-                playButton.BackgroundColor3 = THEME.ORANGE
-                if selectedRig then
-                    rigInfoLabel.Text = "Animation completed"
-                end
-            end)
-        end
-    end)
-    
-    -- Loop button
-    loopButton.MouseButton1Click:Connect(function()
-        if selectedRig and checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) and (#savedPositions > 0 or next(bodyPartPositions)) then
-            if not isLooping then
-                loopButton.Text = "Looping"
-                loopButton.BackgroundColor3 = THEME.GRAY
-                rigInfoLabel.Text = "Auto-loop animation started!"
-                
-                spawn(function()
-                    playAnimationLoop(selectedRig)
-                end)
-            else
-                isLooping = false
-                isPlaying = false
-                if loopConnection then
-                    loopConnection:Disconnect()
-                    loopConnection = nil
-                end
-                loopButton.Text = "Loop"
-                loopButton.BackgroundColor3 = THEME.ORANGE
-                rigInfoLabel.Text = "Animation loop stopped"
-            end
-        else
-            rigInfoLabel.Text = "Select rig and save keyframes first!"
-            loopButton.BackgroundColor3 = THEME.GRAY
-            spawn(function()
-                wait(0.5)
-                loopButton.BackgroundColor3 = THEME.ORANGE
-                wait(1.5)
-                if selectedRig then
-                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-                else
-                    rigInfoLabel.Text = "No rig selected - Click on a character"
-                end
-            end)
-        end
-    end)
-    
-    -- Stop button
-    stopButton.MouseButton1Click:Connect(function()
-        isPlaying = false
-        isLooping = false
-        if loopConnection then
-            loopConnection:Disconnect()
-            loopConnection = nil
-        end
-        playButton.Text = "Play"
-        playButton.BackgroundColor3 = THEME.ORANGE
-        loopButton.Text = "Loop"
-        loopButton.BackgroundColor3 = THEME.ORANGE
-        rigInfoLabel.Text = "All animations stopped"
-        
-        stopButton.BackgroundColor3 = THEME.WHITE
-        stopButton.TextColor3 = THEME.BLACK
-        spawn(function()
-            wait(0.3)
-            stopButton.BackgroundColor3 = THEME.ORANGE
-            stopButton.TextColor3 = THEME.WHITE
-        end)
-    end)
-    
-    -- Reset button
-    resetButton.MouseButton1Click:Connect(function()
-        if selectedRig and checkRigExists(selectedRig, rigInfoLabel, bodyPartsList, bodyPartsLayout) and (#savedPositions > 0 or next(bodyPartPositions)) then
-            resetToInitial(selectedRig)
-            resetButton.BackgroundColor3 = THEME.WHITE
-            resetButton.TextColor3 = THEME.BLACK
-            spawn(function()
-                wait(0.3)
-                resetButton.BackgroundColor3 = THEME.ORANGE
-                resetButton.TextColor3 = THEME.WHITE
-            end)
-        end
-    end)
-    
-    -- Clear All button
-    clearAllButton.MouseButton1Click:Connect(function()
-        savedPositions = {}
-        bodyPartPositions = {}
-        currentKeyframe = 0
-        editingKeyframe = nil
-        startFromKeyframe = 1
-        startFromInput.Text = "1"
-        
-        isLooping = false
-        isPlaying = false
-        if loopConnection then
-            loopConnection:Disconnect()
-            loopConnection = nil
-        end
-        playButton.Text = "Play"
-        playButton.BackgroundColor3 = THEME.ORANGE
-        loopButton.Text = "Loop"
-        loopButton.BackgroundColor3 = THEME.ORANGE
-        
-        updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-        clearKeyframePreview()
-        previewButton.Text = "Preview"
-        previewButton.BackgroundColor3 = THEME.ORANGE
-        previewActive = false
-        
-        clearAllButton.BackgroundColor3 = THEME.WHITE
-        clearAllButton.TextColor3 = THEME.BLACK
-        rigInfoLabel.Text = "All keyframes cleared!"
-        spawn(function()
-            wait(0.3)
-            clearAllButton.BackgroundColor3 = THEME.GRAY
-            clearAllButton.TextColor3 = THEME.WHITE
-            wait(1)
-            if selectedRig then
-                rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-            else
-                rigInfoLabel.Text = "No rig selected - Click on a character"
-            end
-        end)
-    end)
-    
-    -- Delete Selected button
-    deleteSelectedButton.MouseButton1Click:Connect(function()
-        if editingKeyframe then
-            local deleted = deleteSpecificKeyframe()
-            if deleted then
-                updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-                clearKeyframePreview()
-                deleteSelectedButton.BackgroundColor3 = THEME.WHITE
-                deleteSelectedButton.TextColor3 = THEME.BLACK
-                rigInfoLabel.Text = "Selected keyframe deleted!"
-                
-                spawn(function()
-                    wait(0.3)
-                    deleteSelectedButton.BackgroundColor3 = THEME.GRAY
-                    deleteSelectedButton.TextColor3 = THEME.WHITE
-                    wait(1)
-                    if selectedRig then
-                        rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-                    else
-                        rigInfoLabel.Text = "No rig selected - Click on a character"
-                    end
-                end)
-            else
-                rigInfoLabel.Text = "Failed to delete keyframe!"
-            end
-        else
-            rigInfoLabel.Text = "Select a keyframe first!"
-            deleteSelectedButton.BackgroundColor3 = THEME.GRAY
-            spawn(function()
-                wait(0.5)
-                deleteSelectedButton.BackgroundColor3 = THEME.GRAY
-                wait(1.5)
-                if selectedRig then
-                    rigInfoLabel.Text = "Selected: " .. selectedRig.Name
-                else
-                    rigInfoLabel.Text = "No rig selected - Click on a character"
-                end
-            end)
-        end
-    end)
-    
-    -- Close button
-    closeButton.MouseButton1Click:Connect(function()
-        isLooping = false
-        isPlaying = false
-        if loopConnection then
-            loopConnection:Disconnect()
-            loopConnection = nil
-        end
-        
-        removeHighlight()
-        clearKeyframePreview()
-        if rigCheckConnection then
-            rigCheckConnection:Disconnect()
-        end
-        gui:Destroy()
-    end)
-    
-    -- Initialize body parts list
-    updateBodyPartsList(bodyPartsList, bodyPartsLayout)
-    
-    print("Moon Animator X loaded successfully!")
-    print("Instructions:")
-    print("1. Left click on a character to select rig")
-    print("2. Right click on body parts to select specific parts")
-    print("3. Use Save button to create keyframes")
-    print("4. Use Preview to see ghost positions")
-    print("5. Use Play for single animation or Loop for infinite")
-end
-
--- Initialize the system
-setupSystem()
+print('GUI clonada com sucesso!')
